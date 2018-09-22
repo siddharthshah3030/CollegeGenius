@@ -1,0 +1,84 @@
+//
+// Input Group
+// ==============================
+
+
+// wrapper
+
+.InputGroup {
+	.display-flex();
+	margin-bottom: @spacing-md;
+
+	// remove the bottom margin when inside a .FormField
+	// this occurs when using in a .horizontal-form
+	.FormField & {
+		margin-bottom: 0;
+	}
+}
+
+
+// common
+
+.InputGroup_section {
+
+	// add gutter to additional elements
+	& + & {
+		padding-left: @input-padding-horizontal;
+	}
+
+	// make flush when contiguous
+	.InputGroup--contiguous & {
+		padding-left: 0;
+	}
+}
+
+// stretch the appropriate element - 1 per input group
+
+.InputGroup_section--grow {
+	.flex(1,1,auto);
+}
+
+
+// bring focused elements to the front so we can see their decoration
+
+.InputGroup_section > .FormInput,
+.InputGroup_section > .Button {
+	position: relative;
+
+	&:focus {
+		z-index: 1;
+	}
+}
+
+
+
+
+//  Contiguous fields/buttons
+// ------------------------------
+
+.InputGroup--contiguous > .InputGroup_section {
+	// pull subsequent children over their sibling's border
+	margin-left: -1px;
+	&:first-child {
+		margin-left: 0;
+	}
+
+	// remove the border radius initially
+	> .FormInput,
+	> .Button,
+	> .FormField .FormInput {
+		border-radius: 0;
+	}
+
+	// reapply where appropriate
+	&:first-child > .FormInput,
+	&:first-child > .Button,
+	&:first-child > .FormField .FormInput {
+		.border-left-radius(@border-radius-base);
+	}
+	&:last-child > .FormInput,
+	&:last-child > .Button,
+	&:last-child > .FormField .FormInput {
+		.border-right-radius(@border-radius-base);
+	}
+}

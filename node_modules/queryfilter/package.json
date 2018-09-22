@@ -1,0 +1,55 @@
+{
+  "title": "QueryFilter",
+  "name": "queryfilter",
+  "version": "0.0.4",
+  "description": "Create query filters, stringify them, humanize them",
+  "homepage": "https://github.com/keystonejs/queryfilter",
+  "keywords": [
+    "queryfilter",
+    "keystonejs",
+    "keystone"
+  ],
+  "license": {
+    "type": "MIT"
+  },
+  "badges": {
+    "travis": true,
+    "npm": true,
+    "david": true,
+    "daviddev": true,
+    "gittip": "keystonejs"
+  },
+  "author": "2014+ Jed Watson <jed@thinkmill.com.au> (https://github.com/jedwatson)",
+  "maintainers": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)",
+    "Jed Watson <jed@thinkmill.com.au> (https://github.com/jedwatson)"
+  ],
+  "contributors": [
+    "JedWatson (https://github.com/JedWatson)"
+  ],
+  "bugs": {
+    "url": "https://github.com/keystonejs/queryfilter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/keystonejs/queryfilter.git"
+  },
+  "engines": {
+    "node": ">=0.4"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "joe": "~1.4.0",
+    "joe-reporter-console": "~1.2.1",
+    "projectz": "~0.3.13"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "scripts": {
+    "test": "node ./test/queryfilter-test.js"
+  },
+  "main": "./lib/queryfilter.js",
+  "browser": {}
+}

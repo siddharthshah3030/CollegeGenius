@@ -1,0 +1,1715 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"wid",
+				"width"
+			],
+			[
+				"bordr",
+				"border-radius"
+			],
+			[
+				"mari",
+				"margin"
+			],
+			[
+				"background",
+				"background"
+			],
+			[
+				"Path",
+				"path.normalize(path);"
+			],
+			[
+				"pancake",
+				"pancake-js"
+			],
+			[
+				"set",
+				"setTimeout(callback, after);"
+			],
+			[
+				"timeout",
+				"setTimeout(callback, after);"
+			],
+			[
+				"cons",
+				"console.log();"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"compo",
+				"componentWillUpdate\t Life Cycle"
+			],
+			[
+				"com",
+				"componentWillUnmount\t Life Cycle"
+			],
+			[
+				"componentWi",
+				"componentWillMount\t Life Cycle"
+			],
+			[
+				"const",
+				"constructor\tReact.Component"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"mag",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"tabl",
+				"table-cell"
+			],
+			[
+				"con",
+				"console.log();"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"background-i",
+				"background-size"
+			],
+			[
+				"js-meter",
+				"js-meter-knob"
+			],
+			[
+				"bakg",
+				"background-color"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"list-s",
+				"list-style"
+			],
+			[
+				"m",
+				"margin-top"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"style",
+				"style\tTag"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"table-",
+				"table-cell"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"lesscontent",
+				"lessContents"
+			],
+			[
+				"meta",
+				"meta\t<meta name=\"\" content=\"\">"
+			],
+			[
+				"GUI-source",
+				"GUI-source-master"
+			],
+			[
+				"Handeliz",
+				"Handleize"
+			],
+			[
+				"boder",
+				"border-radius"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"sitecolor",
+				"sitecolor-B"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"repeat",
+				"repeat-y  (value)"
+			],
+			[
+				"indi",
+				"indicator-A"
+			],
+			[
+				"leg",
+				"legend\t<legend>"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"alerts-sucess",
+				"alerts-success-backgroundcolor"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"backrou",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"marin",
+				"margin-right"
+			],
+			[
+				"padding-ot",
+				"padding-bottom"
+			],
+			[
+				"mobile",
+				"mobileView"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"datepicker",
+				"datepicker-wrapper"
+			],
+			[
+				"fi",
+				"figure\t<figure>"
+			],
+			[
+				"white",
+				"white-space"
+			],
+			[
+				"curre",
+				"currentField"
+			],
+			[
+				"trip-plann",
+				"trip-planner-from"
+			],
+			[
+				"min",
+				"minLength"
+			],
+			[
+				"js-tic",
+				"js-ticket-type-radio-row1"
+			],
+			[
+				"show",
+				"showTicketTypes"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"updat",
+				"updateFormMessage"
+			],
+			[
+				"error",
+				"errorMessages"
+			],
+			[
+				"has",
+				"hasClass"
+			],
+			[
+				"box-",
+				"box-shadow"
+			],
+			[
+				"typea",
+				"typeaheadFilter"
+			],
+			[
+				"ret",
+				"returnDB"
+			],
+			[
+				"new",
+				"newItem"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"artists",
+				"artistIDs"
+			],
+			[
+				"alT",
+				"allThumbs"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"temp",
+				"tempptab"
+			],
+			[
+				"cate",
+				"categoryURL"
+			],
+			[
+				"categ",
+				"categories"
+			],
+			[
+				"categr",
+				"categoryURL"
+			],
+			[
+				"cat",
+				"categories"
+			],
+			[
+				"preloa",
+				"preloadImg"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"url",
+				"urldecode"
+			],
+			[
+				"series",
+				"seriesURL"
+			],
+			[
+				"newSer",
+				"newSeries"
+			],
+			[
+				"newCa",
+				"newCategory"
+			],
+			[
+				"qRes",
+				"qResC"
+			],
+			[
+				"seri",
+				"seriesURL"
+			],
+			[
+				"category",
+				"categoryURL"
+			],
+			[
+				"backgt",
+				"background-position"
+			],
+			[
+				"mysq",
+				"MySqlres"
+			],
+			[
+				"mysql_re",
+				"mysql_real_escape_string"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"qr",
+				"qResI"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 5878,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dominikwilkowski/Sites/keystone-test-project/README.md",
+			"settings":
+			{
+				"buffer_size": 551,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dominikwilkowski/Sites/keystone-test-project/package.json",
+			"settings":
+			{
+				"buffer_size": 1668,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 7905,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 374.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"prett",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"enabkl",
+				"Package Control: Enable Package"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pre",
+				"Pretty JSON: Validate"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"pret",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"con",
+				"Convert Case: Title Case"
+			],
+			[
+				"titl",
+				"Convert Case: Title Case"
+			],
+			[
+				"theme",
+				"Colorsublime: Browse Themes"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"set jav",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"prey",
+				"Pretty JSON: Validate"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Pretty JSON: JSON 2 XML"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"Autoprefix CSS"
+			],
+			[
+				"disb",
+				"Package Control: Disable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"instakl",
+				"Package Control: Install Package"
+			],
+			[
+				"auto",
+				"Autoprefix CSS"
+			],
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"list p",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pag",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 504.0
+	},
+	"console":
+	{
+		"height": 305.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/dominikwilkowski/Sites/keystone",
+		"/Users/dominikwilkowski/Sites/keystone/lib",
+		"/Users/dominikwilkowski/Sites/keystone/test",
+		"/Users/dominikwilkowski/Sites/keystone/test/e2e"
+	],
+	"file_history":
+	[
+		"/Users/dominikwilkowski/Sites/keystone/server/bindBodyParser.js",
+		"/Users/dominikwilkowski/Desktop/backstop.json",
+		"/Users/dominikwilkowski/Desktop/test.js",
+		"/Users/dominikwilkowski/Sites/keystone/test/e2e/adminUI/tests/group005Item/uxTestItemView.js",
+		"/Users/dominikwilkowski/Sites/keystone/test/mocha-admin.opts",
+		"/Users/dominikwilkowski/Sites/keystone/admin/client/App/sagas/test/queryParamsSagas.test.js",
+		"/Users/dominikwilkowski/Sites/keystone/.travis.yml",
+		"/Users/dominikwilkowski/Sites/keystone/admin/client/App/components/Navigation/Mobile/test/SectionItem.test.js",
+		"/Users/dominikwilkowski/Sites/keystone/admin/client/App/sagas/queryParamsSagas.js",
+		"/Users/dominikwilkowski/Sites/keystone/admin/server/templates/index.html",
+		"/Users/dominikwilkowski/Sites/keystone/admin/client/App/components/Footer/index.js",
+		"/Users/dominikwilkowski/Sites/keystone/admin/client/App/components/Navigation/Primary/test/PrimaryNavigation.test.js",
+		"/Users/dominikwilkowski/Sites/keystone/admin/client/App/components/Navigation/Primary/test/NavItem.test.js",
+		"/Users/dominikwilkowski/Sites/keystone/admin/client/App/components/Navigation/Mobile/test/ListItem.test.js",
+		"/Users/dominikwilkowski/Sites/keystone/admin/client/App/components/Footer/test/component.test.js",
+		"/Users/dominikwilkowski/Sites/keystone/test/unit/lib/email.js",
+		"/Users/dominikwilkowski/Sites/keystone/test/unit/lib/session.js",
+		"/Users/dominikwilkowski/Sites/keystone/lib/email.js",
+		"/Users/dominikwilkowski/Sites/keystone/lib/list/ensureTextIndex.js",
+		"/Users/dominikwilkowski/Sites/keystone/lib/session.js",
+		"/Users/dominikwilkowski/Sites/keystone/test/mocha.opts",
+		"/Users/dominikwilkowski/Sites/keystone/node_modules/keystone-email/lib/Email.js",
+		"/Users/dominikwilkowski/Sites/keystone/lib/safeRequire.js",
+		"/Users/dominikwilkowski/Sites/keystone/test/unit/lib/emailtemplate.pug",
+		"/Users/dominikwilkowski/Sites/keystone-5/packages/breville/config.js",
+		"/Users/dominikwilkowski/Sites/keystone-5/packages/breville/.env.example",
+		"/Users/dominikwilkowski/Sites/keystone-5/packages/core/Keystone/index.js",
+		"/Users/dominikwilkowski/Sites/keystone-5/packages/core/List/index.js",
+		"/Users/dominikwilkowski/Sites/keystone-5/packages/fields/types/Relationship/Relationship.js",
+		"/Users/dominikwilkowski/Sites/keystone-5/.gitignore",
+		"/Users/dominikwilkowski/Sites/rust-start/Cargo.lock",
+		"/Users/dominikwilkowski/Sites/rust-start/Cargo.toml",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-syrup/README.md",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/README.md",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake/src/files.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake/src/settings.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-syrup/src/cli.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-json/src/pancake.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/tester.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test11/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-json/CHANGELOG.md",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-json/README.md",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-json/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-react/src/pancake.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-react/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-react/CHANGELOG.md",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-react/README.md",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test13/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test11/fixture/pancake/pancake.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test11/pancake/pancake.json",
+		"/Users/dominikwilkowski/Desktop/test/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/modules/testmodule1/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/modules/testmodule2/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/modules/testmodule3/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/modules/testmodule4/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test12/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test12/fixture/pancake/pancake.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test12/pancake/pancake.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test12/node_modules/@gov.au/testmodule1/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test12/node_modules/@gov.au/testmodule2/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test12/node_modules/@gov.au/testmodule3/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test12/node_modules/@gov.au/testmodule4/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test12/node_modules/@gov.au/testmodule5/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test11/_fixture/pancake/pancake.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-json/__tests__/json.spec.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-js/src/pancake.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-json/src/json.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test11/node_modules/@gov.au/testmodule1/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test11/node_modules/@gov.au/testmodule2/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-sass/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-sass/README.md",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-sass/CHANGELOG.md",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test11/node_modules/@gov.au/testmodule3/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-sass/src/pancake.js",
+		"/Users/dominikwilkowski/Desktop/steve/pancake/sass/pancake.scss",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-sass/src/sass.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-sass/node_modules/@gov.au/pancake/README.md",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-js/node_modules/@gov.au/pancake/README.md",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-js/README.md",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake/README.md",
+		"/Users/dominikwilkowski/Desktop/steve/node_modules/@gov.au/pancake-sass/lib/pancake.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/modules/testmodule3/lib/sass/_globals.scss",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/modules/testmodule3/lib/sass/_module.scss",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/modules/testmodule2/lib/sass/_globals.scss",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/modules/testmodule1/lib/sass/_globals.scss",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/.circleci/config.yml",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-js/src/js.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-syrup/__tests__/prettiness.spec.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-js/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/lerna.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/.editorconfig",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/circle.yml",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake/src/plugins.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test10/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-react/src/react.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-react/__tests__/react.spec.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test10/fixture/pancake/react/testmodule1.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test10/fixture/pancake/react/testmodule3.js",
+		"/Users/dominikwilkowski/.npm/_logs/2017-07-24T00_32_17_604Z-debug.log",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test10/node_modules/@gov.au/testmodule1/lib/js/module.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-sass/__tests__/sass.spec.js",
+		"/Users/dominikwilkowski/Sites/bell-birthday/script.js",
+		"/Users/dominikwilkowski/Sites/bell-birthday/style.css",
+		"/Users/dominikwilkowski/Sites/bell-birthday/index.html",
+		"/Users/dominikwilkowski/Desktop/t/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/slumdesk/package.json",
+		"/Users/dominikwilkowski/Sites/DTA/slumdesk/docs/index.html",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake/CHANGELOG.md",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-syrup/CHANGELOG.md",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake/src/modules.js",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-svg/README.md",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-svg/CHANGELOG.md",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/packages/pancake-js/CHANGELOG.md",
+		"/Users/dominikwilkowski/Sites/react-learn/tutorial/catch-of-the-day/src/components/StorePicker.jsx",
+		"/Users/dominikwilkowski/Sites/react-learn/tutorial/catch-of-the-day/src/components/Order.jsx",
+		"/Users/dominikwilkowski/Sites/react-learn/tutorial/catch-of-the-day/src/components/Fish.jsx",
+		"/Users/dominikwilkowski/Sites/react-learn/tutorial/catch-of-the-day/src/components/App.jsx",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test2/fixture/pancake/css/testmodule1.css",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test2/fixture/pancake/css/testmodule2.css",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test2/fixture/pancake/css/testmodule3.css",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test2/fixture/pancake/css/testmodule4.css",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test2/fixture/pancake/css/testmodule5.css",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test8/fixture/pancake/sass/pancake.scss",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test8/fixture/pancake/sass/testmodule1.scss",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test8/fixture/pancake/sass/testmodule2.scss",
+		"/Users/dominikwilkowski/Sites/DTA/pancake/tests/test8/fixture/pancake/sass/testmodule3.scss"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 133.0,
+		"where_history":
+		[
+			"-node_modules/*",
+			"-node_modules/*, admin/**/*.test.js",
+			"-node_modules/*"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"new Err",
+			".^",
+			"^.",
+			"-rc",
+			"1.^0.0-rc.10",
+			"greenkepper",
+			"green",
+			"extended",
+			"key",
+			"[description]",
+			"err",
+			"[type]",
+			"[description]",
+			"\"",
+			"createScenario",
+			"setReferenceUrl",
+			"\t",
+			" -",
+			"JOB",
+			"test-e2e-saucelabs-group",
+			"Your changes have been saved successfully",
+			"keyston",
+			"Keystone",
+			"templatePath",
+			"templa",
+			"keystone",
+			"Keystone",
+			"console.log(",
+			"QUERY HAS CHANGED",
+			"return",
+			"yield",
+			"evalQueryParams",
+			"QUERY HAS NOT CHANGED",
+			"/Users/dominikwilkowski/Sites/keystone/admin/",
+			" ",
+			"non",
+			"signinWithUser",
+			"keystone",
+			"keystone.session.signin(lookup, null, null, function () {",
+			"done();",
+			"sinon.assert.calledOnce(keystone.session.signinWithUser);",
+			"this.User.model.exec.calledAfter(this.User.model.findOne).must.be.true;",
+			"sinon.assert.calledOnce(this.User.model.exec);",
+			"this.User.model.findOne.getCall(0).args[0].email.must.be.instanceof(RegExp);",
+			"sinon.assert.calledOnce(this.User.model.findOne);",
+			"keystone.session.signin(lookup, null, null, function () {",
+			"model",
+			"password",
+			"this.User.model",
+			"shoud",
+			"model",
+			"keystone.session.signin",
+			"sess",
+			"library",
+			"safeRequire",
+			"template"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5878,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2581,
+								2581
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1694.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/dominikwilkowski/Sites/keystone-test-project/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 551,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								184,
+								201
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Markdown Extended/Syntaxes/Markdown Extended.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false,
+							"trim_trailing_white_space_on_save": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/dominikwilkowski/Sites/keystone-test-project/package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1668,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7905,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Markdown Extended/Syntaxes/Markdown Extended.sublime-syntax",
+							"translate_tabs_to_spaces": false,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3945.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 47.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.nodejs":
+	{
+		"height": 213.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 128.0
+	},
+	"pinned_build_system": "",
+	"project": "keystone4.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"header.less",
+				"HTML/_assets/less/modules/header.less"
+			],
+			[
+				"footer.le",
+				"HTML/_assets/less/modules/footer.less"
+			],
+			[
+				"header.le",
+				"HTML/_assets/less/modules/header.less"
+			],
+			[
+				"exam",
+				"HTML/_assets/less/modules/example.less"
+			],
+			[
+				"gridly.le",
+				"HTML/_assets/less/modules/gridly.less"
+			],
+			[
+				"patter",
+				"dev/less/modules/patternbox.less"
+			],
+			[
+				"home",
+				"dev/less/modules/home.less"
+			],
+			[
+				"head",
+				"dev/less/modules/header.less"
+			],
+			[
+				"conten",
+				"dev/less/modules/content.less"
+			],
+			[
+				"base",
+				"jekyll/_includes/base.liquid"
+			],
+			[
+				"content",
+				"dev/less/modules/content.less"
+			],
+			[
+				"respon",
+				"jekyll/principles/responsive-grid.md"
+			],
+			[
+				"javas",
+				"GUI/theme base/docs/javascript.html"
+			],
+			[
+				"com",
+				"GUI/theme base/docs/components.html"
+			],
+			[
+				"compo",
+				"GUI/theme base/docs/components.html"
+			],
+			[
+				"symbo",
+				"GUI/theme base/docs/symbols.html"
+			],
+			[
+				"formin",
+				"form/BSA/brand/html/formindex.html"
+			],
+			[
+				"accor",
+				"form/base/brand/less/modules/accordion.less"
+			],
+			[
+				"css",
+				"GUI/theme base/docs/css.html"
+			],
+			[
+				"docs",
+				"GUI/Westpac/css/docs.css"
+			],
+			[
+				"java",
+				"GUI/theme base/docs/javascript.html"
+			],
+			[
+				"doc",
+				"GUI/theme base/js/docs.js"
+			],
+			[
+				"button",
+				"GUI/theme base/less/overwrites/buttons.less"
+			],
+			[
+				"sett",
+				"form/BSA/brand/less/base/settings.less"
+			],
+			[
+				"compon",
+				"GUI/theme base/docs/components.html"
+			],
+			[
+				"css.html",
+				"GUI/theme base/docs/css.html"
+			],
+			[
+				"components.html",
+				"GUI/theme base/docs/components.html"
+			],
+			[
+				"gruntf",
+				"GUI/BOM/Gruntfile.js"
+			],
+			[
+				"grunt",
+				"form/BOM/Gruntfile.js"
+			],
+			[
+				"type",
+				"GUI/theme base/less/overwrites/type.less"
+			],
+			[
+				"ty",
+				"GUI/theme base/less/bootstrap/type.less"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"print",
+				"GUI/theme base/less/bootstrap/print.less"
+			],
+			[
+				"tab",
+				"GUI/theme base/less/overwrites/tables.less"
+			],
+			[
+				"tables",
+				"GUI/theme base/less/bootstrap/tables.less"
+			],
+			[
+				"settin",
+				"GUI/BSA/brand/less/settings.less"
+			],
+			[
+				"label",
+				"GUI/theme base/less/overwrites/tables.less"
+			],
+			[
+				"form",
+				"GUI/theme base/less/overwrites/forms.less"
+			],
+			[
+				"setting",
+				"GUI/BOM/brand/less/base/settings.less"
+			],
+			[
+				"bread",
+				"GUI/theme base/less/modules/breadcrumbs.less"
+			],
+			[
+				"error",
+				"uberform/uberform base/less/modules/error.less"
+			],
+			[
+				"forms",
+				"uberform/BOM/css/forms.css"
+			],
+			[
+				"mini",
+				"jekyll-build/_includes/mini-planner.html"
+			],
+			[
+				"icon",
+				"stylus/includes/base/icons.styl"
+			],
+			[
+				"hea",
+				"jekyll-build/_includes/header.html"
+			],
+			[
+				"tfn",
+				"jekyll-build/js/tfnsw.js"
+			],
+			[
+				"heade",
+				"jekyll-build/_includes/header.html"
+			],
+			[
+				"status",
+				"stylus/includes/module/status-feed.styl"
+			],
+			[
+				"datatable",
+				"stylus/includes/module/datatable.styl"
+			],
+			[
+				"foo",
+				"jekyll-build/_includes/footer.html"
+			],
+			[
+				"wid",
+				"widget/widget.html"
+			],
+			[
+				"widg",
+				"jekyll-build/widget.md"
+			],
+			[
+				"cont",
+				"jekyll-build/_layouts/contact.html"
+			],
+			[
+				"info",
+				"stylus/includes/module/infosys.styl"
+			],
+			[
+				"timetable-da",
+				"jekyll-build/_includes/timetable-datepicker.html"
+			],
+			[
+				"date",
+				"stylus/includes/module/datepicker.styl"
+			],
+			[
+				"foot",
+				"jekyll-build/_includes/footer.html"
+			],
+			[
+				"sites",
+				"stylus/includes/base/site-settings.styl"
+			],
+			[
+				"datepick",
+				"stylus/includes/module/datepicker.styl"
+			],
+			[
+				"footer",
+				"jekyll-build/_includes/footer.html"
+			],
+			[
+				"mapbo",
+				"stylus/includes/module/mapBox.styl"
+			],
+			[
+				"mini-",
+				"jekyll-build/_includes/mini-planner.html"
+			],
+			[
+				"guide",
+				"jekyll-build/_includes/navigation/guide.html"
+			],
+			[
+				"sty",
+				"stylus/style.styl"
+			],
+			[
+				"retin",
+				"stylus/includes/base/retina.styl"
+			],
+			[
+				"reti",
+				"stylus/includes/base/retina.styl"
+			],
+			[
+				"mapb",
+				"stylus/includes/module/mapBox.styl"
+			],
+			[
+				"icon.s",
+				"stylus/includes/base/icons.styl"
+			],
+			[
+				"detail",
+				"jekyll-build/_includes/status/detail.html"
+			],
+			[
+				"navigat",
+				"stylus/includes/module/navigation.styl"
+			],
+			[
+				"subnav",
+				"stylus/includes/module/subnavigation.styl"
+			],
+			[
+				"navigai",
+				"stylus/includes/module/navigation.styl"
+			],
+			[
+				"styl",
+				"stylus/style.styl"
+			],
+			[
+				"news-lis",
+				"jekyll-build/_layouts/news-listing.html"
+			],
+			[
+				"event",
+				"jekyll-build/_layouts/events-listing.html"
+			],
+			[
+				"alerts",
+				"stylus/includes/module/alert.styl"
+			],
+			[
+				"timetable-maps",
+				"stylus/includes/module/timetables-maps.styl"
+			],
+			[
+				"example",
+				"jekyll-build/_includes/example-timetable.html"
+			],
+			[
+				"",
+				"jekyll-build/_includes/example-timetable-ferry.html"
+			],
+			[
+				"timetable-deta",
+				"jekyll-build/_layouts/timetable-detail.html"
+			],
+			[
+				"buy",
+				"jekyll-build/_layouts/buy-tickets.html"
+			],
+			[
+				"navigation/",
+				"jekyll-build/_includes/navigation/tickets.html"
+			],
+			[
+				"na",
+				"jekyll-build/_includes/navigation.html"
+			],
+			[
+				"retina",
+				"stylus/includes/base/retina.styl"
+			],
+			[
+				"retina.",
+				"stylus/includes/base/retina.styl"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "cutt",
+		"selected_items":
+		[
+			[
+				"cutt",
+				"~/Sites/cuttlebelle-website/cuttlebelle-website.sublime-project"
+			],
+			[
+				"post",
+				"~/Sites/postfixcsv/postfix.sublime-project"
+			],
+			[
+				"talk",
+				"~/Sites/talks/talks.sublime-project"
+			],
+			[
+				"keyst",
+				"~/Sites/keystone-5/keystone5.sublime-project"
+			],
+			[
+				"grunt",
+				"~/Sites/grunt-css-purge/grunt-css-purge.sublime-project"
+			],
+			[
+				"sass",
+				"~/Sites/sass-versioning/sass-versioning.sublime-project"
+			],
+			[
+				"gol",
+				"~/Sites/GUI-modules/GUI-logos/GUI-logos.sublime-project"
+			],
+			[
+				"ui",
+				"~/Sites/DTA/uikit/uikit.sublime-project"
+			],
+			[
+				"go",
+				"~/Sites/GUI-docs/GUI-docs.sublime-project"
+			],
+			[
+				"",
+				"~/Sites/GUI-docs/GUI-docs.sublime-project"
+			],
+			[
+				"god",
+				"~/Sites/GUI-docs/GUI-docs.sublime-project"
+			],
+			[
+				"uiki",
+				"~/Sites/DTA/uikit/uikit.sublime-project"
+			],
+			[
+				"uikk",
+				"~/Sites/DTA/uikit-pancake/uikit-pancake.sublime-workspace"
+			],
+			[
+				"cuttl",
+				"~/Sites/cuttlebelle/cuttlebelle.sublime-project"
+			],
+			[
+				"remin",
+				"~/Sites/DTA/reminder/reminder.sublime-project"
+			],
+			[
+				"uikit",
+				"~/Sites/DTA/uikit/uikit.sublime-project"
+			],
+			[
+				"serv",
+				"~/Sites/DTA/service-manual/service-manual.sublime-project"
+			],
+			[
+				"uik",
+				"~/Sites/DTA/uikit/uikit.sublime-project"
+			],
+			[
+				"ser",
+				"~/Sites/DTA/service-manual/service-manual.sublime-project"
+			],
+			[
+				"cfon",
+				"~/Sites/cfonts/cfonts.sublime-project"
+			],
+			[
+				"sl",
+				"~/Sites/DTA/slumdesk/slumdesk.sublime-project"
+			],
+			[
+				"slu",
+				"~/Sites/DTA/slumdesk/slumdesk.sublime-project"
+			],
+			[
+				"slum",
+				"~/Sites/DTA/slumdesk/slumdesk.sublime-project"
+			],
+			[
+				"gel",
+				"~/Sites/GEL/GEL.sublime-project"
+			],
+			[
+				"cont",
+				"~/Sites/DTA/content-guide/content-guide.sublime-project"
+			],
+			[
+				"guid",
+				"~/Sites/DTA/guides/guides.sublime-project"
+			],
+			[
+				"gui-mo",
+				"~/Sites/GUI-modules/GUI-modules.sublime-project"
+			],
+			[
+				"blen",
+				"~/Sites/blender/blender.sublime-project"
+			],
+			[
+				"sas",
+				"~/Sites/sass-versioning/sass-versioning.sublime-project"
+			],
+			[
+				"scss",
+				"~/Sites/scss-versioning/scss-versioning.sublime-project"
+			],
+			[
+				"bron",
+				"~/Sites/bronze/#bronze.sublime-project"
+			],
+			[
+				"dom",
+				"~/Sites/dominikwilkowski/#dominikwilkowski.sublime-project"
+			],
+			[
+				"doc",
+				"~/Sites/GUI-docs/GUI-docs.sublime-project"
+			],
+			[
+				"gui-d",
+				"~/Sites/GUI-docs/GUI-docs.sublime-project"
+			],
+			[
+				"deli",
+				"~/Sites/delikt/Delikt.sublime-project"
+			],
+			[
+				"gui-do",
+				"~/Sites/GUI-docs/GUI-docs.sublime-project"
+			],
+			[
+				"work",
+				"~/Sites/workshop/gui-workshop.sublime-project"
+			],
+			[
+				"mod",
+				"~/Sites/GUI-modules/GUI-modules.sublime-project"
+			],
+			[
+				"cre",
+				"~/Sites/create-react-app/create-react-app.sublime-project"
+			],
+			[
+				"gui-wo",
+				"~/Desktop/GUI-workshop/gui-workshop.sublime-project"
+			],
+			[
+				"modl",
+				"~/Sites/GUI-modules/GUI-modules.sublime-project"
+			],
+			[
+				"beas",
+				"~/Sites/beast.js/beastjs.sublime-project"
+			],
+			[
+				"sms",
+				"~/Sites/sms-page/sms-page.sublime-project"
+			],
+			[
+				"gui-sou",
+				"~/Sites/GUI-source/GUI-source.sublime-project"
+			],
+			[
+				"do",
+				"~/Sites/GUI-docs/GUI-docs.sublime-project"
+			],
+			[
+				"d",
+				"~/Sites/GUI-docs/GUI-docs.sublime-project"
+			],
+			[
+				"ble",
+				"~/Sites/blender/blender.sublime-project"
+			],
+			[
+				"cust",
+				"~/Sites/custardjs/custard.sublime-project"
+			],
+			[
+				"beln",
+				"~/Sites/blender/blender.sublime-project"
+			],
+			[
+				"table",
+				"~/Sites/GUI-modules/GUI-tables/GUI-tables.sublime-project"
+			],
+			[
+				"gui-so",
+				"~/Sites/GUI-source/GUI-source.sublime-project"
+			],
+			[
+				"gui-mod",
+				"~/Sites/GUI-modules/GUI-modules.sublime-project"
+			],
+			[
+				"giu-d",
+				"~/Sites/GUI-docs/GUI-docs.sublime-project"
+			],
+			[
+				"group05",
+				"~/Sites/GUI-modules/GUI-icons-group05/GUI-icons-group05.sublime-project"
+			],
+			[
+				"r2r",
+				"~/Sites/R2R/R2R.sublime-project"
+			],
+			[
+				"logo",
+				"~/Sites/GUI-modules/GUI-logos/GUI-logos.sublime-project"
+			],
+			[
+				"group02",
+				"~/Sites/GUI-modules/GUI-icons-group02/GUI-icons-group02.sublime-project"
+			],
+			[
+				"icons-group09",
+				"~/Sites/GUI-modules/GUI-icons-group09/GUI-icons-group09.sublime-project"
+			],
+			[
+				"lists",
+				"~/Sites/GUI-modules/GUI-lists/GUI-lists.sublime-project"
+			],
+			[
+				"ge",
+				"~/Sites/GEL/GEL.sublime-workspace"
+			],
+			[
+				"cms",
+				"~/Sites/Westpac CMS/westpac CMS.sublime-project"
+			],
+			[
+				"sch",
+				"/Users/dominikwilkowski/Sites/schlabe/#schlabe.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 239.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

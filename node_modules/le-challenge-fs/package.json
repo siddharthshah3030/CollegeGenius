@@ -1,0 +1,43 @@
+{
+  "name": "le-challenge-fs",
+  "version": "2.0.8",
+  "description": "A fs-based strategy for node-letsencrypt for setting, retrieving, and clearing ACME challenges issued by the ACME server",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daplie/le-challenge-fs.git"
+  },
+  "keywords": [
+    "acme",
+    "challenge",
+    "cluster",
+    "ephemeral",
+    "fs",
+    "http",
+    "http-01",
+    "le",
+    "le-challenge",
+    "le-challenge-",
+    "le-challenge-fs",
+    "le-challenge-http",
+    "le-challenge-webroot",
+    "letsencrypt",
+    "webroot"
+  ],
+  "author": "AJ ONeal <coolaj86@gmail.com> (https://coolaj86.com/)",
+  "license": "(MIT OR Apache-2.0)",
+  "bugs": {
+    "url": "https://github.com/Daplie/le-challenge-fs/issues"
+  },
+  "homepage": "https://github.com/Daplie/le-challenge-fs#readme",
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "finalhandler": "^0.5.0",
+    "serve-static": "^1.11.1"
+  }
+}

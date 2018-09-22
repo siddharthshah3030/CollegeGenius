@@ -1,0 +1,118 @@
+//
+// Spinner
+// ==============================
+
+
+
+
+
+// Base
+// ------------------------------
+
+.Spinner {
+	display: inline-block;
+	font-size: @spinner-dot-size;
+	height: @spinner-dot-size;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+
+
+
+// Dots
+// ------------------------------
+
+.Spinner_dot {
+	.animation( pulse 1s infinite ease-in-out );
+	.square(1em);
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+&.Spinner_dot--second {
+	.animation-delay( 160ms );
+	margin-left: 1em;
+}
+&.Spinner_dot--third {
+	.animation-delay( 320ms );
+	margin-left: 1em;
+}
+
+
+
+
+// Types
+// ------------------------------
+
+
+// default
+.Spinner--default > .Spinner_dot { background-color: @spinner-dot-bg; }
+
+// primary
+.Spinner--primary > .Spinner_dot { background-color: @app-primary; }
+
+// inverted
+.Spinner--inverted > .Spinner_dot { background-color: white; }
+
+
+
+
+// Types
+// ------------------------------
+
+
+// default
+.Spinner--default > .Spinner_dot { background-color: @spinner-dot-bg; }
+
+// primary
+.Spinner--primary > .Spinner_dot { background-color: @app-primary; }
+
+// inverted
+.Spinner--inverted > .Spinner_dot { background-color: white; }
+
+
+
+
+// Sizes
+// ------------------------------
+
+
+// small
+.Spinner--sm {
+	font-size: @spinner-dot-size-sm;
+	height: @spinner-dot-size-sm;
+}
+
+// large
+.Spinner--lg {
+	font-size: @spinner-dot-size-lg;
+	height: @spinner-dot-size-lg;
+}
+
+
+
+
+
+// Inside Buttons
+// ------------------------------
+
+.Button > .Spinner {
+	.Spinner--sm();
+	margin-right: 2em;
+
+	&:only-child {
+		margin-right: 0;
+	}
+}
+
+
+
+
+
+
+
+
+

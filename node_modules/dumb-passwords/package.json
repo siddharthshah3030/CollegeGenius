@@ -1,0 +1,49 @@
+{
+  "name": "dumb-passwords",
+  "version": "0.2.1",
+  "description": "Guard your users from security problems that start by having dumb passwords",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test",
+    "istanbul": "istanbul cover _mocha -- --recursive",
+    "lint": "eslint --fix ./lib index.js",
+    "mocha": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kn9ts/dumb-passwords.git"
+  },
+  "keywords": [
+    "stupid",
+    "dumb",
+    "password",
+    "stupid passwords",
+    "dumb passwords",
+    "common",
+    "common passwords",
+    "security",
+    "user",
+    "user password",
+    "risks",
+    "top 10000 worst passwords"
+  ],
+  "author": "Eugene Mutai <eugenemutai@gmail.com> (http://twitter.com/kn9ts)",
+  "license": "MIT",
+  "bugs": {
+    "email": "eugenemutai@gmail.com",
+    "url": "https://github.com/kn9ts/dumb-passwords/issues"
+  },
+  "homepage": "https://github.com/kn9ts/dumb-passwords#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.10.2",
+    "gulp": "^3.9.1",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-eslint": "^2.0.0",
+    "gulp-istanbul": "^0.10.4",
+    "gulp-mocha": "^2.2.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.5.3",
+    "run-sequence": "^1.2.1"
+  }
+}

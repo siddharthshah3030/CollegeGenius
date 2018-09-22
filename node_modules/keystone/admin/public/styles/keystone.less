@@ -1,0 +1,225 @@
+/*!
+ * Keystone JS
+ *
+ * Copyright 2016 Jed Watson
+ * Licensed under the MIT License
+ * http://opensource.org/licenses/MIT
+ */
+
+
+
+// Elemental
+// ------------------------------
+
+@import "@{elementalPath}/less/elemental.less";
+
+
+// KEYSTONE VARIABLES
+@import "variables.less";
+
+// KEYSTONE AUTH
+@import "auth.less";
+
+// KEYSTONE SETUP
+@import "keystone/animation.less";
+@import "keystone/base.less";
+@import "keystone/dashboard.less";
+@import "keystone/forms.less";
+@import "keystone/navigation.less";
+@import "keystone/tables.less";
+@import "keystone/utils.less";
+
+@import "keystone/list.less";
+@import "keystone/list-dropzone.less";
+@import "keystone/item.less";
+@import "keystone/toolbar.less";
+
+// COMPONENTS
+@import "keystone/wysiwyg.less";
+@import "keystone/popout.less";
+
+
+// REACT FIELDS
+@import "react/react.less";
+
+
+// DayPicker styles
+// ------------------------------
+
+.DayPicker {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	outline: none;
+	padding: 1rem;
+	position: relative;
+	user-select: none;
+
+	&:focus .DayPicker-Caption {
+		text-decoration: underline;
+	}
+}
+
+// wrap the calendar in chrome
+.DayPicker--chrome {
+	background-color: #fafafa;
+	border-radius: @border-radius-base;
+	border: 1px solid @input-border-color;
+}
+
+.DayPicker-Month {
+	border-collapse: collapse;
+	border-spacing: 0;
+	display: table;
+	// margin: 0 1rem;
+	table-layout: fixed;
+	user-select: none;
+	width: 100%;
+}
+
+.DayPicker-NavBar {
+	left: 0;
+	padding: 0 .5rem;
+	position: absolute;
+	right: 0;
+}
+
+.DayPicker-NavButton {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	cursor: pointer;
+	height: 1.5rem;
+	position: absolute;
+	width: 1.5rem;
+}
+
+.DayPicker-NavButton--prev {
+	left: 1rem;
+	background-image: url("../images/datepicker-prev.svg");
+}
+
+.DayPicker-NavButton--next {
+	right: 1rem;
+	background-image: url("../images/datepicker-next.svg");
+}
+
+
+.DayPicker-Caption {
+	display: table-caption;
+	height: 1.5rem;
+	text-align: center;
+}
+
+.DayPicker-Weekdays {
+	display: table-header-group;
+}
+
+.DayPicker-WeekdaysRow {
+	display: table-row;
+}
+
+.DayPicker-Weekday {
+	display: table-cell;
+	font-size: .875em;
+	font-weight: 500;
+	padding: .5rem;
+	text-align: center;
+}
+
+.DayPicker-Body {
+	display: table-row-group;
+}
+
+.DayPicker-Week {
+	display: table-row;
+}
+
+.DayPicker-Day {
+	background-color: @dropdown-bg;
+	border: 1px solid @input-border-color;
+	cursor: pointer;
+	display: table-cell;
+	padding: .5rem 0;
+	text-align: center;
+	vertical-align: middle;
+
+	&:hover,
+	&:focus {
+		background-color: mix(@link-color, @dropdown-bg, 10%);
+		color: @link-color;
+		outline: none;
+	}
+}
+
+.DayPicker--interactionDisabled .DayPicker-Day {
+	cursor: default;
+}
+
+
+// Modifiers
+
+.DayPicker-Day--today {
+	color: #FF4981; // pink
+	font-weight: 500;
+}
+
+.DayPicker-Day--disabled {
+	color: @gray;
+	cursor: default;
+	background-color: lighten(@gray, 7);
+}
+
+.DayPicker-Day--sunday {
+	color: @gray;
+	background-color: lighten(@gray, 10);
+}
+
+.DayPicker-Day--outside {
+	background-color: rgba(0, 0, 0, 0.05);
+	cursor: default;
+	color: @gray;
+}
+
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+	color: white;
+	background-color: @app-primary;
+}
+
+// Locales
+
+.DayPicker--ar {
+	direction: rtl;
+}
+
+// Custom
+
+@daypicker-indicator-size: 7px;
+
+.DayPicker-Indicator {
+	left: 1rem;
+	position: absolute;
+	top: -(@daypicker-indicator-size - 1);
+}
+.DayPicker-Indicator__bg,
+.DayPicker-Indicator__border {
+	border: @daypicker-indicator-size solid transparent;
+	border-top-width: 0;
+	display: inline-block;
+	left: 0;
+	top: 0;
+	height: 0;
+	position: absolute;
+	width: 0;
+}
+
+.DayPicker-Indicator__border {
+	border-bottom-color: darken(@input-border-color, 10%);
+	top: -1px;
+}
+.DayPicker-Indicator__bg {
+	border-bottom-color: #fafafa;
+}
+
+// CUSTOM ADMIN APPLICATION STYLES
+@import (optional) "@{customStylesPath}";

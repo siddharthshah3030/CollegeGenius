@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+var fs = require('fs'),
+    UglifyJS = require('uglify-js');
+
+var result = UglifyJS.minify('displayName.js');
+
+fs.writeFile('displayName.min.js', result.code, function (err) {
+    if (err)
+        console.warn('Build failed!');
+    else
+        console.log('Build complete, see displayName.min.js');
+});

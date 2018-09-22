@@ -1,0 +1,58 @@
+extends ../layouts/default
+
+include ../mixins/post
+block content
+	.page-header
+		a(href='/keystone/posts?new').btn.btn-default.pull-right= user ? 'Write Post' : 'Sign in to Write Post'
+		h1=category ? category.name : 'Blog'
+	.row
+		.col-sm-8
+			if filters.category && !category
+				h3 Invalid Category.
+			else
+				if posts.results.length
+					if posts.totalPages > 1
+						.lead.text-muted Showing 
+							strong #{posts.first}
+							|  to 
+							strong #{posts.last}
+							|  of 
+							strong #{posts.total}
+							|  posts
+					else
+						.lead.text-muted Showing #{utils.plural(posts.results.length, '* post')}
+					.blog
+						each post in posts.results
+							+post(post)
+					if posts.totalPages > 1
+						ul.pagination
+							if posts.previous
+								li: a(href='?page=' + posts.previous): span.glyphicon.glyphicon-chevron-left
+							else
+								li.disabled: a(href='?page=' + 1): span.glyphicon.glyphicon-chevron-left
+							each p, i in posts.pages
+								li(class=posts.currentPage === p ? 'active' : null)
+									a(href='?page=' + (p === '...' ? (i ? posts.totalPages : 1) : p ))= p
+							if posts.next
+								li: a(href='?page=' + posts.next): span.glyphicon.glyphicon-chevron-right
+							else
+								li.disabled: a(href='?page=' + posts.totalPages): span.glyphicon.glyphicon-chevron-right
+				else
+					if category
+						.jumbotron.text-center
+							h3(style="margin-bottom:0;margin-top:0;") No posts in the category #{category.name}.
+					else
+						.jumbotron.text-center
+							h3(style="margin-bottom:0;margin-top:0;") There are no posts yet.
+		.col-sm-4
+			if categories.length
+				.lead.text-muted Categories
+				ul.nav.nav-pills.nav-stacked
+					li(class=!category ? 'active' : null)
+						a(href='/blog') All
+					each cat in categories
+						li(role="presentation" class=category && category.id === cat.id ? 'active' : null)
+							a(href='/blog/' + cat.key)
+								=cat.name
+								if cat.postCount
+									span.badge.pull-right= cat.postCount

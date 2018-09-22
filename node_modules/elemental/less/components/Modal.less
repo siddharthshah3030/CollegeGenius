@@ -1,0 +1,182 @@
+//
+// Modal
+// ==============================
+
+// Inspired by https://github.com/twbs/bootstrap
+
+
+
+
+// Wrapper
+// ------------------------------
+
+.Modal {
+	.transition( visibility 140ms );
+	bottom: 0;
+	left: 0;
+	outline: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	visibility: hidden;
+	z-index: @zindex-modal;
+	-webkit-overflow-scrolling: touch;
+
+	&.is-open {
+		.transition( none );
+		visibility: visible;
+	}
+}
+
+
+
+
+// Dialog
+// ------------------------------
+
+
+
+// shell div to position the modal
+.Modal-dialog {
+	max-width: 100%;
+	padding: 10px;
+	position: relative;
+	width: auto;
+	z-index: 2;
+}
+.Modal-dialog-enter {
+	.animation-name( modalDialogEnter );
+	.animation-duration( 260ms );
+	.animation-timing-function( cubic-bezier(0.500, -0.550, 0.400, 1.550) );
+}
+.Modal-dialog-leave {
+	.animation-duration( 140ms );
+	.animation-name( modalDialogLeave );
+}
+
+
+// actual modal
+
+.Modal-content {
+	background-color: @modal-bg;
+	border-radius: @border-radius-base;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.175), 0 3px 8px rgba(0,0,0,.175);
+	outline: none; // remove focus outline from opened modal
+	position: relative;
+}
+
+
+// sizes
+
+@media (min-width: @screen-sm) {
+	.Modal-dialog {
+		margin: 80px auto;
+	}
+	.Modal-dialog--small  { width: @modal-width-small; }
+	.Modal-dialog--medium { width: @modal-width-medium; }
+	.Modal-dialog--large  { width: @modal-width-large; }
+}
+
+
+
+
+// Inner
+// ------------------------------
+
+// common
+.Modal__header,
+.Modal__body,
+.Modal__footer {
+	margin-left: @modal-padding-horizontal;
+	margin-right: @modal-padding-horizontal;
+	padding-bottom: @modal-padding-vertical;
+	padding-top: @modal-padding-vertical;
+	position: relative;
+}
+
+// header
+.Modal__header {
+	box-shadow: 0 2px 0 rgba(0,0,0,.05);
+	z-index: 1;
+}
+.Modal__header__text {
+	color: inherit;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1;
+	margin: 0;
+}
+
+// close button
+.Modal__header__close {
+	.transition(opacity 140ms);
+	// dechrome
+	background: none;
+	border: none;
+	cursor: pointer;
+	line-height: 1ex; // get it? ;)
+	margin: 0;
+
+	// style and position
+	opacity: .4;
+	font-size: 24px;
+	padding: @modal-padding-vertical @modal-padding-horizontal;
+	position: absolute;
+	right: -@modal-padding-horizontal;
+	top: 0;
+
+	// add the x
+	&::after {
+		content: "\00d7";
+	}
+
+	&:hover,
+	&:focus {
+		opacity: 1;
+		outline: 0;
+	}
+	&:active {
+		color: @app-danger;
+	}
+}
+
+// body
+.Modal__body {
+	margin: 0;
+	// max-height: @modal-body-height;
+	// overflow: scroll;
+	padding: @modal-padding-vertical @modal-padding-horizontal;
+	// -webkit-overflow-scrolling: touch;
+}
+
+// footer
+.Modal__footer {
+	box-shadow: 0 -2px 0 rgba(0,0,0,.05);
+	z-index: 1;
+}
+
+
+
+
+// Background
+// ------------------------------
+
+.Modal-backdrop {
+	.animation-duration( 140ms );
+	background-color: @modal-backdrop-bg;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: @zindex-modal-backdrop;
+}
+.Modal-background-enter {
+	.animation-name( modalBackdropEnter );
+}
+.Modal-background-leave {
+	.animation-duration( 240ms );
+	.animation-name( modalBackdropLeave );
+}

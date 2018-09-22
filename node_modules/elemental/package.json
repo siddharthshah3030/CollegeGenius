@@ -1,0 +1,70 @@
+{
+  "name": "elemental",
+  "version": "0.6.1",
+  "description": "React UI Framework",
+  "main": "lib/Elemental.js",
+  "author": "Jed Watson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elementalui/elemental.git"
+  },
+  "dependencies": {
+    "blacklist": "^1.1.4",
+    "classnames": "^2.2.5"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "eslint": "^2.13.1",
+    "eslint-config-keystone": "^2.4.0",
+    "eslint-plugin-react": "^5.2.2",
+    "glob": "^7.0.5",
+    "gulp": "^3.9.1",
+    "isparta": "^4.0.0",
+    "react": "^15.0.0",
+    "react-addons-css-transition-group": "^15.0.0",
+    "react-component-gulp-tasks": "^0.7.7",
+    "react-dom": "^15.0.0",
+    "react-router": "^2.6.0",
+    "rimraf": "^2.5.4",
+    "tap-xunit": "^1.4.0",
+    "tape": "^4.6.0",
+    "teaspoon": "^6.4.1"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0",
+    "react-addons-css-transition-group": "^0.14.0 || ^15.0.0"
+  },
+  "browserify-shim": {
+    "react": "global:React"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "build:lib": "gulp build:lib",
+    "bump": "gulp bump",
+    "lint": "eslint .",
+    "prepublish": "npm run build:lib",
+    "publish:npm": "gulp publish:npm",
+    "publish:site": "gulp publish:examples",
+    "publish:tag": "gulp publish:tag",
+    "publish:bower": "./scripts/bower.sh",
+    "release": "gulp release",
+    "site": "gulp dev:server",
+    "start": "gulp dev",
+    "watch": "gulp watch:lib",
+    "test": "babel-node test",
+    "precov": "rimraf coverage",
+    "cov": "babel-node node_modules/isparta/bin/isparta cover --report text --report html test"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "ui",
+    "framework",
+    "controls",
+    "element",
+    "css",
+    "less"
+  ]
+}

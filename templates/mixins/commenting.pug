@@ -1,0 +1,35 @@
+mixin comment-form(action)
+	form(method='post', style="margin-bottom: 40px; margin-top: 40px;")
+		input(type='hidden', name='action', value='comment.create')
+		.media
+			.pull-left
+				if user
+					img(src=user.photo.exists ? user._.photo.thumbnail(80,80) : 'http://placehold.it/80x80', alt=user.name.full, width=80, height=80).img-rounded
+				else
+					img(src='http://placehold.it/80x80', alt='Comment author placeholder', width=80, height=80).img-rounded
+			.media-body
+				textarea(name='content', placeholder=user ? 'Leave a comment...' : 'Please sign in to comment', disabled=!user, style="margin-bottom: 10px; min-height: 80px; resize: vertical;").form-control
+				if user
+					button(type='submit').btn.btn-primary Post Comment
+				else
+					ul.list-inline
+						li: a(href='/keystone/signin').btn.btn-sm.btn-primary Sign in to Comment
+
+mixin comment-post(comment)
+	if comment.author
+		div(id='comment-id-' + comment.id, style="margin-top: 20px;")
+			.media
+				.pull-left
+					img(src=comment.author.photo.exists ? comment.author._.photo.thumbnail(80,80) : 'http://placehold.it/80x80', alt=comment.author.name.full, width=80, height=80).img-rounded
+				.media-body
+					p
+						strong= comment.author.name.full
+						if user && user.id === comment.author.id
+							|  &middot; 
+							a(href='?remove=comment&comment=' + comment.id, title='Delete this comment', rel='tooltip', data-placement='left').comment-delete.js-delete-confirm Delete
+					p=comment.content.replace(/\n/g, '<br>')
+
+mixin comment-thread(comments)
+	if comments.length
+		for comment in comments
+			+comment-post(comment)
