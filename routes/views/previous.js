@@ -1,5 +1,5 @@
 var keystone = require('keystone');
-var Gallery = keystone.list('previous');
+var previous = keystone.list('previous');
 
 exports = module.exports = function (req, res) {
 
@@ -8,7 +8,7 @@ exports = module.exports = function (req, res) {
 
 	locals.section = 'previous';
 
-	view.query('previous', Gallery.model.find().sort('sortOrder'));
+	view.query('previous', previous.model.find().sort('sortOrder'));
 
 	view.render('previous');
 
