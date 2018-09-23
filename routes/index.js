@@ -5,9 +5,10 @@ const importRoutes = keystone.importer(__dirname);
 keystone.pre('routes', function (req, res, next) {
 	res.locals.navLinks = [
 		{ label: 'Home', key: 'home', href: '/' },
-		{ label: 'Blog', key: 'blog', href: '/blog' },
+		{ label: 'Articles', key: 'blog', href: '/blog' },
 		{ label: 'Notes', key: 'gallery', href: '/gallery' },
 		{ label: 'Questions', key: 'contact', href: '/contact' },
+		{ label: 'Previous Years', key: 'previous', href: '/previousquestions' },
 	];
 	res.locals.user = req.user;
 	next();

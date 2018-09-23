@@ -3,8 +3,8 @@ var Types = keystone.Field.Types;
 
 var Gallery = new keystone.List('Gallery', {
 	autokey: { from: 'name', path: 'key', unique: true },
-	plural: 'Albums',
-	singular: 'Album',
+	plural: 'Notes',
+	singular: 'Notes',
 });
 
 Gallery.add({
