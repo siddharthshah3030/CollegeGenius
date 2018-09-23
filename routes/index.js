@@ -8,7 +8,7 @@ keystone.pre('routes', function (req, res, next) {
 		{ label: 'Articles', key: 'blog', href: '/blog' },
 		{ label: 'Notes', key: 'gallery', href: '/gallery' },
 		{ label: 'Questions', key: 'contact', href: '/contact' },
-		{ label: 'Previous Years', key: 'previous', href: '/previousquestions' },
+		{ label: 'Previous Years', key: 'previous', href: '/previous' },
 	];
 	res.locals.user = req.user;
 	next();
@@ -36,6 +36,8 @@ exports = module.exports = function (app) {
 	app.all('/blog/post/:post', routes.views.post);
 	app.get('/gallery', routes.views.gallery);
 	app.all('/contact', routes.views.contact);
+	app.all('/previous', routes.views.contact);
+	// app.get('/previous', routes.views.previous);
 
 	// Downloads
 	app.get('/download/users', routes.download.users);
