@@ -9,13 +9,15 @@
   "dependencies": {
     "async": "^2.6.1",
     "csv": "^3.1.0",
+    "global": "^4.3.2",
     "keystone": "^4.0.0",
     "lodash": "^4.17.10",
+    "node-supervisor": "^1.0.2",
     "nodemon": "^1.18.4",
     "pug": "^2.0.3"
   },
   "scripts": {
-    "start": "node keystone.js"
+    "start": " nodemon -e js,ejs,html -w . -w public -w views -w routes -w models keystone.js"
   },
   "author": "siddharthshah3030 <siddharthshah3030@gmail.com>",
   "license": "MIT"

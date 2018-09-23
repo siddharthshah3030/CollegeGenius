@@ -28,6 +28,7 @@ keystone.init({
 
 });
 
+
 keystone.import('models');
 
 keystone.set('locals', {
@@ -40,6 +41,7 @@ keystone.set('locals', {
 	chartbeat_property: keystone.get('chartbeat property'),
 	chartbeat_domain: keystone.get('chartbeat domain')
 });
+
 
 keystone.set('routes', require('./routes'));
 
