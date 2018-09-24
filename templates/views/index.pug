@@ -1,5 +1,6 @@
 extends ../layouts/default
-
+block css
+	
 block content
 	div(style="padding-left: 5vw; padding-right: 5vw;").jumbotron
 		h1 NitrrGenious
@@ -23,7 +24,7 @@ block content
 			p Simple contact form that validates input and logs enquiries to the database.
 			p You can sign in using the demo account to view the submitted enquiries.
 			hr
-			h3 Previous Years Questions
+			<h3> pug heading check</h3>
 			p User can download previous year question from big collection
 			p it is all organised by date, sem , branch, subject
 			a(href='/previous').btn.btn-default Download Previous years
