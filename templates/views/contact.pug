@@ -18,7 +18,7 @@ block content
 	else
 		.page-header
 			a(href='/keystone/enquiries').btn.btn-default.pull-right= user ? 'View Enquiries' : 'Sign in to View Enquiries'
-			h1 Questions
+			h1 Enquiry
 		.row
 			.col-sm-8
 				form(method='post').form-horizontal
@@ -50,12 +50,12 @@ block content
 						.col-sm-10.col-sm-offset-2
 							p.help-block Note: others can see your enquiry in the <a href='/keystone/enquiries'>Admin UI</a>
 							button(type='submit').btn.btn-primary Submit
-			.col-sm-4
-				.panel.panel-default
-					.panel-heading
-						h3.panel-title Resources
-					.panel-body Well that's it for the demo, but you can find out more from these links:
-					.list-group
-						a(href='http://github.com/KeystoneJS/keystone-demo', target='_blank').list-group-item GitHub Repo
-						a(href='https://v4.keystonejs.com/getting-started', target='_blank').list-group-item Documentation
-						a(href='http://community.keystonejs.com', target='_blank').list-group-item KeystoneJS Community Slack
+			//- .col-sm-4
+			//- 	.panel.panel-default
+			//- 		.panel-heading
+			//- 			h3.panel-title Resources
+			//- 		.panel-body Well that's it for the demo, but you can find out more from these links:
+			//- 		.list-group
+			//- 			a(href='http://github.com/KeystoneJS/keystone-demo', target='_blank').list-group-item GitHub Repo
+			//- 			a(href='https://v4.keystonejs.com/getting-started', target='_blank').list-group-item Documentation
+			//- 			a(href='http://community.keystonejs.com', target='_blank').list-group-item KeystoneJS Community Slack
