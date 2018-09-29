@@ -11,14 +11,21 @@ User.add({
 	email: { type: Types.Email, initial: true, required: true, index: true, unique: true },
 	phone: { type: String, width: 'short' },
 	photo: { type: Types.CloudinaryImage, collapse: true },
+	isadmin: { type: Boolean,  initial: true, required: true },
+
 	password: { type: Types.Password, initial: true, required: false },
-}, 'Permissions', {
-	isProtected: { type: Boolean, noedit: true },
+},{
+	isProtected: { type: Boolean, noedit: false },
 });
 
 // Provide access to Keystone
 User.schema.virtual('canAccessKeystone').get(function () {
+	console.log(this.isadmin)
+	if(this.isadmin==true)
 	return true;
+	else 
+	return false;
+
 });
 
 User.relationship({ ref: 'Post', path: 'posts', refPath: 'author' });
