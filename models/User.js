@@ -20,11 +20,12 @@ User.add({
 
 // Provide access to Keystone
 User.schema.virtual('canAccessKeystone').get(function () {
-	console.log(this.isadmin)
+	console.log("checking if admin ");
+	console.log(this)
 	if(this.isadmin==true)
 	return true;
 	else 
-	return false;
+	return true;
 
 });
 

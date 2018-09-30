@@ -2,6 +2,8 @@ var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
 var Gallery = new keystone.List('Gallery', {
+	nodelete: false,
+
 	autokey: { from: 'name', path: 'key', unique: true },
 	plural: 'Notes',
 	singular: 'Notes',
