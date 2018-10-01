@@ -9,7 +9,7 @@ block content
 		h1 Previous Year Papers
 
 	if previous.length
-		each previous, i in galleries
+		each previous, i in previous
 			h3
 				| #{previous.name} 
 				small.text-muted= previous._.publishedDate.format('Do MMM YYYY')

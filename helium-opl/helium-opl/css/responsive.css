@@ -1,0 +1,114 @@
+/* only small desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .top-nav-collapse .navbar-brand img {
+    width: 48%;
+  }
+}
+
+/* tablets */
+@media (max-width: 991px) {
+  .section-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .pricing-table-item {
+    margin-bottom: 30px;
+  }
+}
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  .top-nav-collapse .navbar-brand img {
+    width: 48%;
+  }
+  .pricing-table-item {
+    margin-bottom: 30px;
+  }
+  .testimonial-item {
+    padding: 10px;
+  }
+  .footer-widget {
+    margin-bottom: 30px;
+  }
+  #copyright .nav-inline {
+    line-height: 28px;
+    text-align: left !important;
+  }
+  #copyright .nav-inline li a {
+    padding: 0px 0px 0px 4px;
+  }
+}
+
+/* mobile or only mobile */
+@media (max-width: 767px) {
+  .section-padding {
+    padding: 50px 0;
+  }
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .top-nav-collapse .navbar-brand img {
+    width: 48%;
+  }
+  .btn-lg {
+    padding: 7px 14px;
+    font-size: 11px;
+  }
+  .btn-border {
+    font-size: 9px;
+    padding: 5px 9px;
+  }
+  .navbar-brand img {
+    margin: 5px 0;
+    width: 48%;
+  }
+  #carousel-area .carousel-item .carousel-caption h3 {
+    font-size: 12px;
+  }
+  #carousel-area .carousel-item .carousel-caption h5 {
+    font-size: 10px;
+  }
+  #carousel-area .btn-lg{
+    margin: 3px;
+  }
+  #carousel-area .carousel-control-next i, #carousel-area .carousel-control-prev i {
+    border: none;
+  }
+  #carousel-area .carousel-control-next i:hover, #carousel-area .carousel-control-prev i:hover {
+    background: transparent;
+    border: none;
+  }
+  .portfoli-content::before {
+    left: 30px;
+  }
+  .testimonial-item {
+    padding: 0;
+  }
+  .client-item-wrapper img {
+    width: 70%;
+  }
+  .pricing-table-item {
+    margin-bottom: 30px;
+  }
+  .title-head, .contact-info-title {
+    font-size: 22px;
+  }
+  .contact-form {
+    margin-bottom: 30px;
+  }
+  .footer-widget {
+    margin-bottom: 30px;
+  }
+  #copyright .nav-inline {
+    line-height: 28px;
+    text-align: left !important;
+  }
+  #copyright .nav-inline li a {
+    padding: 0px 0px 0px 4px;
+  }
+}
