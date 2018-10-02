@@ -829,6 +829,10 @@ footer .menu li a:hover {
   color: #EB586F;
   border: 2px solid #EB586F;
   background: transparent;
+  color: #fff;
+  background: #EB586F;
+  border: 2px solid #EB586F;
+
 }
 
 .btn-common:hover {
@@ -840,6 +844,7 @@ footer .menu li a:hover {
 .btn-border {
   border: 2px solid #fff;
   color: #fff;
+  
 }
 
 .btn-border:hover {
