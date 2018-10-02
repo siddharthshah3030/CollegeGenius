@@ -5,7 +5,12 @@ Website: https://uideck.com
 More Info: https://uideck.com/products/helium-ui-kit
 */
 
+.slide-text{
 
+  font-size: 16px;
+  font-weight: 700;
+
+}
 #counter {
 background-color: grey;
  background-size: cover;
@@ -3063,7 +3068,7 @@ nav#menu span.fa.fa-bars:hover {
   line-height: 24px;
   font-weight: 400;
   margin-bottom: 30px;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Rubik", sans-serif;
 }
 
@@ -4673,4 +4678,11 @@ img {
   padding-top: 50px;
   text-transform: uppercase;
   margin: 0 0 20px 0;
+}
+
+.slide-text{
+
+  font-size: 16px;
+  font-weight: 700;
+  
 }

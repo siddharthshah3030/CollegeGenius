@@ -42,7 +42,6 @@ keystone.set('locals', {
 	chartbeat_domain: keystone.get('chartbeat domain')
 });
 
-
 keystone.set('routes', require('./routes'));
 
 keystone.set('nav', {

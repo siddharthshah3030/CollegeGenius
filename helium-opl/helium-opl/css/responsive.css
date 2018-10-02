@@ -5,6 +5,12 @@
   }
 }
 
+.slide-text{
+
+  font-size: 16px;
+  font-weight: 700;
+  
+}
 /* tablets */
 @media (max-width: 991px) {
   .section-title {
