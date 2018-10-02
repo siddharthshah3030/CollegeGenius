@@ -60,6 +60,8 @@ a {
   transition: 0.2s ease-in;
   letter-spacing: 0px;
   outline: 0 !important;
+  font-size: 30px;
+
 }
 
 a:hover, a:active, a:focus {
@@ -70,7 +72,7 @@ a:hover, a:active, a:focus {
 p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 25px;
   color: #444;
   letter-spacing: 0px;
@@ -1100,9 +1102,10 @@ footer .menu li a:hover {
 
 /* large Buttons */
 .btn-lg {
-  font-size: 18px;
+  font-size: 25px;
   min-width: 198px;
   padding: 15px 11px;
+  font-weight: 700
 }
 
 .learn-more .btn-lg {
@@ -1158,7 +1161,7 @@ footer .menu li a:hover {
 
 .navbar-brand {
   color: #ccc !important;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 20px;
   font-weight: 700;
   padding: 20px 15px;
@@ -1213,10 +1216,12 @@ footer .menu li a:hover {
 /* Default Navbar */
 .navbar-nav .nav-link {
   color: #000;
-  font-size: 18px;
-  margin-right: 18px;
+  font-size: 23px;
+  margin-right: 5px;
   font-weight: 800;
   padding: 18px 0px;
+  text-shadow: 1px 1px 2px #555555;
+
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -3066,10 +3071,12 @@ nav#menu span.fa.fa-bars:hover {
 #carousel-area .carousel-item .carousel-caption h5 {
   color: #fff;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 800;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Rubik", sans-serif;
+  text-shadow: 2px 2px 20px  #000000;
+
 }
 
 #carousel-area .carousel-item .carousel-caption h3 {
@@ -3077,6 +3084,8 @@ nav#menu span.fa.fa-bars:hover {
   margin-bottom: 15px;
   color: #fff;
   font-weight: 700;
+  text-shadow: 2px 2px 20px  #000000;
+
 }
 
 #carousel-area .carousel-indicators {
