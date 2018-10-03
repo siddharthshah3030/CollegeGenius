@@ -159,6 +159,13 @@ $('#sem-cgpa-btn').on('click',function(){
 /*
 * GPA CALCULATOR
 * */
+if(brach1){
+    for(var i = 1;i<13;i++){
+        var stringnow = "#s"+i+"l";
+        var textnow = "sub.g"+i+".n";
+ $(stringnow).text(eval(textnow));
+    }
+ }
 function branch(){
     console.log("branch function triggered")
    var brach1  =  document.getElementById("br1").checked ;
@@ -168,7 +175,7 @@ function branch(){
        for(var i = 1;i<13;i++){
            var stringnow = "#s"+i+"l";
            var textnow = "sub.g"+i+".n";
-    $(stringnow).text((textnow);
+    $(stringnow).text(eval(textnow));
        }
     }
        if(brach2){
@@ -178,7 +185,6 @@ function branch(){
      $(stringnow).text(eval(textnow));
         }
 }
-
 }
 
 $('#gbtn').on('click',function(){
