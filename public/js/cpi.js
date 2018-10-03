@@ -92,14 +92,14 @@ $('#sem-cgpa-btn').on('click',function(){
     var gpa1, gpa2, gpa3, gpa4, gpa5, gpa6, gpa7, gpa8,fc1=0, fc2=0, fc3=0, fc4=0, fc5=0, fc6=0, fc7=0, fc8=0,fcgpa=0;
     gpa1=$('#gpa1').val();
     fc1 = $('#fc1').val();
-    fc1 = 1
+    fc1 = 0.5
     if(gpa1 =='' || fc1===''){
         fc1 = 0;
         gpa1 = 0;
     }
     gpa2=$('#gpa2').val();
     fc2 = $('#fc2').val();
-    fc2 = 1
+    fc2 = 0.5
     if(gpa2 =='' || fc2===''){
         fc2 = 0;
         gpa2 = 0;
@@ -146,7 +146,7 @@ $('#sem-cgpa-btn').on('click',function(){
         fc8 = 0;
         gpa8 = 0;
     }
-    fcgpa=((parseFloat(gpa1)*fc1)+(parseFloat(gpa2)*fc2)+(parseFloat(gpa3)*fc3)+(parseFloat(gpa4)*fc4)+(parseFloat(gpa5)*fc5)+(parseFloat(gpa6)*fc6)+(parseFloat(gpa7)*fc7)+(parseFloat(gpa8)*fc8))/(fc1*0.5+fc2*0.5+fc3*1+fc4*1+fc5*1+fc6*1+fc7*1+fc8*1);
+    fcgpa=((parseFloat(gpa1)*fc1)+(parseFloat(gpa2)*fc2)+(parseFloat(gpa3)*fc3)+(parseFloat(gpa4)*fc4)+(parseFloat(gpa5)*fc5)+(parseFloat(gpa6)*fc6)+(parseFloat(gpa7)*fc7)+(parseFloat(gpa8)*fc8))/(fc1*1+fc2*1+fc3*1+fc4*1+fc5*1+fc6*1+fc7*1+fc8*1);
     if(isNaN(fcgpa)){
         alert("Insufficient Data !!");
     }
@@ -159,31 +159,64 @@ $('#sem-cgpa-btn').on('click',function(){
 /*
 * GPA CALCULATOR
 * */
+
+
+var brach1 =  document.getElementById("br1").checked ;
+
 if(brach1){
+    g1lastmax = sub.g12.max;
+     h2lastmax = sub.h13.max;
+
+    document.getElementById("sl13s").style.display = "none"
+
     for(var i = 1;i<13;i++){
+        var stringcredit = "sub.g"+i+".c";
         var stringnow = "#s"+i+"l";
         var textnow = "sub.g"+i+".n";
- $(stringnow).text(eval(textnow));
-    }
- }
+ $(stringnow).text(eval(textnow) );
+ var stringnow = "#s"+i+"l1";
+
+ $(stringnow).text("credits :- " + eval(stringcredit) );
+   }
+}
 function branch(){
     console.log("branch function triggered")
-   var brach1  =  document.getElementById("br1").checked ;
-   var brach2 =  document.getElementById("br2").checked ;
-   console.log(brach1 +"  "+ brach2)
+        var brach1  =  document.getElementById("br1").checked ;
+        var brach2 =  document.getElementById("br2").checked ;
+        console.log(brach1 +"  "+ brach2)
    if(brach1){
-       for(var i = 1;i<13;i++){
-           var stringnow = "#s"+i+"l";
-           var textnow = "sub.g"+i+".n";
-    $(stringnow).text(eval(textnow));
+        g1lastmax = sub.g12.max;
+         h2lastmax = sub.h13.max;
+
+        document.getElementById("sl13s").style.display = "none"
+
+        for(var i = 1;i<13;i++){
+            var stringcredit = "sub.g"+i+".c";
+            var stringnow = "#s"+i+"l";
+            var textnow = "sub.g"+i+".n";
+     $(stringnow).text(eval(textnow) );
+     var stringnow = "#s"+i+"l1";
+
+     $(stringnow).text("credits :- " + eval(stringcredit) );
        }
     }
-       if(brach2){
+    
+    
+    if(brach2){
+        g1lastmax = sub.h12.max;
+        h2lastmax = sub.h13.max;
+
+        document.getElementById("sl13s").style.display = "block"
         for(var i = 1;i<14;i++){
+            var stringcredit = "sub.h"+i+".c";
             var stringnow = "#s"+i+"l";
             var textnow = "sub.h"+i+".n";
-     $(stringnow).text(eval(textnow));
+     $(stringnow).text(eval(textnow) );
+     var stringnow = "#s"+i+"l1";
+
+     $(stringnow).text("credits :-  " + eval(stringcredit) );
         }
+
 }
 }
 

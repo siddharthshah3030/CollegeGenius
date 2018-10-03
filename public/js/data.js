@@ -10,7 +10,7 @@ var sub = {
     g9: {n:"Basic Electronics Lab",c:1}, 
     g10: {n:"Basic Civil Engg. Lab",c:1}, 
     g11: {n:"Computer Fundamental & Information Technolgy Lab",c:1}, 
-    g12: {n:"Health Hygiene and Yoga",c:2},
+    g12: {n:"Health Hygiene and Yoga",c:2, max: 30},
     h1: {n:"Language Professional communication in English", c: 2 },
     h2: {n:" Applied Chemistry ", c: 4 },
     h3: {n:"Applied Physics", c: 4 },
@@ -22,7 +22,7 @@ var sub = {
     h9: {n:" Electrical Eng. Lab", c: 1 },
     h10: {n:" Mechanics Lab", c: 1 },
     h11: {n:" Workshop ", c: 3 },
-    h12: {n:"Communication skills ", c: 1 },
-    h12: {n:"NCC / NSS / Sports ", c: 1 },
+    h12: {n:"Communication skills ", c: 1, max: 15 },
+    h13: {n:"NCC / NSS / Sports ", c: 1, max: 15 },
 
 }
