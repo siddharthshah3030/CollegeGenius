@@ -219,45 +219,90 @@ function branch(){
 
 }
 }
+function marksToGrade(a){
+    var b;
+    if(a>42)b=5;
+    if(a>54)b=6;
+    if(a>66)b=7;
+    if(a>78)b=8;
+    if(a>90)b=9;
+if(a>102)b=10;
+if(a<43){
+    b = 0
+}
+return b;
+}
+function pmarksToGrade(a){
+    var b;
+    if(a>24)b=5;
+    if(a>28)b=6;
+    if(a>32)b=7;
+    if(a>36)b=8;
+    if(a>40)b=9;
+    if(a>44)b=10;
+if(a<25) {
+    b=0;
+}
+return b;
+}
 $('#gbtn').on('click',function(){
-    var num = 0;
-    var cred = 0;
+     num = 0;
+     cred = 0;
     for(var i = 1;i<7;i++){
         var stringnow = "#s"+i+"t";
-
-        if($(eval(stringnow)).val()>0){
-            num += $(eval("#s"+i+"t")).val()*eval("sub.g"+ i+".c" ) 
+        if($(stringnow).val()>0){
+            nume = $("#s"+i+"t").val()*eval("sub.g"+ i+".c" ) 
+            num += marksToGrade(nume)
             cred += eval("sub.g"+ i+".c" )
         } else {
-            num += ($(eval("#s"+i+"c1")).val()+$(eval("#s"+i+"c2")).val()+$(eval("#s"+i+"e")).val()+$(eval("#s"+i+"a")).val())*eval("sub.g"+ i+".c" ) 
+            nume = ($("#s"+i+"c1").val()+$("#s"+i+"c2").val()+$("#s"+i+"e").val()+$("#s"+i+"a").val())*eval("sub.g"+ i+".c" ) 
+            num +=marksToGrade(nume)
             cred += eval("sub.g"+ i+".c" )
 
         }
     }
-    for(var i = 7;i<14;i++){
-        if(brach1){
-            if(i==12){
-                i++;
-            }
-
-        if($(eval("#s"+i+"t")).val()>0){
-            num += $(eval("#s"+i+"t")).val()*eval("sub.g"+ i+".c" ) 
-            cred += eval("sub.g"+ i+".c" )
+    for(var i = 7;i<12;i++){
+        if($("#s"+i+"t").val()>0){
+            console.log($("#s"+i+"t").val()*eval("sub.g"+ i+".c" ))
+            console.log(typeof($("#s"+i+"t").val()*eval("sub.g"+ i+".c" )))
+            nume = $("#s"+i+"t").val()*eval("sub.g"+ i+".c" ) 
+            num += pmarksToGrade(nume)
+             cred += eval("sub.g"+ i+".c" )
         } else {
-            num += ($(eval("#s"+i+"c1")).val()+$(eval("#s"+i+"c2")).val())*eval("sub.g"+ i+".c" ) 
+            console.log($("#s"+i+"t").val()*eval("sub.g"+ i+".c" ))
+            console.log(typeof($("#s"+i+"t").val()*eval("sub.g"+ i+".c" )))
+            nume = ($("#s"+i+"c1").val()+$("#s"+i+"c2").val())*eval("sub.g"+ i+".c" ) 
+            num += pmarksToGrade(nume)
             cred += eval("sub.g"+ i+".c" )
-
         }
-        var spiform4 = num/cred;
+    }
+    for(var i = 12;i<14;i++){
+            console.log($("#s"+i+"t").val()*eval("sub.g"+ i+".c" ))
+            console.log(typeof($("#s"+i+"t").val()*eval("sub.g"+ i+".c" )))
+            num += $("#s"+i+"t").val()*eval("sub.g"+ i+".c" ) 
+            cred += eval("sub.g"+ i+".c" )
+            if(brach1){
+
+        if(i==12){
+            i++;
+        }
     }
 
     }
+  
+    
+    console.log(num)
+    console.log(cred)
+     spiform4 = num/cred;
+
+    console.log(typeof(spiform4))
+    console.log(spiform4)
 
     // var g1=0,g2=0,g3=0,g4=0,g5=0,g6=0,g7=0,g8=0,g9=0,g10=0,c1=0,c2=0,c3=0,c4=0,c5=0,c6=0,c7=0,c8=0,c9=0,c10=0,sum=0,gpa=0;
     // g1=parseInt($('#g1').val()),g2=parseInt($('#g2').val()),g3=parseInt($('#g3').val()),g4=parseInt($('#g4').val()),g5=parseInt($('#g5').val()),g6=parseInt($('#g6').val()),g7=parseInt($('#g7').val()),g8=parseInt($('#g8').val()),g9=parseInt($('#g9').val()),g10=parseInt($('#g10').val()),c1=parseInt($('#c1').val()),c2=parseInt($('#c2').val()),c3=parseInt($('#c3').val()),c4=parseInt($('#c4').val()),c5=parseInt($('#c5').val()),c6=parseInt($('#c6').val()),c7=parseInt($('#c7').val()),c8=parseInt($('#c8').val()),c9=parseInt($('#c9').val()),c10=parseInt($('#c10').val());
     // gpa=(c1*g1+c2*g2+c3*g3+c4*g4+c5*g5+c6*g6+c7*g7+c8*g8+c9*g9+c10*g10)/(c1+c2+c3+c4+c5+c6+c7+c8+c9+c10);
 
-    if(isNaN(cpi)){
+    if(isNaN(spiform4)){
         alert("Insufficient data!");
         gpa="Unavailable";
     }
