@@ -1,5 +1,6 @@
 {
     "git.enableSmartCommit": true,
     "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 0
 }

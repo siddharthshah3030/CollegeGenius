@@ -1,0 +1,50 @@
+select{
+    background: white;
+    border-color: #95a5a6;
+    color:#000;
+}
+header{
+    padding: 3% 0 0 0;
+    width: 100%;
+    background : linear-gradient(to bottom right,#58a6da,#1b567e);
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+}
+p{
+    font-size:20px;
+    font-weight:bold;
+}
+h1{
+    color: #000000;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 3%;
+}
+.card-container{
+    background-color: #ffffff;
+    padding : 3%;
+    /*margin-right: 2%;
+    margin-left: 4%;*/
+    margin-bottom: 3%;
+    border-radius: 5px;
+}
+.form-inline{
+    display: inline-flex;
+}
+.btn-holder{
+    padding: 3%;
+}
+h1{
+    text-transform: uppercase;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.container-fluid{
+    padding : 2%;
+    background : linear-gradient(to bottom,#58a6da,#091d2a);
+}

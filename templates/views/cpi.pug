@@ -1,68 +1,394 @@
 extends ../layouts/default
 block css
-	
-block content
-	div(style="padding-left: 5vw; padding-right: 5vw;").jumbotron
-		h1 NitrrGenious
-		//- .lead This site demonstrates common patterns in <a href='http://keystonejs.com', target='_blank'>KeystoneJS</a>.
-		//- a(href='http://github.com/keystonejs/keystone-demo', target='_blank', title='View on GitHub').btn.btn-lg.btn-primary View on GitHub
-		//- a(href='https://v4.keystonejs.com', target='_blank', title='KeystoneJS Documentation').btn.btn-lg.btn-link Read the Docs
-			
-	.row
-		.col-sm-8
 
-			h3: a(href='/') Student's cpi
-			//- p Simple example blog with posts and categories.
-			p Collection of Previous year questions papers
-			p Contribution of articles/blogs by nth year to (n-1)th year
-			p Collection of notes sorted by class and subject
-			p All books of semester available as ebooks
 
-			hr
-			h3: a(href='/') Student's profile
-			p Details of Student
-			p Leaderboard of students
-			p Experiences and work qualifications
-			hr
-			h3: a(href='/') Student's panel
-			p Student's Panel
-			p Open Q n A panel for doubts with a rating system
-			p Searching the whole database for specific query and providing the best rated solutions
-			p Attempt quizzes on sets of specific subjects and branches online
-			hr
-			h3: a(href='/') Student's manager
-			p Academic Calendar of the entire session
-			p Today's Timetable (changes in periods updated by the teacher)
-			p Syllabi for all subjects
-			p CPI Enhancement Assistant
-			a(href='/').btn.btn-default Download Previous years
-	//- 	.col-sm-4
-	//- 		.panel.panel-default
-	//- 			.panel-heading
-	//- 				h3.panel-title: a(href='/keystone/signin') Admin UI
-	//- 			.panel-body
-	//- 				p Keystone includes session management and default sign-in and sign-out views.
-	//- 				p Sign in with the username <code>demo@keystonejs.com</code> and the password <code>demo</code>
-	//- 				if user
-	//- 					a(href='/keystone').btn.btn-default Open Admin UI
-	//- 					a(href='/keystone/signout').btn.btn-link Sign out
-	//- 				else
-	//- 					a(href='/keystone/signin').btn.btn-default Sign in
-				
-	//- 		.panel.panel-default
-	//- 			.panel-heading
-	//- 				h3.panel-title: a(href='/404') Error Handling
-	//- 			.panel-body
-	//- 				p The 404 and 500 views demonstrate how to set up error handlers for your application.
-	//- 				a(href='/hey-this-isnt-a-valid-url').btn.btn-default Test it
-	
-	//- div(style="margin-top: 60px; padding-left: 10vw; padding-right: 10vw;").jumbotron.text-center
-	//- 	h2 We'll handle the back end, you handle the front
-	//- 	p KeystoneJS isn't opinionated about how you design or build the front-end of your site. Use jQuery, Angular, React.js with LESS, SASS or css-modules and any node.js template language.
-	//- 	div We've made this demo site with Bootstrap, Jade and LESS to show how simple it can be to get going, and included some themes from <a href="https://bootswatch.com/?ref=keystonejs" target="_blank">bootswatch</a>. Try them out by selecting below:
-	//- 	if themes && themes.length
-	//- 		hr(style="margin-bottom: 3em; margin-top: 3em;")
-	//- 		ul.nav.nav-pills
-	//- 			each theme in themes
-	//- 				li(class=currentTheme === theme ? 'active' : '')
-	//- 					a(href='/?theme=' + theme)= theme
+    center
+      .main-container
+        .header-container
+          header VIT CGPA CALCULATOR
+        nav.navbar.navbar-expand-lg.navbar-dark.sticky-top(style='background-color : #1b567e;')
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarTogglerDemo01', aria-controls='navbarTogglerDemo01', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarTogglerDemo01.collapse.navbar-collapse
+            ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+              li.nav-item.link2.active(onclick='changeActiveLink(2)')
+                a.nav-link(href='#emc') EXPECTED MARKS CALCULATOR
+              li.nav-item.link1(onclick='changeActiveLink(1)')
+                a.nav-link(href='#qcc') QUICK CGPA CALCULATOR
+              li.nav-item.link3(onclick='changeActiveLink(3)')
+                a.nav-link(href='#ascc') ANY SEM CGPA CALCULATOR
+              li.nav-item.link4(onclick='changeActiveLink(4)')
+                a.nav-link(href='#gc') GPA CALCULATOR
+        .container-fluid
+          .row
+            #emc.col-sm-12.col-md-12.col-lg-6.marks-predictor(align='left')
+              .card-container
+                a.badge.badge-danger.float-right(href='#emc') NEW
+                h1 Compute Expected Marks
+                hr
+                form
+                  .form-group.row
+                    label.col-sm-6.col-form-label(for='cat1') Marks in CAT 1 : 
+                    .input-group.col
+                      input#cat1.form-control(type='text', placeholder='Your score in CAT 1', aria-label='Marks Input', aria-describedby='basic-addon')
+                      .input-group-append
+                        span#basic-addon.input-group-text   max 50 
+                  .form-group.row
+                    label.col-sm-6.col-form-label(for='cat2') Marks in CAT 2 : 
+                    .input-group.col
+                      input#cat2.form-control(type='text', placeholder='Your score in CAT 2', aria-label='Marks Input', aria-describedby='basic-addon')
+                      .input-group-append
+                        span#basic-addon.input-group-text   max 50 
+                  .form-group.row
+                    label.col-sm-6.col-form-label(for='da') Marks in Internals : 
+                    .input-group.col
+                      input#da.form-control(type='text', placeholder='Your score in DA(s)', aria-label='Marks Input', aria-describedby='basic-addon')
+                      .input-group-append
+                        span#basic-addon.input-group-text   max 30 
+                  .form-group.row
+                    label.col-sm-6.col-form-label(for='lab') Marks in Lab : 
+                    .input-group.col
+                      input#lab.form-control(type='text', placeholder='Your score in Lab', aria-label='Marks Input', aria-describedby='basic-addon')
+                      .input-group-append
+                        span#basic-addon.input-group-text  max 100 
+                  .form-group.row
+                    label.col-sm-6.col-form-label(for='j-comp') Marks in J Component : 
+                    .input-group.col
+                      input#j-comp.form-control(type='text', placeholder='Your score in Project', aria-label='Marks Input', aria-describedby='basic-addon')
+                      .input-group-append
+                        span#basic-addon.input-group-text max 100 
+                  .form-group.row
+                    label.col-sm-6.col-form-label(for='fat') Expected Marks in FAT :
+                    .input-group.col
+                      input#fat.form-control(type='text', placeholder='Say 98', aria-label='Marks Input', aria-describedby='basic-addon')
+                      .input-group-append
+                        span#basic-addon.input-group-text max 100 
+                  .alert.alert-primary.text-center.text-uppercase.alert-marks(role='alert')
+                    b
+                      span#marks
+                  .form-group.row
+                    .col-sm-12
+                      button.btn.btn-primary.float-right(type='button', onclick='getMarks()') Submit
+                      small#projHelp.form-text.text-danger *If the course doesn't have J-Component/L-Component you can leave it empty.
+            // This semester cgpa calculator
+            #qcc.col-sm-12.col-md-12.col-lg-6.quick-cgpa-calculator
+              .card-container
+                section#cgpa-box.cgpa-box
+                  center
+                    h1 Quick Cgpa Calculator
+                    hr
+                    div
+                      .input-group.col-sm-8
+                        input#tc.form-control.cgpa-input(type='text', maxlength='3', placeholder='Credits till last Sem?', aria-label='Marks Input', aria-describedby='basic-addon')
+                        .input-group-append
+                          span#basic-addon.input-group-text max 200 
+                      br
+                      .input-group.col-sm-8
+                        input#cgpa.form-control.cgpa-input(type='text', maxlength='4', placeholder='CGPA till last Sem?', aria-label='Marks Input', aria-describedby='basic-addon')
+                        .input-group-append
+                          span#basic-addon.input-group-text   max 10 
+                      br
+                      .input-group.col-sm-8
+                        input#c.form-control.cgpa-input(type='text', maxlength='2', placeholder='Credits in this Sem?', aria-label='Marks Input', aria-describedby='basic-addon')
+                        .input-group-append
+                          span#basic-addon.input-group-text max   32 
+                      br
+                      .input-group.col-sm-8
+                        input#gpa.form-control.cgpa-input(type='text', maxlength='4', placeholder='GPA this semester?', aria-label='Marks Input', aria-describedby='basic-addon')
+                        .input-group-append
+                          span#basic-addon.input-group-text max   10 
+                      br
+                      .alert.alert-primary.text-center.text-uppercase.alert-cgpa-msg(role='alert')
+                        b
+                          span#cgpa-msg.cgpa-msg
+                      button#submit.btn.btn-primary.float-right Submit
+                br
+                br
+            #ascc.col-sm-12.col-md-6.col-lg-6.n-sem-cgpa-calculator
+              .card-container
+                h1.card-title Calculate your CGPA for any number of Semesters
+                hr
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text 1st Sem
+                  input#gpa1.form-control.fgpa(type='text', name='fgpa1', placeholder='GPA', aria-describedby='basic-addon')
+                  input#fc1.form-control.fcredits(type='text', name='fcredit1', placeholder='CREDITS')
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text 2nd Sem
+                  input#gpa2.form-control.fgpa(type='text', name='fgpa2', placeholder='GPA', aria-describedby='basic-addon')
+                  input#fc2.form-control.fcredits(type='text', name='fcredit2', placeholder='CREDITS')
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text 3rd Sem
+                  input#gpa3.form-control.fgpa(type='text', name='fgpa3', placeholder='GPA', aria-describedby='basic-addon')
+                  input#fc3.form-control.fcredits(type='text', name='fcredit3', placeholder='CREDITS')
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text 4th Sem
+                  input#gpa4.form-control.fgpa(type='text', name='fgpa4', placeholder='GPA', aria-describedby='basic-addon')
+                  input#fc4.form-control.fcredits(type='text', name='fcredit4', placeholder='CREDITS')
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text 5th Sem
+                  input#gpa5.form-control.fgpa(type='text', name='fgpa5', placeholder='GPA', aria-describedby='basic-addon')
+                  input#fc5.form-control.fcredits(type='text', name='fcredit5', placeholder='CREDITS')
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text 6th Sem
+                  input#gpa6.form-control.fgpa(type='text', name='fgpa6', placeholder='GPA', aria-describedby='basic-addon')
+                  input#fc6.form-control.fcredits(type='text', name='fcredit6', placeholder='CREDITS')
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text 7th Sem
+                  input#gpa7.form-control.fgpa(type='text', name='fgpa7', placeholder='GPA', aria-describedby='basic-addon')
+                  input#fc7.form-control.fcredits(type='text', name='fcredit7', placeholder='CREDITS')
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text 8th Sem
+                  input#gpa8.form-control.fgpa(type='text', name='fgpa8', placeholder='GPA', aria-describedby='basic-addon')
+                  input#fc8.form-control.fcredits(type='text', name='fcredit8', placeholder='CREDITS')
+                br
+                .alert.alert-primary.text-center.text-uppercase.alert-fcgpa(role='alert')
+                  b
+                    span#fcgpa.text-info
+                button#sem-cgpa-btn.btn.btn-primary.float-right Submit
+                br
+                br
+            #gc.col-sm-12.col-md-12.col-lg-6.gpa-calculator
+              .card-container
+                h1.card-title Calculate GPA
+                hr
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text Course 
+                  select#g1.form-control(name='grades')
+                    option(value='0') Grade
+                    option(value='10') S
+                    option(value='9') A
+                    option(value='8') B
+                    option(value='7') C
+                    option(value='6') D
+                    option(value='5') E
+                    option(value='0') F
+                    option(value='0') N
+                  select#c1.form-control(name='credits')
+                    option#c0(value='0') Credits
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                    option(value='4') 4
+                    option(value='5') 5
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text Course 
+                  select#g2.form-control(name='grades')
+                    option(value='0') Grade
+                    option(value='10') S
+                    option(value='9') A
+                    option(value='8') B
+                    option(value='7') C
+                    option(value='6') D
+                    option(value='5') E
+                    option(value='0') F
+                    option(value='0') N
+                  select#c2.form-control(name='credits')
+                    option#c0(value='0') Credits
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                    option(value='4') 4
+                    option(value='5') 5
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text Course 
+                  select#g3.form-control(name='grades')
+                    option(value='0') Grade
+                    option(value='10') S
+                    option(value='9') A
+                    option(value='8') B
+                    option(value='7') C
+                    option(value='6') D
+                    option(value='5') E
+                    option(value='0') F
+                    option(value='0') N
+                  select#c3.form-control(name='credits')
+                    option#c0(value='0') Credits
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                    option(value='4') 4
+                    option(value='5') 5
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text Course 
+                  select#g4.form-control(name='Grades')
+                    option(value='0') Grade
+                    option(value='10') S
+                    option(value='9') A
+                    option(value='8') B
+                    option(value='7') C
+                    option(value='6') D
+                    option(value='5') E
+                    option(value='0') F
+                    option(value='0') N
+                  select#c4.form-control(name='credits')
+                    option#c0(value='0') Credits
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                    option(value='4') 4
+                    option(value='5') 5
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text Course 
+                  select#g5.form-control(name='Grades')
+                    option(value='0') Grade
+                    option(value='10') S
+                    option(value='9') A
+                    option(value='8') B
+                    option(value='7') C
+                    option(value='6') D
+                    option(value='5') E
+                    option(value='0') F
+                    option(value='0') N
+                  select#c5.form-control(name='credits')
+                    option#c0(value='0') Credits
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                    option(value='4') 4
+                    option(value='5') 5
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text Course 
+                  select#g6.form-control(name='Grades')
+                    option(value='0') Grade
+                    option(value='10') S
+                    option(value='9') A
+                    option(value='8') B
+                    option(value='7') C
+                    option(value='6') D
+                    option(value='5') E
+                    option(value='0') F
+                    option(value='0') N
+                  select#c6.form-control(name='credits')
+                    option#c0(value='0') Credits
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                    option(value='4') 4
+                    option(value='5') 5
+                  br
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text Course 
+                  select#g7.form-control(name='Grades')
+                    option(value='0') Grade
+                    option(value='10') S
+                    option(value='9') A
+                    option(value='8') B
+                    option(value='7') C
+                    option(value='6') D
+                    option(value='5') E
+                    option(value='0') F
+                    option(value='0') N
+                  select#c7.form-control(name='credits')
+                    option#c0(value='0') Credits
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                    option(value='4') 4
+                    option(value='5') 5
+                    |  class="form-control"
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text Course 
+                  select#g8.form-control(name='Grades')
+                    option(value='0') Grade
+                    option(value='10') S
+                    option(value='9') A
+                    option(value='8') B
+                    option(value='7') C
+                    option(value='6') D
+                    option(value='5') E
+                    option(value='0') F
+                    option(value='0') N
+                  select#c8.form-control(name='credits')
+                    option#c0(value='0') Credits
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                    option(value='4') 4
+                    option(value='5') 5
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text Course 
+                  select#g9.form-control(name='Grade')
+                    option(value='0') Grade
+                    option(value='10') S
+                    option(value='9') A
+                    option(value='8') B
+                    option(value='7') C
+                    option(value='6') D
+                    option(value='5') E
+                    option(value='0') F
+                    option(value='0') N
+                  select#c9.form-control(name='credits')
+                    option#c0(value='0') Credits
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                    option(value='4') 4
+                    option(value='5') 5
+                br
+                .input-group.col-sm-8
+                  .input-group-prepend
+                    span#basic-addon.input-group-text Course 
+                  select#g10.form-control(name='Grades')
+                    option(value='0') Grade
+                    option(value='10') S
+                    option(value='9') A
+                    option(value='8') B
+                    option(value='7') C
+                    option(value='6') D
+                    option(value='5') E
+                    option(value='0') F
+                    option(value='0') N
+                  select#c10.form-control(name='credits')
+                    option#c0(value='0') Credits
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                    option(value='4') 4
+                    option(value='5') 5
+                  section
+                br
+                br
+                .alert.alert-primary.alert-grades(role='alert')
+                  b
+                    span#grades.text-info
+                button#gbtn.gbtn.btn.btn-primary.float-right Submit
+                br
+                br
+        // script for year in footer
+        script.
+          var d = new Date();
+          //   document.getElementById('thisYear').innerHTML = d.getFullYear();
+          // main script file
+          script(language='javascript', type='text/javascript', src='js/calculator.js')
