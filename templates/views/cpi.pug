@@ -184,7 +184,13 @@ block css
                 | 1st Sem: Electronics, Electrical, Bio-Tech, Bio-Med, Chem, IT
                 br
                 | 2nd Sem: Mech, Meta, Civil, Min, CSE
-
+                .form-group.row
+                    label.col-sm-6.col-form-label(for='cat1') Marks in CT 1 : 
+                    .input-group.row
+                      input#cat1.form-control(type='text', placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
+                      .input-group-append
+                        span#basic-addon.input-group-text   max 15 
+                
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text Course 
