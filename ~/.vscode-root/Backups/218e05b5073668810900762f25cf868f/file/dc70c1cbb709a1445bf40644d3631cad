@@ -1,3 +1,4 @@
+file:///home/sid/Desktop/CollegeGenious/templates/views/cpi.pug
 extends ../layouts/cpidefault
 block css
 
@@ -189,7 +190,7 @@ block css
                 .form-group.row
                     label#s1l.col-sm-4.col-form-label(for='') Marks in CT 1 : 
                       br
-                      
+                        
                     .input-group.row
                       input#s1c1.col-sm-4.form-control(type='number',max="15",min="0", placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
                       input#s1c2.col-sm-4.form-control(type='number',max="15",min="0", placeholder='Your score in CT 2', aria-label='Marks Input', aria-describedby='basic-addon')
