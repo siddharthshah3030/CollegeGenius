@@ -57,6 +57,11 @@ console.log(netMarks)
 /*
 * Quick CGPA CALCULATOR
 * */
+function currentsem(){
+   return parseFloat($('#cgpa').val());
+
+
+}
 $('#submit').click(function(){
     document.getElementById('cgpa-msg').classList.remove("hide");
     // document.getElementById('cbtn').className="btn btn-warning hide";
@@ -65,13 +70,15 @@ $('#submit').click(function(){
     var c=parseFloat($('#c').val());
     var tc=parseFloat($('#tc').val());
 
-    var f=(((cgpa*tc)+(gpa*c))/(tc+c));
+    // var f=(((cgpa*tc)+(gpa*c))/(tc+c));
+    var f=(gpa + c)/2;
+
     if(isNaN(f)){
         alert("Insufficient data!");
         f="Unavailable";
     }
     $('.alert-cgpa-msg').show();
-    document.getElementById('cgpa-msg').innerHTML="YOUR CGPA IS "+f.toFixed(2);
+    document.getElementById('cgpa-msg').innerHTML="YOUR latest CPI is "+f.toFixed(2);
 });
 
 /*

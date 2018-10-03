@@ -75,28 +75,28 @@ block css
               .card-container
                 section#cgpa-box.cgpa-box
                   center
-                    h1 Quick Cgpa Calculator
+                    h1 Quick CPI Calculator
                     hr
                     div
                       .input-group.col-sm-8
-                        input#tc.form-control.cgpa-input(type='text', maxlength='3', placeholder='Credits till last Sem?', aria-label='Marks Input', aria-describedby='basic-addon')
+                        input#tc.form-control.cgpa-input(type='text', maxlength='2', placeholder='Last semester?', aria-label='Marks Input', aria-describedby='basic-addon')
                         .input-group-append
-                          span#basic-addon.input-group-text max 200 
+                          span#basic-addon.input-group-text 1,2,3... 
                       br
                       .input-group.col-sm-8
-                        input#cgpa.form-control.cgpa-input(type='text', maxlength='4', placeholder='CGPA till last Sem?', aria-label='Marks Input', aria-describedby='basic-addon')
+                        input#cgpa.form-control.cgpa-input(type='text', maxlength='4', placeholder='CPI till last Sem?', aria-label='Marks Input', aria-describedby='basic-addon')
                         .input-group-append
-                          span#basic-addon.input-group-text   max 10 
+                          span#basic-addon.input-group-text Max 10
                       br
                       .input-group.col-sm-8
-                        input#c.form-control.cgpa-input(type='text', maxlength='2', placeholder='Credits in this Sem?', aria-label='Marks Input', aria-describedby='basic-addon')
+                        input#c.form-control.cgpa-input(type='text', maxlength='2', placeholder='SPI in this semester', aria-label='Marks Input', aria-describedby='basic-addon')
                         .input-group-append
-                          span#basic-addon.input-group-text max   32 
+                          span#basic-addon.input-group-text Current SPI
                       br
                       .input-group.col-sm-8
-                        input#gpa.form-control.cgpa-input(type='text', maxlength='4', placeholder='GPA this semester?', aria-label='Marks Input', aria-describedby='basic-addon')
+                        input#gpa.form-control.cgpa-input(value=currentsem   type='text', maxlength='4', placeholder='This semester ?', aria-label='Marks Input', aria-describedby='basic-addon')
                         .input-group-append
-                          span#basic-addon.input-group-text max   10 
+                          span#basic-addon.input-group-text obvilously +1 then previous 
                       br
                       .alert.alert-primary.text-center.text-uppercase.alert-cgpa-msg(role='alert')
                         b
