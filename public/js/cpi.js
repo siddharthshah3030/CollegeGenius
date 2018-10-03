@@ -10,38 +10,47 @@ var getMarks = function(){
     var marksLab = parseFloat($('#lab').val());
     var marksProj = parseFloat($('#j-comp').val());
     var marksFat = parseFloat($('#fat').val());
-    console.log(marksCat1,marksCat2,marksDa,marksLab,marksProj,marksFat);
-    var choice,netMarks;
-    if(marksLab && marksProj){
-        choice = 3;
-    }else if(marksLab && !marksProj){
-        choice = 2;
-    }else if(marksProj && !marksLab){
-        choice = 1;
-    }else if(!marksProj && !marksLab){
-        choice = 0; //subjects like ALA - MAT3004
-    }
-    var tot = (marksCat1 + marksCat2)*0.3 + marksDa + marksFat * 0.4 ;
-    switch(choice){
-        case 0:
-            netMarks = tot;
-            break;
-        case 1:
-            netMarks = tot*0.75 + marksProj * 0.25;
-            break;
-        case 2:
-            netMarks = tot*0.75 + marksLab * 0.25;
-            break;
-        case 3:
-            netMarks = tot*0.6 + marksLab * 0.2 + marksProj * 0.2 ;
-            break;
-    }
+    // console.log(marksCat1,marksCat2,marksDa,marksLab,marksProj,marksFat);
+    // var choice,netMarks = 0.0;
+    // if(marksLab && marksProj){
+    //     choice = 3;
+    // }else if(marksLab && !marksProj){
+    //     choice = 2;
+    // }else if(marksProj && !marksLab){
+    //     choice = 1;
+    // }else if(!marksProj && !marksLab){
+    //     choice = 0; //subjects like ALA - MAT3004
+    // }
+    // var tot = (marksCat1 + marksCat2) + marksDa + marksFat ;
+    // switch(choice){
+    //     case 0:
+    //         netMarks = tot;
+    //         break;
+    //     case 1:
+    //         netMarks = tot*0.75 + marksProj * 0.25;
+    //         break;
+    //     case 2:
+    //         netMarks = tot*0.75 + marksLab * 0.25;
+    //         break;
+    //     case 3:
+    //         netMarks = tot*0.6 + marksLab * 0.2 + marksProj * 0.2 ;
+    //         break;
+    // }
+    var netMarks;
+    console.log(marksDa)
+    console.log(netMarks)
+    netMarks = marksCat1 + marksCat2 + marksDa + marksFat;
+    console.log(typeof(marksCat1))
+    console.log(netMarks)
+        netMarks = netMarks * 1.0;
+console.log(netMarks)
     if(isNaN(netMarks)){
-        alert("Insufficient Data !!");
+        console.log(netMarks)
+        alert("Insufficient Data for total marks !!");
     }
     else{
         $('.alert-marks').show();
-        $('#marks').html('YOUR EXPECTED MARKS IS '+netMarks.toFixed(2));
+        $('#marks').html('YOUR EXPECTED MARKS IS '+netMarks);
     }
 }
 

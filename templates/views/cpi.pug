@@ -28,48 +28,48 @@ block css
                 hr
                 form
                   .form-group.row
-                    label.col-sm-6.col-form-label(for='cat1') Marks in CAT 1 : 
+                    label.col-sm-6.col-form-label(for='cat1') Marks in CT 1 : 
                     .input-group.col
-                      input#cat1.form-control(type='text', placeholder='Your score in CAT 1', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#cat1.form-control(type='text', placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
-                        span#basic-addon.input-group-text   max 50 
+                        span#basic-addon.input-group-text   max 15 
                   .form-group.row
-                    label.col-sm-6.col-form-label(for='cat2') Marks in CAT 2 : 
+                    label.col-sm-6.col-form-label(for='cat2') Marks in CT 2 : 
                     .input-group.col
                       input#cat2.form-control(type='text', placeholder='Your score in CAT 2', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
-                        span#basic-addon.input-group-text   max 50 
+                        span#basic-addon.input-group-text   max 15 
                   .form-group.row
-                    label.col-sm-6.col-form-label(for='da') Marks in Internals : 
+                    label.col-sm-6.col-form-label(for='da') Marks in EndSem : 
                     .input-group.col
-                      input#da.form-control(type='text', placeholder='Your score in DA(s)', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#da.form-control(type='text', placeholder='Your score in EndSem', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
-                        span#basic-addon.input-group-text   max 30 
+                        span#basic-addon.input-group-text   max 70 
+                  //- .form-group.row
+                  //-   label.col-sm-6.col-form-label(for='lab') Marks in Lab : 
+                  //-   .input-group.col
+                  //-     input#lab.form-control(type='text', placeholder='Your score in Lab', aria-label='Marks Input', aria-describedby='basic-addon')
+                  //-     .input-group-append
+                  //-       span#basic-addon.input-group-text  max 100 
+                  //- .form-group.row
+                  //-   label.col-sm-6.col-form-label(for='j-comp') Marks in J Component : 
+                  //-   .input-group.col
+                  //-     input#j-comp.form-control(type='text', placeholder='Your score in Project', aria-label='Marks Input', aria-describedby='basic-addon')
+                  //-     .input-group-append
+                  //-       span#basic-addon.input-group-text max 100 
                   .form-group.row
-                    label.col-sm-6.col-form-label(for='lab') Marks in Lab : 
+                    label.col-sm-6.col-form-label(for='fat') Expected Marks in TA :
                     .input-group.col
-                      input#lab.form-control(type='text', placeholder='Your score in Lab', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#fat.form-control(type='text', placeholder='Say 16', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
-                        span#basic-addon.input-group-text  max 100 
-                  .form-group.row
-                    label.col-sm-6.col-form-label(for='j-comp') Marks in J Component : 
-                    .input-group.col
-                      input#j-comp.form-control(type='text', placeholder='Your score in Project', aria-label='Marks Input', aria-describedby='basic-addon')
-                      .input-group-append
-                        span#basic-addon.input-group-text max 100 
-                  .form-group.row
-                    label.col-sm-6.col-form-label(for='fat') Expected Marks in FAT :
-                    .input-group.col
-                      input#fat.form-control(type='text', placeholder='Say 98', aria-label='Marks Input', aria-describedby='basic-addon')
-                      .input-group-append
-                        span#basic-addon.input-group-text max 100 
+                        span#basic-addon.input-group-text max 20 
                   .alert.alert-primary.text-center.text-uppercase.alert-marks(role='alert')
                     b
                       span#marks
                   .form-group.row
                     .col-sm-12
                       button.btn.btn-primary.float-right(type='button', onclick='getMarks()') Submit
-                      small#projHelp.form-text.text-danger *If the course doesn't have J-Component/L-Component you can leave it empty.
+                      //- small#projHelp.form-text.text-danger *If the course doesn't have J-Component/L-Component you can leave it empty.
             // This semester cgpa calculator
             #qcc.col-sm-12.col-md-12.col-lg-6.quick-cgpa-calculator
               .card-container
