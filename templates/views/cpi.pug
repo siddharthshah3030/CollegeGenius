@@ -109,55 +109,59 @@ block css
                 br
             #ascc.col-sm-12.col-md-6.col-lg-6.n-sem-cgpa-calculator
               .card-container
-                h1.card-title Calculate your CGPA for any number of Semesters
+                h1.card-title Calculate your CPI for any number of Semesters
+                small#projHelp.form-text.text-warning *we keep in mind that 1st and 2nd semester weihtage is 50%
+                <br>
+                small#projHelp.form-text.text-warning *leave blank if not applicable
+
                 hr
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 1st Sem
-                  input#gpa1.form-control.fgpa(type='text', name='fgpa1', placeholder='GPA', aria-describedby='basic-addon')
-                  input#fc1.form-control.fcredits(type='text', name='fcredit1', placeholder='CREDITS')
+                  input#gpa1.form-control.fgpa(type='text', name='fgpa1', placeholder='SPI', aria-describedby='basic-addon')
+                  //- input#fc1.form-control.fcredits(type='text', name='fcredit1', placeholder='CREDITS')
                 br
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 2nd Sem
-                  input#gpa2.form-control.fgpa(type='text', name='fgpa2', placeholder='GPA', aria-describedby='basic-addon')
-                  input#fc2.form-control.fcredits(type='text', name='fcredit2', placeholder='CREDITS')
+                  input#gpa2.form-control.fgpa(type='text', name='fgpa2', placeholder='SPI', aria-describedby='basic-addon')
+                  //- input#fc2.form-control.fcredits(type='text', name='fcredit2', placeholder='CREDITS')
                 br
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 3rd Sem
-                  input#gpa3.form-control.fgpa(type='text', name='fgpa3', placeholder='GPA', aria-describedby='basic-addon')
-                  input#fc3.form-control.fcredits(type='text', name='fcredit3', placeholder='CREDITS')
+                  input#gpa3.form-control.fgpa(type='text', name='fgpa3', placeholder='SPI', aria-describedby='basic-addon')
+                  //- input#fc3.form-control.fcredits(type='text', name='fcredit3', placeholder='CREDITS')
                 br
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 4th Sem
-                  input#gpa4.form-control.fgpa(type='text', name='fgpa4', placeholder='GPA', aria-describedby='basic-addon')
-                  input#fc4.form-control.fcredits(type='text', name='fcredit4', placeholder='CREDITS')
+                  input#gpa4.form-control.fgpa(type='text', name='fgpa4', placeholder='SPI', aria-describedby='basic-addon')
+                  //- input#fc4.form-control.fcredits(type='text', name='fcredit4', placeholder='CREDITS')
                 br
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 5th Sem
-                  input#gpa5.form-control.fgpa(type='text', name='fgpa5', placeholder='GPA', aria-describedby='basic-addon')
-                  input#fc5.form-control.fcredits(type='text', name='fcredit5', placeholder='CREDITS')
+                  input#gpa5.form-control.fgpa(type='text', name='fgpa5', placeholder='SPI', aria-describedby='basic-addon')
+                  //- input#fc5.form-control.fcredits(type='text', name='fcredit5', placeholder='CREDITS')
                 br
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 6th Sem
-                  input#gpa6.form-control.fgpa(type='text', name='fgpa6', placeholder='GPA', aria-describedby='basic-addon')
-                  input#fc6.form-control.fcredits(type='text', name='fcredit6', placeholder='CREDITS')
+                  input#gpa6.form-control.fgpa(type='text', name='fgpa6', placeholder='SPI', aria-describedby='basic-addon')
+                  //- input#fc6.form-control.fcredits(type='text', name='fcredit6', placeholder='CREDITS')
                 br
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 7th Sem
-                  input#gpa7.form-control.fgpa(type='text', name='fgpa7', placeholder='GPA', aria-describedby='basic-addon')
-                  input#fc7.form-control.fcredits(type='text', name='fcredit7', placeholder='CREDITS')
+                  input#gpa7.form-control.fgpa(type='text', name='fgpa7', placeholder='SPI', aria-describedby='basic-addon')
+                  //- input#fc7.form-control.fcredits(type='text', name='fcredit7', placeholder='CREDITS')
                 br
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 8th Sem
-                  input#gpa8.form-control.fgpa(type='text', name='fgpa8', placeholder='GPA', aria-describedby='basic-addon')
-                  input#fc8.form-control.fcredits(type='text', name='fcredit8', placeholder='CREDITS')
+                  input#gpa8.form-control.fgpa(type='text', name='fgpa8', placeholder='SPI', aria-describedby='basic-addon')
+                  //- input#fc8.form-control.fcredits(type='text', name='fcredit8', placeholder='CREDITS')
                 br
                 .alert.alert-primary.text-center.text-uppercase.alert-fcgpa(role='alert')
                   b
@@ -167,8 +171,20 @@ block css
                 br
             #gc.col-sm-12.col-md-12.col-lg-6.gpa-calculator
               .card-container
-                h1.card-title Calculate GPA
+                h1.card-title Calculate SPI
                 hr
+                input(type="radio", name="branch", value="1", checked)
+                | 1st Sem: Mech, Meta, Civil, Min, CSE 
+                br
+                | 2nd Sem: Electronics, Electrical, Bio-Tech, Bio-Med, Chem, IT
+                br
+                br
+                
+                input(type="radio", name="branch", value="0", )
+                | 1st Sem: Electronics, Electrical, Bio-Tech, Bio-Med, Chem, IT
+                br
+                | 2nd Sem: Mech, Meta, Civil, Min, CSE
+
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text Course 

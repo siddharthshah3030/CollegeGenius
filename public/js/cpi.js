@@ -92,59 +92,67 @@ $('#sem-cgpa-btn').on('click',function(){
     var gpa1, gpa2, gpa3, gpa4, gpa5, gpa6, gpa7, gpa8,fc1=0, fc2=0, fc3=0, fc4=0, fc5=0, fc6=0, fc7=0, fc8=0,fcgpa=0;
     gpa1=$('#gpa1').val();
     fc1 = $('#fc1').val();
+    fc1 = 1
     if(gpa1 =='' || fc1===''){
         fc1 = 0;
         gpa1 = 0;
     }
     gpa2=$('#gpa2').val();
     fc2 = $('#fc2').val();
+    fc2 = 1
     if(gpa2 =='' || fc2===''){
         fc2 = 0;
         gpa2 = 0;
     }
     gpa3=$('#gpa3').val();
     fc3 = $('#fc3').val();
+    fc3 = 1
     if(gpa3 =='' || fc3===''){
         fc3 = 0;
         gpa3 = 0;
     }
     gpa4=$('#gpa4').val();
     fc4 = $('#fc4').val();
+    fc4 = 1
     if(gpa4 =='' || fc4===''){
         fc4 = 0;
         gpa4 = 0;
     }
     gpa5=$('#gpa5').val();
     fc5 = $('#fc5').val();
+    fc5 =1 
     if(gpa5 =='' || fc5===''){
         fc5 = 0;
         gpa5 = 0;
     }
     gpa6=$('#gpa6').val();
     fc6 = $('#fc6').val();
+    fc6 = 1
     if(gpa6 =='' || fc6===''){
         fc6 = 0;
         gpa6 = 0;
     }
     gpa7=$('#gpa7').val();
     fc7 = $('#fc7').val();
+    fc7 = 1
     if(gpa7 =='' || fc7===''){
         fc7 = 0;
         gpa7 = 0;
     }
     gpa8=$('#gpa8').val();
     fc8 = $('#fc8').val();
+    fc8 =1
     if(gpa8 =='' || fc8===''){
         fc8 = 0;
         gpa8 = 0;
     }
-    fcgpa=((parseFloat(gpa1)*fc1)+(parseFloat(gpa2)*fc2)+(parseFloat(gpa3)*fc3)+(parseFloat(gpa4)*fc4)+(parseFloat(gpa5)*fc5)+(parseFloat(gpa6)*fc6)+(parseFloat(gpa7)*fc7)+(parseFloat(gpa8)*fc8))/(fc1*1+fc2*1+fc3*1+fc4*1+fc5*1+fc6*1+fc7*1+fc8*1);
+    fcgpa=((parseFloat(gpa1)*fc1)+(parseFloat(gpa2)*fc2)+(parseFloat(gpa3)*fc3)+(parseFloat(gpa4)*fc4)+(parseFloat(gpa5)*fc5)+(parseFloat(gpa6)*fc6)+(parseFloat(gpa7)*fc7)+(parseFloat(gpa8)*fc8))/(fc1*0.5+fc2*0.5+fc3*1+fc4*1+fc5*1+fc6*1+fc7*1+fc8*1);
     if(isNaN(fcgpa)){
         alert("Insufficient Data !!");
     }
     else{
         $('.alert-fcgpa').show();
-        $('#fcgpa').html('YOUR CGPA WOULD BE '+fcgpa.toFixed(2));
+        $('#fcgpa').html('YOUR CPI WOULD BE '+fcgpa.toFixed(2));
     }
 });
 
