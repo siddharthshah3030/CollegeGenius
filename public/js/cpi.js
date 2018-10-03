@@ -58,8 +58,10 @@ console.log(netMarks)
 * Quick CGPA CALCULATOR
 * */
 function currentsem(){
-   return parseFloat($('#cgpa').val());
-
+    console.log("current sem function triggered")
+//    return parseFloat($('#cgpa').val());
+// $('#tc').val() = $('#cgpa').val();
+document.getElementById("gpa").value = $('#tc').val() -2 +3 ;
 
 }
 $('#submit').click(function(){
@@ -71,8 +73,8 @@ $('#submit').click(function(){
     var tc=parseFloat($('#tc').val());
 
     // var f=(((cgpa*tc)+(gpa*c))/(tc+c));
-    var f=(gpa + c)/2;
-
+        var f=(gpa + c)/2;
+  
     if(isNaN(f)){
         alert("Insufficient data!");
         f="Unavailable";

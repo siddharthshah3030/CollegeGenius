@@ -79,22 +79,22 @@ block css
                     hr
                     div
                       .input-group.col-sm-8
-                        input#tc.form-control.cgpa-input(type='text', maxlength='2', placeholder='Last semester?', aria-label='Marks Input', aria-describedby='basic-addon')
+                        input#tc.form-control.cgpa-input(onkeyup="currentsem()" type='number', maxlength='2', placeholder='Last semester?', aria-label='Marks Input', aria-describedby='basic-addon')
                         .input-group-append
                           span#basic-addon.input-group-text 1,2,3... 
                       br
                       .input-group.col-sm-8
-                        input#cgpa.form-control.cgpa-input(type='text', maxlength='4', placeholder='CPI till last Sem?', aria-label='Marks Input', aria-describedby='basic-addon')
+                        input#cgpa.form-control.cgpa-input( type='number', max='10', placeholder='CPI till last Sem?', aria-label='Marks Input', aria-describedby='basic-addon')
                         .input-group-append
                           span#basic-addon.input-group-text Max 10
                       br
                       .input-group.col-sm-8
-                        input#c.form-control.cgpa-input(type='text', maxlength='2', placeholder='SPI in this semester', aria-label='Marks Input', aria-describedby='basic-addon')
+                        input#c.form-control.cgpa-input(type='number', max='10', placeholder='SPI in this semester', aria-label='Marks Input', aria-describedby='basic-addon')
                         .input-group-append
                           span#basic-addon.input-group-text Current SPI
                       br
                       .input-group.col-sm-8
-                        input#gpa.form-control.cgpa-input(value=currentsem   type='text', maxlength='4', placeholder='This semester ?', aria-label='Marks Input', aria-describedby='basic-addon')
+                        input#gpa.form-control.cgpa-input(  readonly type='text', maxlength='4', placeholder='This semester ?', aria-label='Marks Input', aria-describedby='basic-addon')
                         .input-group-append
                           span#basic-addon.input-group-text obvilously +1 then previous 
                       br
@@ -102,7 +102,10 @@ block css
                         b
                           span#cgpa-msg.cgpa-msg
                       button#submit.btn.btn-primary.float-right Submit
+
                 br
+                small#projHelp.form-text.text-danger *we keep in mind that 1st and 2nd semester weihtage is 50%
+
                 br
             #ascc.col-sm-12.col-md-6.col-lg-6.n-sem-cgpa-calculator
               .card-container
@@ -392,4 +395,5 @@ block css
           //   document.getElementById('thisYear').innerHTML = d.getFullYear();
           // main script file
         //-   script(language='javascript', type='text/javascript', src='js/calculator.js')
+        script(src="https://code.jquery.com/jquery-2.2.4.js", integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=", crossorigin="anonymous")
         script(src='/js/cpi.js')
