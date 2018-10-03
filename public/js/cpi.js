@@ -159,6 +159,16 @@ $('#sem-cgpa-btn').on('click',function(){
 /*
 * GPA CALCULATOR
 * */
+function branch(){
+    console.log("branch function triggered")
+   var brach1  =  document.getElementById("br1").checked ;
+   var brach2 =  document.getElementById("br2").checked ;
+   console.log(brach1 +"  "+ brach2)
+   if(brach1){
+       console.log(sub)
+   }
+
+}
 $('#gbtn').on('click',function(){
     var g1=0,g2=0,g3=0,g4=0,g5=0,g6=0,g7=0,g8=0,g9=0,g10=0,c1=0,c2=0,c3=0,c4=0,c5=0,c6=0,c7=0,c8=0,c9=0,c10=0,sum=0,gpa=0;
     g1=parseInt($('#g1').val()),g2=parseInt($('#g2').val()),g3=parseInt($('#g3').val()),g4=parseInt($('#g4').val()),g5=parseInt($('#g5').val()),g6=parseInt($('#g6').val()),g7=parseInt($('#g7').val()),g8=parseInt($('#g8').val()),g9=parseInt($('#g9').val()),g10=parseInt($('#g10').val()),c1=parseInt($('#c1').val()),c2=parseInt($('#c2').val()),c3=parseInt($('#c3').val()),c4=parseInt($('#c4').val()),c5=parseInt($('#c5').val()),c6=parseInt($('#c6').val()),c7=parseInt($('#c7').val()),c8=parseInt($('#c8').val()),c9=parseInt($('#c9').val()),c10=parseInt($('#c10').val());
