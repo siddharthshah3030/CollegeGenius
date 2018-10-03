@@ -9,6 +9,8 @@ keystone.pre('routes', function (req, res, next) {
 		{ label: 'Notes', key: 'gallery', href: '/gallery' },
 		{ label: 'Enquiry', key: 'contact', href: '/contact' },
 		{ label: 'Previous Years', key: 'previous', href: '/previous' },
+		{ label: 'CPI', key: 'cpi', href: '/cpi' },
+
 	];
 	res.locals.user = req.user;
 	next();
@@ -37,6 +39,7 @@ exports = module.exports = function (app) {
 	app.get('/gallery', routes.views.gallery);
 	app.all('/contact', routes.views.contact);
 	app.all('/previous', routes.views.previous);
+	app.all('/cpi', routes.views.cpi);
 
 	// Downloads
 	app.get('/download/users', routes.download.users);
