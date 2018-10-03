@@ -1,4 +1,4 @@
-extends ../layouts/default
+extends ../layouts/cpidefault
 block css
 
 
@@ -391,4 +391,5 @@ block css
           var d = new Date();
           //   document.getElementById('thisYear').innerHTML = d.getFullYear();
           // main script file
-          script(language='javascript', type='text/javascript', src='js/calculator.js')
+        //-   script(language='javascript', type='text/javascript', src='js/calculator.js')
+        script(src='/js/cpi.js')
