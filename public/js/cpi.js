@@ -219,18 +219,50 @@ function branch(){
 
 }
 }
-
 $('#gbtn').on('click',function(){
-    var g1=0,g2=0,g3=0,g4=0,g5=0,g6=0,g7=0,g8=0,g9=0,g10=0,c1=0,c2=0,c3=0,c4=0,c5=0,c6=0,c7=0,c8=0,c9=0,c10=0,sum=0,gpa=0;
-    g1=parseInt($('#g1').val()),g2=parseInt($('#g2').val()),g3=parseInt($('#g3').val()),g4=parseInt($('#g4').val()),g5=parseInt($('#g5').val()),g6=parseInt($('#g6').val()),g7=parseInt($('#g7').val()),g8=parseInt($('#g8').val()),g9=parseInt($('#g9').val()),g10=parseInt($('#g10').val()),c1=parseInt($('#c1').val()),c2=parseInt($('#c2').val()),c3=parseInt($('#c3').val()),c4=parseInt($('#c4').val()),c5=parseInt($('#c5').val()),c6=parseInt($('#c6').val()),c7=parseInt($('#c7').val()),c8=parseInt($('#c8').val()),c9=parseInt($('#c9').val()),c10=parseInt($('#c10').val());
-    gpa=(c1*g1+c2*g2+c3*g3+c4*g4+c5*g5+c6*g6+c7*g7+c8*g8+c9*g9+c10*g10)/(c1+c2+c3+c4+c5+c6+c7+c8+c9+c10);
+    var num = 0;
+    var cred = 0;
+    for(var i = 1;i<7;i++){
+        var stringnow = "#s"+i+"t";
 
-    if(isNaN(gpa)){
+        if($(eval(stringnow)).val()>0){
+            num += $(eval("#s"+i+"t")).val()*eval("sub.g"+ i+".c" ) 
+            cred += eval("sub.g"+ i+".c" )
+        } else {
+            num += ($(eval("#s"+i+"c1")).val()+$(eval("#s"+i+"c2")).val()+$(eval("#s"+i+"e")).val()+$(eval("#s"+i+"a")).val())*eval("sub.g"+ i+".c" ) 
+            cred += eval("sub.g"+ i+".c" )
+
+        }
+    }
+    for(var i = 7;i<14;i++){
+        if(brach1){
+            if(i==12){
+                i++;
+            }
+
+        if($(eval("#s"+i+"t")).val()>0){
+            num += $(eval("#s"+i+"t")).val()*eval("sub.g"+ i+".c" ) 
+            cred += eval("sub.g"+ i+".c" )
+        } else {
+            num += ($(eval("#s"+i+"c1")).val()+$(eval("#s"+i+"c2")).val())*eval("sub.g"+ i+".c" ) 
+            cred += eval("sub.g"+ i+".c" )
+
+        }
+        var spiform4 = num/cred;
+    }
+
+    }
+
+    // var g1=0,g2=0,g3=0,g4=0,g5=0,g6=0,g7=0,g8=0,g9=0,g10=0,c1=0,c2=0,c3=0,c4=0,c5=0,c6=0,c7=0,c8=0,c9=0,c10=0,sum=0,gpa=0;
+    // g1=parseInt($('#g1').val()),g2=parseInt($('#g2').val()),g3=parseInt($('#g3').val()),g4=parseInt($('#g4').val()),g5=parseInt($('#g5').val()),g6=parseInt($('#g6').val()),g7=parseInt($('#g7').val()),g8=parseInt($('#g8').val()),g9=parseInt($('#g9').val()),g10=parseInt($('#g10').val()),c1=parseInt($('#c1').val()),c2=parseInt($('#c2').val()),c3=parseInt($('#c3').val()),c4=parseInt($('#c4').val()),c5=parseInt($('#c5').val()),c6=parseInt($('#c6').val()),c7=parseInt($('#c7').val()),c8=parseInt($('#c8').val()),c9=parseInt($('#c9').val()),c10=parseInt($('#c10').val());
+    // gpa=(c1*g1+c2*g2+c3*g3+c4*g4+c5*g5+c6*g6+c7*g7+c8*g8+c9*g9+c10*g10)/(c1+c2+c3+c4+c5+c6+c7+c8+c9+c10);
+
+    if(isNaN(cpi)){
         alert("Insufficient data!");
         gpa="Unavailable";
     }
     $('.alert-grades').show();
-    $('#grades').html("YOUR GPA IS "+gpa.toFixed(2));
+    $('#grades').html("YOUR SPI IS "+spiform4.toFixed(2));
     document.getElementById('reset').classList.remove("hide");
 });
 
