@@ -1,3 +1,12 @@
+  (function() {
+    var cx = '006698745606709901357:aub8s7hf0g8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 (function($) {
   
   "use strict";  
