@@ -38,9 +38,11 @@ var getMarks = function(){
     // }
     var netMarks = 0;
     console.log(marksDa)
-    console.log(netMarks)
     
     netMarks = marksCat1 + marksCat2 + marksDa + marksFat;
+    console.log("net marks is here ")
+    console.log(netMarks)
+
     var range = marksRange(netMarks)
     var r1;
     var r2;
@@ -49,7 +51,11 @@ var getMarks = function(){
         r2=120;
 
     }
-    if(range==10){
+    else if(netMarks>101){
+        r1=102;
+        r2=120;
+    }
+    else if(range==10){
         r1=0;
         r2=35;
     }
@@ -260,7 +266,7 @@ function marksRange(a){
     if(a>66)b=72;
     if(a>78)b=84;
     if(a>90)b=96;
-if(a>102)b=103;
+if(a>102){b=103;}
 if(a<43){
     b = 10
 }
