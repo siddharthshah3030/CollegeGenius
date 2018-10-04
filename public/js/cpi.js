@@ -36,10 +36,27 @@ var getMarks = function(){
     //         netMarks = tot*0.6 + marksLab * 0.2 + marksProj * 0.2 ;
     //         break;
     // }
-    var netMarks;
+    var netMarks = 0;
     console.log(marksDa)
     console.log(netMarks)
+    
     netMarks = marksCat1 + marksCat2 + marksDa + marksFat;
+    var range = marksRange(netMarks)
+    var r1;
+    var r2;
+    if(range==103){
+        r1=103;
+        r2=120;
+
+    }
+    if(range==10){
+        r1=0;
+        r2=35;
+    }
+    else {
+        r1= range-6;
+        r2=range+5;
+    }
     console.log(typeof(marksCat1))
     console.log(netMarks)
         netMarks = netMarks * 1.0;
@@ -51,6 +68,8 @@ console.log(netMarks)
     else{
         $('.alert-marks').show();
         $('#marks').html('YOUR EXPECTED MARKS IS '+netMarks);
+        $('#pointerform1').html('YOUR EXPECTED Pointer IS '+marksToGrade(netMarks));
+        $('#rangeform1').html('YOUR Pointer range IS '+r1+ ' to '+r2);
     }
 }
 
@@ -73,7 +92,9 @@ $('#submit').click(function(){
     var tc=parseFloat($('#tc').val());
 
     // var f=(((cgpa*tc)+(gpa*c))/(tc+c));
-        var f=(gpa + c)/2;
+        var f=(cgpa + c)/2;
+        console.log(gpa)
+        console.log(c)
   
     if(isNaN(f)){
         alert("Insufficient data!");
@@ -232,6 +253,19 @@ if(a<43){
 }
 return b;
 }
+function marksRange(a){
+    var b;
+    if(a>42)b=48;
+    if(a>54)b=60;
+    if(a>66)b=72;
+    if(a>78)b=84;
+    if(a>90)b=96;
+if(a>102)b=103;
+if(a<43){
+    b = 10
+}
+return b;
+}
 function pmarksToGrade(a){
     var b;
     if(a>24)b=5;
@@ -247,7 +281,11 @@ return b;
 }
 $('#gbtn').on('click',function(){
      num = 0;
+     sname = " pointers are<br> "
      cred = 0;
+
+
+    //  sname = sname + ' the pointer of '+eval("sub.g"+i+".n")+ ' is '+ marksToGrade(nume) +' <br>'
     for(var i = 1;i<7;i++){
         var stringnow = "#s"+i+"t";
         if($(stringnow).val()>0){
@@ -255,6 +293,8 @@ $('#gbtn').on('click',function(){
             if(nume>0){
                 num += marksToGrade(nume)
             cred += eval("sub.g"+ i+".c" )
+            sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ marksToGrade(nume) +' <br>'
+
             }
         } else {
             nume = ($("#s"+i+"c1").val()+$("#s"+i+"c2").val()+$("#s"+i+"e").val()+$("#s"+i+"a").val())*eval("sub.g"+ i+".c" ) 
@@ -262,6 +302,8 @@ $('#gbtn').on('click',function(){
             if(nume>0){
             num +=marksToGrade(nume)
             cred += eval("sub.g"+ i+".c" )
+            sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ marksToGrade(nume) +' <br>'
+
             }
 
         }
@@ -273,6 +315,8 @@ $('#gbtn').on('click',function(){
             nume = $("#s"+i+"t").val()*eval("sub.g"+ i+".c" ) 
             if(nume>0){
                 num += pmarksToGrade(nume)
+                sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ pmarksToGrade(nume) +' <br>'
+
              cred += eval("sub.g"+ i+".c" )
             }
         } else {
@@ -282,6 +326,8 @@ $('#gbtn').on('click',function(){
             if(nume>0){
                 
                 num += pmarksToGrade(nume)
+                sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ pmarksToGrade(nume) +' <br>'
+
             cred += eval("sub.g"+ i+".c" )
             }
         }
@@ -320,7 +366,9 @@ $('#gbtn').on('click',function(){
         gpa="Unavailable";
     }
     $('.alert-grades').show();
-    $('#grades').html("YOUR SPI IS "+spiform4.toFixed(2));
+    $('#grades').html("YOUR SPI IS "+spiform4.toFixed(2)+"<br>");
+    $('#gradespointer').html(" Your individual subject  "+sname);
+
     document.getElementById('reset').classList.remove("hide");
 });
 
@@ -369,26 +417,26 @@ $('.form-control').on('keyup',function(){
             $(this).val('');
         }
     }
-    if((input>10 || input<0) && (this.id==='gpa1' || this.id==='gpa2' || this.id==='gpa3' || this.id==='gpa4' || this.id==='gpa5' || this.id==='gpa6' || this.id==='gpa7' || this.id==='gpa8')){
-        alert('Your GPA should be between 0 and 10 !');
-        $(this).val('');
-    }
-    else if((input>50 || input<0) && (this.id==='cat1' || this.id==='cat2')){
-        alert('Your CAT1 and CAT2 marks should be between 0 and 50 !');
-        $(this).val('');
-    }
-    else if((input>30 || input<0) && (this.id==='da')){
-        alert('Your DA marks should be between 0 and 30 !');
-        $(this).val('');
-    }
-    else if((input>100 || input<0) && (this.id==='lab' || this.id==='j-comp' || this.id==='fat')){
-        alert('Your Lab, Fat and Project marks should be between 0 and 100 !');
-        $(this).val('');
-    }
-    else if((input>32 || input<0) && (this.id==='fc1' || this.id==='fc2' || this.id==='fc3' || this.id==='fc4' || this.id==='fc5' || this.id==='fc6' || this.id==='fc7' || this.id==='fc8')){
-        alert('Your Credits should be between 16 and 27 !');
-        $(this).val('');
-    }
+    // if((input>10 || input<0) && (this.id==='gpa1' || this.id==='gpa2' || this.id==='gpa3' || this.id==='gpa4' || this.id==='gpa5' || this.id==='gpa6' || this.id==='gpa7' || this.id==='gpa8')){
+    //     alert('Your GPA should be between 0 and 10 !');
+    //     $(this).val('');
+    // }
+    // else if((input>50 || input<0) && (this.id==='cat1' || this.id==='cat2')){
+    //     alert('Your CAT1 and CAT2 marks should be between 0 and 50 !');
+    //     $(this).val('');
+    // }
+    // else if((input>30 || input<0) && (this.id==='da')){
+    //     alert('Your DA marks should be between 0 and 30 !');
+    //     $(this).val('');
+    // }
+    // else if((input>100 || input<0) && (this.id==='lab' || this.id==='j-comp' || this.id==='fat')){
+    //     alert('Your Lab, Fat and Project marks should be between 0 and 100 !');
+    //     $(this).val('');
+    // }
+    // else if((input>32 || input<0) && (this.id==='fc1' || this.id==='fc2' || this.id==='fc3' || this.id==='fc4' || this.id==='fc5' || this.id==='fc6' || this.id==='fc7' || this.id==='fc8')){
+    //     alert('Your Credits should be between 16 and 27 !');
+    //     $(this).val('');
+    // }
 });
 
 //Changing active link

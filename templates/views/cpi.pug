@@ -29,20 +29,20 @@ block css
                 form
                   .form-group.row
                     label.col-sm-6.col-form-label(for='cat1') Marks in CT 1 : 
-                    .input-group.col
-                      input#cat1.form-control(type='text', placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
+                    .input-group.col.col-sm-6
+                      input#cat1.form-control(type='number',step="0.5",max="15",min="0", placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   max 15 
                   .form-group.row
                     label.col-sm-6.col-form-label(for='cat2') Marks in CT 2 : 
-                    .input-group.col
-                      input#cat2.form-control(type='text', placeholder='Your score in CAT 2', aria-label='Marks Input', aria-describedby='basic-addon')
+                    .input-group.col.col-sm-6
+                      input#cat2.form-control(type='number',step="0.5",max="15",min="0", placeholder='Your score in CT 2', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   max 15 
                   .form-group.row
                     label.col-sm-6.col-form-label(for='da') Marks in EndSem : 
-                    .input-group.col
-                      input#da.form-control(type='text', placeholder='Your score in EndSem', aria-label='Marks Input', aria-describedby='basic-addon')
+                    .input-group.col.col-sm-6
+                      input#da.form-control(type='number',step="0.5",max="70",min="0", placeholder='Your score in EndSem', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   max 70 
                   //- .form-group.row
@@ -59,13 +59,18 @@ block css
                   //-       span#basic-addon.input-group-text max 100 
                   .form-group.row
                     label.col-sm-6.col-form-label(for='fat') Expected Marks in TA :
-                    .input-group.col
-                      input#fat.form-control(type='text', placeholder='Say 16', aria-label='Marks Input', aria-describedby='basic-addon')
+                    .input-group.col.col-sm-6
+                      input#fat.form-control(type='number',max="20",step="0.5", min="0", placeholder='Say 16', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text max 20 
                   .alert.alert-primary.text-center.text-uppercase.alert-marks(role='alert')
                     b
                       span#marks
+                      br
+                      span#pointerform1
+                      br
+                      span#rangeform1
+
                   .form-group.row
                     .col-sm-12
                       button.btn.btn-primary.float-right(type='button', onclick='getMarks()') Submit
@@ -84,12 +89,12 @@ block css
                           span#basic-addon.input-group-text 1,2,3... 
                       br
                       .input-group.col-sm-8
-                        input#cgpa.form-control.cgpa-input( type='number', max='10', placeholder='CPI till last Sem?', aria-label='Marks Input', aria-describedby='basic-addon')
+                        input#cgpa.form-control.cgpa-input( type='number',step="0.01", max='10', placeholder='CPI till last Sem?', aria-label='Marks Input', aria-describedby='basic-addon')
                         .input-group-append
                           span#basic-addon.input-group-text Max 10
                       br
                       .input-group.col-sm-8
-                        input#c.form-control.cgpa-input(type='number', max='10', placeholder='SPI in this semester', aria-label='Marks Input', aria-describedby='basic-addon')
+                        input#c.form-control.cgpa-input(type='number', step="0.01",max='10', placeholder='SPI in this semester', aria-label='Marks Input', aria-describedby='basic-addon')
                         .input-group-append
                           span#basic-addon.input-group-text Current SPI
                       br
@@ -118,49 +123,49 @@ block css
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 1st Sem
-                  input#gpa1.form-control.fgpa(type='text', name='fgpa1', placeholder='SPI', aria-describedby='basic-addon')
+                  input#gpa1.form-control.fgpa(type='number',max="10",min="0",step="0.01", name='fgpa1', placeholder='SPI', aria-describedby='basic-addon')
                   //- input#fc1.form-control.fcredits(type='text', name='fcredit1', placeholder='CREDITS')
                 br
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 2nd Sem
-                  input#gpa2.form-control.fgpa(type='text', name='fgpa2', placeholder='SPI', aria-describedby='basic-addon')
+                  input#gpa2.form-control.fgpa(type='text',max="10",min="0",step="0.01",  name='fgpa2', placeholder='SPI', aria-describedby='basic-addon')
                   //- input#fc2.form-control.fcredits(type='text', name='fcredit2', placeholder='CREDITS')
                 br
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 3rd Sem
-                  input#gpa3.form-control.fgpa(type='text', name='fgpa3', placeholder='SPI', aria-describedby='basic-addon')
+                  input#gpa3.form-control.fgpa(type='number', max="10",min="0",step="0.01", name='fgpa3', placeholder='SPI', aria-describedby='basic-addon')
                   //- input#fc3.form-control.fcredits(type='text', name='fcredit3', placeholder='CREDITS')
                 br
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 4th Sem
-                  input#gpa4.form-control.fgpa(type='text', name='fgpa4', placeholder='SPI', aria-describedby='basic-addon')
+                  input#gpa4.form-control.fgpa(type='number', max="10",min="0",step="0.01", name='fgpa4', placeholder='SPI', aria-describedby='basic-addon')
                   //- input#fc4.form-control.fcredits(type='text', name='fcredit4', placeholder='CREDITS')
                 br
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 5th Sem
-                  input#gpa5.form-control.fgpa(type='text', name='fgpa5', placeholder='SPI', aria-describedby='basic-addon')
+                  input#gpa5.form-control.fgpa(type='number',max="10",min="0",step="0.01",  name='fgpa5', placeholder='SPI', aria-describedby='basic-addon')
                   //- input#fc5.form-control.fcredits(type='text', name='fcredit5', placeholder='CREDITS')
                 br
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 6th Sem
-                  input#gpa6.form-control.fgpa(type='text', name='fgpa6', placeholder='SPI', aria-describedby='basic-addon')
+                  input#gpa6.form-control.fgpa(type='number', max="10",min="0",step="0.01", name='fgpa6', placeholder='SPI', aria-describedby='basic-addon')
                   //- input#fc6.form-control.fcredits(type='text', name='fcredit6', placeholder='CREDITS')
                 br
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 7th Sem
-                  input#gpa7.form-control.fgpa(type='text', name='fgpa7', placeholder='SPI', aria-describedby='basic-addon')
+                  input#gpa7.form-control.fgpa(type='number', max="10",min="0",step="0.01", name='fgpa7', placeholder='SPI', aria-describedby='basic-addon')
                   //- input#fc7.form-control.fcredits(type='text', name='fcredit7', placeholder='CREDITS')
                 br
                 .input-group.col-sm-8
                   .input-group-prepend
                     span#basic-addon.input-group-text 8th Sem
-                  input#gpa8.form-control.fgpa(type='text', name='fgpa8', placeholder='SPI', aria-describedby='basic-addon')
+                  input#gpa8.form-control.fgpa(type='number', max="10",min="0",step="0.01", name='fgpa8', placeholder='SPI', aria-describedby='basic-addon')
                   //- input#fc8.form-control.fcredits(type='text', name='fcredit8', placeholder='CREDITS')
                 br
                 .alert.alert-primary.text-center.text-uppercase.alert-fcgpa(role='alert')
@@ -194,10 +199,10 @@ block css
                     
                         
                     .input-group.row
-                      input#s1c1.col-sm-4.form-control(type='number',max="15",min="0", placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s1c2.col-sm-4.form-control(type='number',max="15",min="0", placeholder='Your score in CT 2', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s1e.col-sm-4.form-control(type='number',max="70",min="0", placeholder='Your score in EndSem', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s1a.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s1c1.col-sm-4.form-control(type='number',step="0.5",max="15",min="0", placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s1c2.col-sm-4.form-control(type='number',step="0.5",max="15",min="0", placeholder='Your score in CT 2', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s1e.col-sm-4.form-control(type='number',step="0.5",max="70",min="0", placeholder='Your score in EndSem', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s1a.col-sm-4.form-control(type='number',step="0.5",max="20",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   Or enter total marks in subject  
                       input#s1t.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Total marks', aria-label='Marks Input', aria-describedby='basic-addon')
@@ -211,10 +216,10 @@ block css
                       br
                       
                     .input-group.row
-                      input#s2c1.col-sm-4.form-control(type='number',max="15",min="0", placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s2c2.col-sm-4.form-control(type='number',max="15",min="0", placeholder='Your score in CT 2', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s2e.col-sm-4.form-control(type='number',max="70",min="0", placeholder='Your score in EndSem', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s2a.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s2c1.col-sm-4.form-control(type='number',step="0.5",max="15",min="0", placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s2c2.col-sm-4.form-control(type='number',step="0.5",max="15",min="0", placeholder='Your score in CT 2', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s2e.col-sm-4.form-control(type='number',step="0.5",max="70",min="0", placeholder='Your score in EndSem', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s2a.col-sm-4.form-control(type='number',step="0.5",max="20",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   Or enter total marks in subject  
                       input#s2t.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Total marks', aria-label='Marks Input', aria-describedby='basic-addon')
@@ -227,10 +232,10 @@ block css
                       
                       
                     .input-group.row
-                      input#s3c1.col-sm-4.form-control(type='number',max="15",min="0", placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s3c2.col-sm-4.form-control(type='number',max="15",min="0", placeholder='Your score in CT 2', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s3e.col-sm-4.form-control(type='number',max="70",min="0", placeholder='Your score in EndSem', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s3a.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s3c1.col-sm-4.form-control(type='number',step="0.5",max="15",min="0", placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s3c2.col-sm-4.form-control(type='number',step="0.5",max="15",min="0", placeholder='Your score in CT 2', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s3e.col-sm-4.form-control(type='number',step="0.5",max="70",min="0", placeholder='Your score in EndSem', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s3a.col-sm-4.form-control(type='number',step="0.5",max="20",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   Or enter total marks in subject  
                       input#s3t.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Total marks', aria-label='Marks Input', aria-describedby='basic-addon')
@@ -244,10 +249,10 @@ block css
                       br
                       br
                     .input-group.row
-                      input#s4c1.col-sm-4.form-control(type='number',max="15",min="0", placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s4c2.col-sm-4.form-control(type='number',max="15",min="0", placeholder='Your score in CT 2', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s4e.col-sm-4.form-control(type='number',max="70",min="0", placeholder='Your score in EndSem', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s4a.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s4c1.col-sm-4.form-control(type='number',step="0.5",max="15",min="0", placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s4c2.col-sm-4.form-control(type='number',step="0.5",max="15",min="0", placeholder='Your score in CT 2', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s4e.col-sm-4.form-control(type='number',step="0.5",max="70",min="0", placeholder='Your score in EndSem', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s4a.col-sm-4.form-control(type='number',step="0.5",max="20",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   Or enter total marks in subject  
                       input#s4t.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Total marks', aria-label='Marks Input', aria-describedby='basic-addon')
@@ -261,10 +266,10 @@ block css
                       br
                       br
                     .input-group.row
-                      input#s5c1.col-sm-4.form-control(type='number',max="15",min="0", placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s5c2.col-sm-4.form-control(type='number',max="15",min="0", placeholder='Your score in CT 2', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s5e.col-sm-4.form-control(type='number',max="70",min="0", placeholder='Your score in EndSem', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s5a.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s5c1.col-sm-4.form-control(type='number',step="0.5",max="15",min="0", placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s5c2.col-sm-4.form-control(type='number',step="0.5",max="15",min="0", placeholder='Your score in CT 2', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s5e.col-sm-4.form-control(type='number',step="0.5",max="70",min="0", placeholder='Your score in EndSem', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s5a.col-sm-4.form-control(type='number',step="0.5",max="20",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   Or enter total marks in subject  
                       input#s5t.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Total marks', aria-label='Marks Input', aria-describedby='basic-addon')
@@ -278,10 +283,10 @@ block css
                       br
                       br
                     .input-group.row
-                      input#s6c1.col-sm-4.form-control(type='number',max="15",min="0", placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s6c2.col-sm-4.form-control(type='number',max="15",min="0", placeholder='Your score in CT 2', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s6e.col-sm-4.form-control(type='number',max="70",min="0", placeholder='Your score in EndSem', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s6a.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s6c1.col-sm-4.form-control(type='number',step="0.5",max="15",min="0", placeholder='Your score in CT 1', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s6c2.col-sm-4.form-control(type='number',step="0.5",max="15",min="0", placeholder='Your score in CT 2', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s6e.col-sm-4.form-control(type='number',step="0.5",max="70",min="0", placeholder='Your score in EndSem', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s6a.col-sm-4.form-control(type='number',step="0.5",max="20",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   Or enter total marks in subject  
                       input#s6t.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Total marks', aria-label='Marks Input', aria-describedby='basic-addon')
@@ -296,8 +301,8 @@ block css
                       br
                       br
                     .input-group.row
-                      input#s7c1.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Your score in Practicals', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s7c2.col-sm-4.form-control(type='number',max="30",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s7c1.col-sm-4.form-control(type='number',step="0.5",max="20",min="0", placeholder='Your score in Practicals', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s7c2.col-sm-4.form-control(type='number',step="0.5",max="30",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   Or enter total marks in subject  
                       input#s7t.col-sm-4.form-control(type='number',max="50",min="0", placeholder='Total marks', aria-label='Marks Input', aria-describedby='basic-addon')
@@ -310,8 +315,8 @@ block css
                       br
                       br
                     .input-group.row
-                      input#s8c1.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Your score in Practicals', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s8c2.col-sm-4.form-control(type='number',max="30",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s8c1.col-sm-4.form-control(type='number',step="0.5",max="20",min="0", placeholder='Your score in Practicals', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s8c2.col-sm-4.form-control(type='number',step="0.5",max="30",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   Or enter total marks in subject  
                       input#s8t.col-sm-4.form-control(type='number',max="50",min="0", placeholder='Total marks', aria-label='Marks Input', aria-describedby='basic-addon')
@@ -326,8 +331,8 @@ block css
                       br
                       br
                     .input-group.row
-                      input#s9c1.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Your score in Practicals', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s9c2.col-sm-4.form-control(type='number',max="30",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s9c1.col-sm-4.form-control(type='number',step="0.5",max="20",min="0", placeholder='Your score in Practicals', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s9c2.col-sm-4.form-control(type='number',step="0.5",max="30",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   Or enter total marks in subject  
                       input#s9t.col-sm-4.form-control(type='number',max="50",min="0", placeholder='Total marks', aria-label='Marks Input', aria-describedby='basic-addon')
@@ -341,8 +346,8 @@ block css
                       br
                       
                     .input-group.row
-                      input#s10c1.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Your score in Practicals', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s10c2.col-sm-4.form-control(type='number',max="30",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s10c1.col-sm-4.form-control(type='number',step="0.5",max="20",min="0", placeholder='Your score in Practicals', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s10c2.col-sm-4.form-control(type='number',step="0.5",max="30",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   Or enter total marks in subject  
                       input#s10t.col-sm-4.form-control(type='number',max="50",min="0", placeholder='Total marks', aria-label='Marks Input', aria-describedby='basic-addon')
@@ -356,8 +361,8 @@ block css
                       br
                       
                     .input-group.row
-                      input#s11c1.col-sm-4.form-control(type='number',max="20",min="0", placeholder='Your score in Practicals', aria-label='Marks Input', aria-describedby='basic-addon')
-                      input#s11c2.col-sm-4.form-control(type='number',max="30",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s11c1.col-sm-4.form-control(type='number',step="0.5",max="20",min="0", placeholder='Your score in Practicals', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s11c2.col-sm-4.form-control(type='number',step="0.5",max="30",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   Or enter total marks in subject  
                       input#s11t.col-sm-4.form-control(type='number',max="50",min="0", placeholder='Total marks', aria-label='Marks Input', aria-describedby='basic-addon')
@@ -371,7 +376,7 @@ block css
                       br
                       
                     .input-group.row
-                      input#s12t.col-sm-4.form-control(type='number',max="30",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s12t.col-sm-4.form-control(type='number',step="0.5",max="30",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   Total max #{g1lastmax}                                                                               
                 br
@@ -382,7 +387,7 @@ block css
                       br
                       
                     .input-group.row
-                      input#s13t.col-sm-4.form-control(type='number',max="30",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
+                      input#s13t.col-sm-4.form-control(type='number',step="0.5",max="30",min="0", placeholder='Your score in TA', aria-label='Marks Input', aria-describedby='basic-addon')
                       .input-group-append
                         span#basic-addon.input-group-text   Total max #{h1lastmax}                                                                               
 
@@ -415,6 +420,7 @@ block css
                 .alert.alert-primary.alert-grades(role='alert')
                   b
                     span#grades.text-info
+                    span#gradespointer.text-info
                 button#gbtn.gbtn.btn.btn-primary.float-right Submit
                 br
                 br
