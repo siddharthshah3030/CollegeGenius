@@ -47,7 +47,7 @@ var getMarks = function(){
     var r1;
     var r2;
     if(range==103){
-        r1=103;
+        r1=102;
         r2=120;
 
     }
@@ -254,7 +254,7 @@ function marksToGrade(a){
     if(a>78)b=8;
     if(a>90)b=9;
 if(a>102)b=10;
-if(a<43){
+if(a<42){
     b = 0
 }
 return b;
