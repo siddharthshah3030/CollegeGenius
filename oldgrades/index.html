@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="An online tool to calculate CGPA, GPA and Even get a hint of what your CGPA would be after few semesters. It is 100% accurate and very easy to use. More than 30,000 users have been using it to compute their GPAs and CGPA.">
+    <meta name="keywords" content="CGPA calculator VIT, VIT CGPA CALCULATOR, VIT gpa calculator, gpa calculator VIT, devil-coder cgpa calculator, Raj Chandra vit cgpa calculator, VIT marks calculator">
+    <meta name="author" content="Raj Chandra">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1b567e">
+    <title>VIT CGPA Calculator</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <!-- Animate.css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- Bootstrap -->
+    <!--<link href="bootstrap/css/bootstrap.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- This is for smartlook -->
+    <!-- <script type="text/javascript">
+        window.smartlook||(function(d) {
+        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+        c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+        })(document);
+        smartlook('init', '2522f0e7a204e4f47008022e9c9070d428d19164');
+    </script> -->
+  
+   
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- for likes -->
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<center>
+<div class="main-container">
+    <div class="header-container">
+         <header>VIT CGPA CALCULATOR</header>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color : #1b567e;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item link2 active" onclick="changeActiveLink(2)">
+                <a class="nav-link" href="#emc">EXPECTED MARKS CALCULATOR</a>
+            </li>
+            <li class="nav-item link1" onclick="changeActiveLink(1)">
+                <a class="nav-link" href="#qcc">QUICK CGPA CALCULATOR</a>
+            </li>
+            <li class="nav-item link3" onclick="changeActiveLink(3)">
+                <a class="nav-link" href="#ascc">ANY SEM CGPA CALCULATOR</a>
+            </li>
+            <li class="nav-item link4" onclick="changeActiveLink(4)">
+                <a class="nav-link" href="#gc">GPA CALCULATOR</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+   
+    <div class="container-fluid">
+        <div class="row">
+    <!-- Ads for CodePark comes here -->
+         
+
+            <!--Marks Predictor-->
+            <div class="col-sm-12 col-md-12 col-lg-6 marks-predictor" id="emc" align="left">
+                <div class="card-container">
+                    <a href="#emc" class="badge badge-danger float-right">NEW</a>
+                    <h1>Compute Expected Marks</h1>
+                    <hr>
+                    <form>
+                        <div class="form-group row">
+                            <label for="cat1" class="col-sm-6 col-form-label">Marks in CAT 1 : </label>
+                            <div class="input-group col">
+                                <input type="text"  class="form-control" id="cat1" placeholder="Your score in CAT 1" aria-label="Marks Input" aria-describedby="basic-addon">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon">&nbsp; max 50 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="cat2" class="col-sm-6 col-form-label">Marks in CAT 2 : </label>
+                            <div class="input-group col">
+                                <input type="text"  class="form-control" id="cat2" placeholder="Your score in CAT 2" aria-label="Marks Input" aria-describedby="basic-addon">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon">&nbsp; max 50 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="da" class="col-sm-6 col-form-label">Marks in Internals : </label>
+                            <div class="input-group col">
+                                <input type="text"  class="form-control" id="da" placeholder="Your score in DA(s)" aria-label="Marks Input" aria-describedby="basic-addon">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon">&nbsp; max 30 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lab" class="col-sm-6 col-form-label">Marks in Lab : </label>
+                            <div class="input-group col">
+                                <input type="text"  class="form-control" id="lab" placeholder="Your score in Lab" aria-label="Marks Input" aria-describedby="basic-addon">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon"> max 100 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="j-comp" class="col-sm-6 col-form-label">Marks in J Component : </label>
+                            <div class="input-group col">
+                                <input type="text"  class="form-control" id="j-comp" placeholder="Your score in Project" aria-label="Marks Input" aria-describedby="basic-addon">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon">max 100 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="fat" class="col-sm-6 col-form-label">Expected Marks in FAT :</label>
+                            <div class="input-group col">
+                                <input type="text"  class="form-control" id="fat" placeholder="Say 98" aria-label="Marks Input" aria-describedby="basic-addon">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon">max 100 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert alert-primary text-center text-uppercase alert-marks" role="alert">
+                          <b><span id="marks"></span></b>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <button type="button" onclick="getMarks()" class="btn btn-primary float-right">Submit</button>
+                                <small id="projHelp" class="form-text text-danger">*If the course doesn't have J-Component/L-Component you can leave it empty.</small>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- This semester cgpa calculator -->
+            <div class="col-sm-12 col-md-12 col-lg-6 quick-cgpa-calculator" id="qcc">
+                <div class="card-container">
+                    <section class="cgpa-box" id="cgpa-box"><center>
+                        <h1>Quick Cgpa Calculator</h1>
+                        <hr>
+                        <div>
+                            <div class="input-group col-sm-8">
+                                <input type="text" id='tc' class="form-control cgpa-input" maxlength="3" placeholder="Credits till last Sem?" aria-label="Marks Input" aria-describedby="basic-addon">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon">max 200 </span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="input-group col-sm-8">
+                                <input type="text" id='cgpa' class="form-control cgpa-input" maxlength="4" placeholder="CGPA till last Sem?" aria-label="Marks Input" aria-describedby="basic-addon">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon">&nbsp; max 10 </span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="input-group col-sm-8">
+                                <input type="text" id='c' class="form-control cgpa-input" maxlength="2" placeholder="Credits in this Sem?" aria-label="Marks Input" aria-describedby="basic-addon">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon">max &nbsp; 32 </span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="input-group col-sm-8">
+                                <input type="text" id='gpa' class="form-control cgpa-input" maxlength="4" placeholder="GPA this semester?" aria-label="Marks Input" aria-describedby="basic-addon">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon">max &nbsp; 10 </span>
+                                </div>
+                            </div><br>
+                            <div class="alert alert-primary text-center text-uppercase alert-cgpa-msg" role="alert">
+                                <b><span class="cgpa-msg" id="cgpa-msg"></span></b>
+                            </div>
+                            <button class="btn btn-primary float-right" id="submit">Submit</button>
+                        </div>
+                    </center>
+                    </section><br><br>
+                  </div>
+            </div>
+            <!--(div.input-group.col-sm-8>(label[for='fgpa$']+input#gpa$.form-control.fgpa[name='fgpa$' type='text' placeholder='GPA']+input#fc$.form-control.fcredits[name='fcredit$' type='text' placeholder='GPA']))*10-->
+          <!--All semester CGPA calculator-->
+            <div class="col-sm-12 col-md-6 col-lg-6 n-sem-cgpa-calculator" id="ascc">
+            <div class="card-container">
+                <h1 class="card-title">Calculate your CGPA for any number of Semesters</h1><hr>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">1st Sem</span>
+                    </div>
+                    <input type="text" id="gpa1" class="form-control fgpa" name="fgpa1" placeholder="GPA"  aria-describedby="basic-addon">
+                    <input type="text" id="fc1" class="form-control fcredits" name="fcredit1" placeholder="CREDITS">
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">2nd Sem</span>
+                    </div>
+                    <input type="text" id="gpa2" class="form-control fgpa" name="fgpa2" placeholder="GPA"  aria-describedby="basic-addon">
+                    <input type="text" id="fc2" class="form-control fcredits" name="fcredit2" placeholder="CREDITS">
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">3rd Sem</span>
+                    </div>
+                    <input type="text" id="gpa3" class="form-control fgpa" name="fgpa3" placeholder="GPA"  aria-describedby="basic-addon">
+                    <input type="text" id="fc3" class="form-control fcredits" name="fcredit3" placeholder="CREDITS">
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">4th Sem</span>
+                    </div>
+                    <input type="text" id="gpa4" class="form-control fgpa" name="fgpa4" placeholder="GPA"  aria-describedby="basic-addon">
+                    <input type="text" id="fc4" class="form-control fcredits" name="fcredit4" placeholder="CREDITS">
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">5th Sem</span>
+                    </div>
+                    <input type="text" id="gpa5" class="form-control fgpa" name="fgpa5" placeholder="GPA"  aria-describedby="basic-addon">
+                    <input type="text" id="fc5" class="form-control fcredits" name="fcredit5" placeholder="CREDITS">
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">6th Sem</span>
+                    </div>
+                    <input type="text" id="gpa6" class="form-control fgpa" name="fgpa6" placeholder="GPA"  aria-describedby="basic-addon">
+                    <input type="text" id="fc6" class="form-control fcredits" name="fcredit6" placeholder="CREDITS">
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">7th Sem</span>
+                    </div>
+                    <input type="text" id="gpa7" class="form-control fgpa" name="fgpa7" placeholder="GPA"  aria-describedby="basic-addon">
+                    <input type="text" id="fc7" class="form-control fcredits" name="fcredit7" placeholder="CREDITS">
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">8th Sem</span>
+                    </div>
+                    <input type="text" id="gpa8" class="form-control fgpa" name="fgpa8" placeholder="GPA"  aria-describedby="basic-addon">
+                    <input type="text" id="fc8" class="form-control fcredits" name="fcredit8" placeholder="CREDITS">
+                </div><br>
+                <div class="alert alert-primary text-center text-uppercase alert-fcgpa" role="alert">
+                    <b><span class="text-info" id="fcgpa"></span></b>
+                </div>
+                <button class="btn btn-primary float-right" id="sem-cgpa-btn">Submit</button>
+                <br><br>
+              </div>
+          </div>
+          <!-- CodePark ads -->
+                 <!--  <div class="alert alert-success" onclick="window.location.href='https://www.facebook.com/codepark.in'" role="alert">
+                    <div align="right">
+                      <span class="badge-pill badge-light">Ads</span>
+                    </div>
+                    <p class="mb-0">See latest post from CodePark.</p>
+                  </div>
+                </div> -->
+        <!-- This semseter GPA calculator -->
+        <div class="col-sm-12 col-md-12 col-lg-6 gpa-calculator" id="gc">
+            <div class="card-container">
+                <h1 class="card-title">Calculate GPA</h1><hr>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">Course </span>
+                    </div>
+                    <select class="form-control" name="grades" id="g1" >
+                        <option value="0" >Grade</option>
+                        <option value="10">S</option>
+                        <option value="9">A</option>
+                        <option value="8">B</option>
+                        <option value="7">C</option>
+                        <option value="6">D</option>
+                        <option value="5">E</option>
+                        <option value="0">F</option>
+                        <option value="0">N</option>
+                    </select>
+                    <select class="form-control" name="credits" id="c1">
+                        <option value="0" id="c0">Credits</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">Course </span>
+                    </div>
+                    <select class="form-control" name="grades" id="g2">
+                        <option value="0" >Grade</option>
+                        <option value="10">S</option>
+                        <option value="9">A</option>
+                        <option value="8">B</option>
+                        <option value="7">C</option>
+                        <option value="6">D</option>
+                        <option value="5">E</option>
+                        <option value="0">F</option>
+                        <option value="0">N</option>
+                    </select>
+                    <select class="form-control" name="credits" id="c2">
+                        <option value="0" id="c0">Credits</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">Course </span>
+                    </div>
+                    <select class="form-control" name="grades" id="g3">
+                        <option value="0" >Grade</option>
+                        <option value="10" >S</option>
+                        <option value="9">A</option>
+                        <option value="8">B</option>
+                        <option value="7">C</option>
+                        <option value="6">D</option>
+                        <option value="5">E</option>
+                        <option value="0">F</option>
+                        <option value="0">N</option>
+                    </select>
+                    <select class="form-control" name="credits" id="c3">
+                        <option value="0" id="c0">Credits</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">Course </span>
+                    </div>
+                    <select class="form-control" name="Grades" id="g4">
+                        <option value="0" >Grade</option>
+                        <option value="10">S</option>
+                        <option value="9">A</option>
+                        <option value="8">B</option>
+                        <option value="7">C</option>
+                        <option value="6">D</option>
+                        <option value="5">E</option>
+                        <option value="0">F</option>
+                        <option value="0">N</option>
+                    </select>
+                    <select class="form-control" class="form-control" name="credits" id="c4">
+                        <option value="0" id="c0">Credits</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">Course </span>
+                    </div>
+                    <select class="form-control" name="Grades" id="g5">
+                        <option value="0" >Grade</option>
+                        <option value="10">S</option>
+                        <option value="9">A</option>
+                        <option value="8">B</option>
+                        <option value="7">C</option>
+                        <option value="6">D</option>
+                        <option value="5">E</option>
+                        <option value="0">F</option>
+                        <option value="0">N</option>
+                    </select>
+                    <select class="form-control" name="credits" id="c5">
+                        <option value="0" id="c0">Credits</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">Course </span>
+                    </div>
+                    <select class="form-control" name="Grades" id="g6">
+                        <option value="0" >Grade</option>
+                        <option value="10">S</option>
+                        <option value="9">A</option>
+                        <option value="8">B</option>
+                        <option value="7">C</option>
+                        <option value="6">D</option>
+                        <option value="5">E</option>
+                        <option value="0">F</option>
+                        <option value="0">N</option>
+                    </select>
+                    <select class="form-control" name="credits" id="c6">
+                        <option value="0" id="c0">Credits</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br>
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">Course </span>
+                    </div>
+                    <select class="form-control" name="Grades" id="g7">
+                        <option value="0" >Grade</option>
+                        <option value="10">S</option>
+                        <option value="9">A</option>
+                        <option value="8">B</option>
+                        <option value="7">C</option>
+                        <option value="6">D</option>
+                        <option value="5">E</option>
+                        <option value="0">F</option>
+                        <option value="0">N</option>
+                    </select>
+                    <select class="form-control" name="credits" id="c7">
+                        <option value="0" id="c0">Credits</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option> class="form-control"
+                    </select>
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">Course </span>
+                    </div>
+                    <select class="form-control" name="Grades" id="g8">
+                        <option value="0" >Grade</option>
+                        <option value="10">S</option>
+                        <option value="9">A</option>
+                        <option value="8">B</option>
+                        <option value="7">C</option>
+                        <option value="6">D</option>
+                        <option value="5">E</option>
+                        <option value="0">F</option>
+                        <option value="0">N</option>
+                    </select>
+                    <select class="form-control" name="credits" id="c8">
+                        <option value="0" id="c0">Credits</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">Course </span>
+                    </div>
+                    <select class="form-control" name="Grade" id="g9">
+                        <option value="0" >Grade</option>
+                        <option value="10">S</option>
+                        <option value="9">A</option>
+                        <option value="8">B</option>
+                        <option value="7">C</option>
+                        <option value="6">D</option>
+                        <option value="5">E</option>
+                        <option value="0">F</option>
+                        <option value="0">N</option>
+                    </select>
+                    <select class="form-control" name="credits" id="c9">
+                        <option value="0" id="c0">Credits</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div><br>
+                <div class="input-group col-sm-8">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon">Course </span>
+                    </div>
+                    <select class="form-control" name="Grades" id="g10">
+                        <option value="0" >Grade</option>
+                        <option value="10">S</option>
+                        <option value="9">A</option>
+                        <option value="8">B</option>
+                        <option value="7">C</option>
+                        <option value="6">D</option>
+                        <option value="5">E</option>
+                        <option value="0">F</option>
+                        <option value="0">N</option>
+                    </select>
+                    <select class="form-control" name="credits" id="c10">
+                        <option value="0" id="c0">Credits</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <section>
+                </div><br><br>
+                <div class="alert alert-primary alert-grades" role="alert">
+                    <b><span id="grades" class="text-info"></span></b>
+                </div>
+                <button class="gbtn btn btn-primary float-right" id="gbtn" >Submit</button>
+                </section>
+                <br><br>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- script for year in footer -->
+<script>
+  var d = new Date();
+//   document.getElementById('thisYear').innerHTML = d.getFullYear();
+</script>
+<!-- main script file  -->
+<script language="javascript" type="text/javascript" src="js/calculator.js"></script>
+</body>
+</html>
