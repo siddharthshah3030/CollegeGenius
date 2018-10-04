@@ -22,7 +22,7 @@ Doubts.schema.virtual('content.full').get(function () {
 	return this.content.extended || this.content.brief;
 });
 
-// Doubts.relationship({ path: 'comments', ref: 'PostComment', refPath: 'post' });
+Doubts.relationship({ path: 'comments', ref: 'DoubtsComment', refPath: 'doubts' });
 
 Doubts.track = true;
 Doubts.defaultColumns = 'name, state|20%, author|20%, publishedDate|20%';

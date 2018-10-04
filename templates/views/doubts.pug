@@ -1,58 +1,58 @@
-//- extends ../layouts/default
+extends ../layouts/default
 
-//- include ../mixins/post
-//- block content
-//- 	.page-header
-//- 		a(href='/keystone/doubts?new').btn.btn-default.pull-right= user ? 'Write Post' : 'Sign in to Write Post'
-//- 		h1=category ? category.name : 'Doubts'
-//- 	.row
-//- 		.col-sm-8
-//- 			if filters.category && !category
-//- 				h3 Invalid Category.
-//- 			else
-//- 				if Doubts.results.length
-//- 					if Doubts.totalPages > 1
-//- 						.lead.text-muted Showing 
-//- 							strong #{Doubts.first}
-//- 							|  to 
-//- 							strong #{Doubts.last}
-//- 							|  of 
-//- 							strong #{Doubts.total}
-//- 							|  posts
-//- 					else
-//- 						.lead.text-muted Showing #{utils.plural(Doubts.results.length, '* post')}
-//- 					.blog
-//- 						each Doubts in Doubts.results
-//- 							+post(Doubts)
-//- 					if Doubts.totalPages > 1
-//- 						ul.pagination
-//- 							if Doubts.previous
-//- 								li: a(href='?page=' + posts.previous): span.glyphicon.glyphicon-chevron-left
-//- 							else
-//- 								li.disabled: a(href='?page=' + 1): span.glyphicon.glyphicon-chevron-left
-//- 							each p, i in posts.pages
-//- 								li(class=posts.currentPage === p ? 'active' : null)
-//- 									a(href='?page=' + (p === '...' ? (i ? Doubts.totalPages : 1) : p ))= p
-//- 							if Doubts.next
-//- 								li: a(href='?page=' + posts.next): span.glyphicon.glyphicon-chevron-right
-//- 							else
-//- 								li.disabled: a(href='?page=' + posts.totalPages): span.glyphicon.glyphicon-chevron-right
-//- 				else
-//- 					if category
-//- 						.jumbotron.text-center
-//- 							h3(style="margin-bottom:0;margin-top:0;") No posts in the category #{category.name}.
-//- 					else
-//- 						.jumbotron.text-center
-//- 							h3(style="margin-bottom:0;margin-top:0;") There are no posts yet.
-//- 		.col-sm-4
-//- 			if categories.length
-//- 				.lead.text-muted Topics
-//- 				ul.nav.nav-pills.nav-stacked
-//- 					li(class=!category ? 'active' : null)
-//- 						a(href='/blog') All
-//- 					each cat in categories
-//- 						li(role="presentation" class=category && category.id === cat.id ? 'active' : null)
-//- 							a(href='/blog/' + cat.key)
-//- 								=cat.name
-//- 								if cat.postCount
-//- 									span.badge.pull-right= cat.postCount
+include ../mixins/post
+block content
+	.page-header
+		a(href='/keystone/doubts?new').btn.btn-default.pull-right= user ? 'Write Post' : 'Sign in to Write Post'
+		h1=category ? category.name : 'Doubts'
+	.row
+		.col-sm-8
+			if filters.category && !category
+				h3 Invalid Category.
+			else
+				if doubts.results.length
+					if doubts.totalPages > 1
+						.lead.text-muted Showing 
+							strong #{doubts.first}
+							|  to 
+							strong #{doubts.last}
+							|  of 
+							strong #{doubts.total}
+							|  posts
+					else
+						.lead.text-muted Showing #{utils.plural(doubts.results.length, '* post')}
+					.blog
+						each doubt in doubts.results
+							+post(doubt)
+					if doubts.totalPages > 1
+						ul.pagination
+							if doubts.previous
+								li: a(href='?page=' + doubts.previous): span.glyphicon.glyphicon-chevron-left
+							else
+								li.disabled: a(href='?page=' + 1): span.glyphicon.glyphicon-chevron-left
+							each p, i in doubts.pages
+								li(class=doubts.currentPage === p ? 'active' : null)
+									a(href='?page=' + (p === '...' ? (i ? doubts.totalPages : 1) : p ))= p
+							if doubts.next
+								li: a(href='?page=' + doubts.next): span.glyphicon.glyphicon-chevron-right
+							else
+								li.disabled: a(href='?page=' + doubts.totalPages): span.glyphicon.glyphicon-chevron-right
+				else
+					if category
+						.jumbotron.text-center
+							h3(style="margin-bottom:0;margin-top:0;") No posts in the category #{category.name}.
+					else
+						.jumbotron.text-center
+							h3(style="margin-bottom:0;margin-top:0;") There are no posts yet.
+		.col-sm-4
+			if categories.length
+				.lead.text-muted Topics
+				ul.nav.nav-pills.nav-stacked
+					li(class=!category ? 'active' : null)
+						a(href='/blog') All
+					each cat in categories
+						li(role="presentation" class=category && category.id === cat.id ? 'active' : null)
+							a(href='/doubts/' + cat.key)
+								=cat.name
+								if cat.postCount
+									span.badge.pull-right= cat.postCount
