@@ -53,17 +53,13 @@ header#header-wrap
           li.nav-item
             a.nav-link(href='#team')
               | Notifications(5)
-          li.nav-item
-            a.nav-link(href='#pricing')
-              | Database
+
           if user
-              li: a(href='/keystone') Database
-              li: a(href='/keystone/signout') Sign Out
+              li.nav-item: a.nav-link(href='/keystone') Database
+              li.nav-item: a.nav-link(href='/keystone/signout') Sign Out
           else
-              li: a(href='/keystone/signin') Sign In              
-          li.nav-item
-            a.nav-link(href='#contact')
-              | Hello, SiD
+              li.nav-item: a.nav-link(href='/keystone/signin') Sign In              
+
     // Mobile Menu Start
     ul.mobile-menu.navbar-nav
       li
