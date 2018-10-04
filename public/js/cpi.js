@@ -252,12 +252,17 @@ $('#gbtn').on('click',function(){
         var stringnow = "#s"+i+"t";
         if($(stringnow).val()>0){
             nume = $("#s"+i+"t").val()*eval("sub.g"+ i+".c" ) 
-            num += marksToGrade(nume)
+            if(nume>0){
+                num += marksToGrade(nume)
             cred += eval("sub.g"+ i+".c" )
+            }
         } else {
             nume = ($("#s"+i+"c1").val()+$("#s"+i+"c2").val()+$("#s"+i+"e").val()+$("#s"+i+"a").val())*eval("sub.g"+ i+".c" ) 
+            console.log(marksToGrade(nume))
+            if(nume>0){
             num +=marksToGrade(nume)
             cred += eval("sub.g"+ i+".c" )
+            }
 
         }
     }
@@ -266,21 +271,29 @@ $('#gbtn').on('click',function(){
             console.log($("#s"+i+"t").val()*eval("sub.g"+ i+".c" ))
             console.log(typeof($("#s"+i+"t").val()*eval("sub.g"+ i+".c" )))
             nume = $("#s"+i+"t").val()*eval("sub.g"+ i+".c" ) 
-            num += pmarksToGrade(nume)
+            if(nume>0){
+                num += pmarksToGrade(nume)
              cred += eval("sub.g"+ i+".c" )
+            }
         } else {
             console.log($("#s"+i+"t").val()*eval("sub.g"+ i+".c" ))
             console.log(typeof($("#s"+i+"t").val()*eval("sub.g"+ i+".c" )))
             nume = ($("#s"+i+"c1").val()+$("#s"+i+"c2").val())*eval("sub.g"+ i+".c" ) 
-            num += pmarksToGrade(nume)
+            if(nume>0){
+                
+                num += pmarksToGrade(nume)
             cred += eval("sub.g"+ i+".c" )
+            }
         }
     }
     for(var i = 12;i<14;i++){
             console.log($("#s"+i+"t").val()*eval("sub.g"+ i+".c" ))
             console.log(typeof($("#s"+i+"t").val()*eval("sub.g"+ i+".c" )))
-            num += $("#s"+i+"t").val()*eval("sub.g"+ i+".c" ) 
+            if(nume>0){
+                
+                num += $("#s"+i+"t").val()*eval("sub.g"+ i+".c" ) 
             cred += eval("sub.g"+ i+".c" )
+            }
             if(brach1){
 
         if(i==12){
