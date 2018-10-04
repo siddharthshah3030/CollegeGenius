@@ -2,5 +2,6 @@
     "git.enableSmartCommit": true,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "git.confirmSync": false
 }
