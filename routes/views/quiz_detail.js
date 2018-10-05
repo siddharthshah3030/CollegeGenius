@@ -5,6 +5,6 @@ exports = module.exports = function (req, res) {
 
 	var view = new keystone.View(req, res);
     // console.log(q.schema.tree.name)
-	view.render('quiz');
+	view.render('quiz_detail');
 
 }
