@@ -9,7 +9,7 @@ exports = module.exports = function (req, res) {
 	locals.section = 'notes';
 
 	view.query('galleries', Gallery.model.find().sort('sortOrder'));
-
+// console.log(Gallery.model.find().sort('sortOrder'))
 	view.render('gallery');
 
 }
