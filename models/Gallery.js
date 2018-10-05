@@ -37,11 +37,13 @@ Gallery.add({
 		{ value: 'Meta', label: "Meta" },
 		{ value: 'MCA', label: "MCA" },
 		{ value: 'Mining', label: "Mining" },
-		{ value: 'Electrical', label: "Electrical" },	], required: false }
+		{ value: 'Electrical', label: "Electrical" },	], required: false },
+		categories: { type: Types.Relationship, ref: 'GalleryCategory', many: true },
+
 
 });
 
 Gallery.track = true;
-Gallery.defaultSort = 'name';
-Gallery.defaultColumns = 'name, publishedDate, Sem, Branch';
+Gallery.defaultSort = 'categories';
+Gallery.defaultColumns = 'name,categories, publishedDate, Sem, Branch';
 Gallery.register();

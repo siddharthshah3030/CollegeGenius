@@ -1,16 +1,16 @@
-// var keystone = require('keystone');
-// var Types = keystone.Field.Types;
+var keystone = require('keystone');
+var Types = keystone.Field.Types;
 
-// var PostCategory = new keystone.List('PostCategory', {
-// 	autokey: { from: 'name', path: 'key', unique: true },
-// 	label: 'Categories',
-// });
+var GalleryCategory = new keystone.List('GalleryCategory', {
+	autokey: { from: 'name', path: 'key', unique: true },
+	label: 'Categories',        
+});
 
-// PostCategory.add({
-// 	name: { type: String, required: true },
-// });
+GalleryCategory.add({
+	name: { type: String, required: true },
+});
 
-// PostCategory.relationship({ ref: 'Gallery', refPath: 'categories' });
+GalleryCategory.relationship({ ref: 'Gallery', refPath: 'categories' });
 
-// PostCategory.track = true;
-// PostCategory.register();
+GalleryCategory.track = true;   
+GalleryCategory.register();
