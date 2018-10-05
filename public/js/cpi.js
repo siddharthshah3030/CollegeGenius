@@ -98,7 +98,9 @@ $('#submit').click(function(){
     var tc=parseFloat($('#tc').val());
 
     // var f=(((cgpa*tc)+(gpa*c))/(tc+c));
-        var f=(cgpa + c)/2;
+        var f=(cgpa*tc + c)/(tc + 1);
+
+
         console.log(gpa)
         console.log(c)
   
