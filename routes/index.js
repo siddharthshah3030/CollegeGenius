@@ -10,6 +10,7 @@ keystone.pre('routes', function (req, res, next) {
 		{ label: 'Enquiry', key: 'contact', href: '/contact' },
 		{ label: 'Previous Years', key: 'previous', href: '/previous' },
 		{ label: 'CPI', key: 'cpi', href: '/cpi' },
+		{ label: 'Quiz', key: 'quiz', href: '/quiz' },
 
 	];
 	res.locals.user = req.user;

@@ -75,34 +75,34 @@ header#header-wrap
         a.page-scroll(href='#sliders')
           | Home
       li
-        a.page-scroll(href='#about')
-          | About
+        a.page-scroll(href='/blog')
+          | Doubts
       li
-        a.page-scroll(href='#services')
-          | Services
-      li
-        a.page-scroll(href='#portfolio')
-          | Portfolio
-      li
-        a.page-scroll(href='#feature')
-          | Features
-      li
-        a.page-scroll(href='#team')
-          | Team
-      li
-        a.page-scroll(href='#pricing')
-          | Pricing
-      if user
-          li: a(href='/keystone') Database
-          li: a(href='/keystone/signout') Sign Out
-      else
-          li: a(href='/keystone/signin') Sign In      
+        a.page-scroll(href='/gallery')
+          | Notes
       li
         a.page-scroll(href='#contact')
-          | Contact
-        // Mobile Menu End
-        // Navbar End
-        // sliders
+          | Enquiry
+      li
+        a.page-scroll(href='/CPI')
+          | CPI
+      li
+        a.page-scroll(href='/previous')
+          | Previus year
+      li
+        a.page-scroll(href='quiz')
+          | Quiz
+      if user
+          li: a.page-scroll(href='/keystone') Database
+          li: a.page-scroll(href='/keystone/signout') Sign Out
+      else
+          li: a.page-scroll(href='/keystone/signin') Sign In      
+      //- li
+      //-   a.page-scroll(href='#contact')
+      //-     | Contact
+      // Mobile Menu End
+      // Navbar End
+      // sliders
     //- nav.navbar.navbar-default.navbar-fixed-top
     //-     .container
     //-         .navbar-header
@@ -261,7 +261,7 @@ section#services.section-padding
             i.fa.fa-bell-o
           .service-content
             h4
-              a(href='#') Reminder 
+              a(href='https://docs.google.com/spreadsheets/d/1np_Yl_ZY-dDDZSpWg0_ZkYmRuhLFd3CEp_USS9qmkNE/edit?usp=sharing') Shedule 
             p
               | reminder for assignments,
               br
