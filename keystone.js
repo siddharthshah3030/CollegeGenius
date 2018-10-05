@@ -45,8 +45,8 @@ keystone.set('locals', {
 keystone.set('routes', require('./routes'));
 
 keystone.set('nav', {
-	'posts': ['posts', 'post-comments', 'post-categories'],
-	'galleries': 'galleries',
+	'Articles': ['posts', 'post-comments', 'post-categories'],
+	'Notes': 'galleries',
 	'enquiries': 'enquiries',
 	'users': 'users',
 	'field-tests': 'things'
