@@ -5,31 +5,33 @@ block css
 				
 block content
 	.page-header
-		a(href='/keystone/previous?new').btn.btn-default.pull-right= user ? 'Add questions papers' : 'Sign in to Add Album'
-		h1 Previous Year Papers
+		h1 Previous Year Question Papers
+		a(href='/keystone/previous?new').btn.btn-default.pull-right.btn-info= user ? 'Add Question Papers' : 'Sign in to Add Question Papers'
+		a(href='/keystone/previous').btn.btn-primary.center-block.modal-sm.btn-group-sm Search Database
 
 	if previous.length
-		each previous, i in previous
+		each gallery, i in previous
 			h3
-				| #{previous.name} 
-				small.text-muted= previous._.publishedDate.format('Do MMM YYYY')
+				| #{gallery.name} 
+				small.text-muted= gallery._.publishedDate.format('Do MMM YYYY')
 			
 			.row
-				each image, i in previous.images
+				each image, i in gallery.images
+					//- p: i
 					.col-xs-4.col-sm-3.col-md-2(style="margin-bottom: 30px;")
-						a(href=image.limit(900,600), title=previous.name + ' image ' + (i+1), rel=previous.key).previous-image
-							img(src=image.fill(300,300), alt=previous.name + ' image ' + (i+1)).img-thumbnail
+						a(href=image.limit(900,600), title=gallery.name + ' image ' + (i+1), rel=gallery.key).gallery-image
+							img(src=image.fill(300,300), alt=gallery.name + ' image ' + (i+1)).img-thumbnail
 		
 	else
 		.jumbotron.text-center
-			h3(style="margin-bottom:0;margin-top:0;") There are no previous years papers added yet.
+			h3(style="margin-bottom:0;margin-top:0;") There are no previous year question papers yet .
 
 
 block page-js
 	script(src="/js/lib/fancybox/jquery.fancybox.pack.js")
 	script.
 		jQuery(function($) {
-			$('.previous-image').fancybox({
+			$('.gallery-image').fancybox({
 				prevEffect: 'none',
 				nextEffect: 'none',
 				closeBtn: false,
