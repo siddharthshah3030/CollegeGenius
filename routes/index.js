@@ -41,7 +41,7 @@ exports = module.exports = function (app) {
 	app.all('/previous', routes.views.previous);
 	app.all('/cpi', routes.views.cpi);
 	app.all('/doubts', routes.views.doubts);
-
+	app.all('/quiz', routes.views.quiz)
 	// Downloads
 	app.get('/download/users', routes.download.users);
 
