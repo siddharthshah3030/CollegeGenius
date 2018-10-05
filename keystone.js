@@ -13,8 +13,8 @@ keystone.init({
 	'view engine': 'pug',
 
 	'auto update': true,
-	'mongo': process.env.MONGO_URI || process.env.MONGOLAB_URI ||'mongodb://siddharth:siddharth3030@ds151431.mlab.com:51431/collegegenius',
-	// 'mongo': process.env.MONGO_URI || process.env.MONGOLAB_URI || 'mongodb://localhost/keystone-demo',
+	// 'mongo': process.env.MONGO_URI || process.env.MONGOLAB_URI ||'mongodb://siddharth:siddharth3030@ds151431.mlab.com:51431/collegegenius',
+	'mongo': process.env.MONGO_URI || process.env.MONGOLAB_URI || 'mongodb://localhost/keystone-demo',
 	'cloudinary config': 'cloudinary://985282186514726:KijYScOjxOUhzXU9MTDz-kzuCg0@siddharth-shah',
 	'session': true,
 	'auth': true,
