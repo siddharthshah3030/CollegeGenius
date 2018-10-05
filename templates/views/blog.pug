@@ -4,7 +4,7 @@ include ../mixins/post
 block content
 	.page-header
 		h1=category ? category.name : 'Doubts'
-		a(href='/keystone/posts?new').btn.btn-default.modal-sm.pull-right= user ? 'Ask Doubt' : 'Sign in to Ask Doubt'
+		a(href='/keystone/posts?new').btn.btn-default.modal-sm.pull-right.btn-info= user ? 'Ask Doubt' : 'Sign in to Ask Doubt'
 		a(href='/keystone/posts').btn.btn-primary.center-block.modal-sm.btn-group-sm Search Database
 	.row
 		.col-sm-8

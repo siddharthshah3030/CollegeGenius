@@ -11,10 +11,11 @@ Enquiry.add({
 	phone: { type: String },
 	enquiryType: { type: Types.Select, options: [
 		{ value: 'message', label: "Just leaving a message" },
+		{ value: 'feedback', label: "some feedback" },
 		{ value: 'question', label: "I've got a question" },
 		{ value: 'other', label: "Something else..." },
 	], required: true },
-	message: { type: Types.Textarea, required: true },
+	content: { type: Types.Textarea, required: true },
 });
 
 Enquiry.track = true;

@@ -5,14 +5,15 @@ block content
 		.jumbotron.text-center
 			h1 Success!
 			if user
-				p Head over to the Admin UI to see your enquiry:
-				a(href='/keystone/enquiries').btn.btn-lg.btn-primary Admin UI 
+				p We have received your enquiry we'll look and reply as soon as possible :
+				p Head over to the Student Library to explore and learn :
+				a(href='/keystone/enquiries').btn.btn-lg.btn-primary Student Library 
 			else
-				p(style="margin-left: 10vw; margin-right: 10vw;") To see your enquiry, sign in with the username 
+				p(style="margin-left: 10vw; margin-right: 10vw;") To expore and learn , sign in with the username 
 					code demo@keystonejs.com
 					|  and the password 
 					code demo
-					|  then go to the enquiries list.
+					|  then go to the student library and explore.
 				a(href='/keystone/signin').btn.btn-lg.btn-primary Sign In
 	
 	else
@@ -36,19 +37,19 @@ block content
 						.col-sm-10
 							input(type='text' name='phone' value=formData.phone placeholder='(optional)').form-control
 					.form-group(class=validationErrors.enquiryType ? 'has-error' : null required)
-						label.col-sm-2.control-label doubts
+						label.col-sm-2.control-label Topic
 						.col-sm-10
 							select(name='enquiryType').form-control
 								option(value='') (required)
 								each type in enquiryTypes
 									option(value=type.value selected=formData.enquiryType === type.value)= type.label
 					.form-group(class=validationErrors.message ? 'has-error' : null)
-						label.col-sm-2.control-label Questions
+						label.col-sm-2.control-label content
 						.col-sm-10
-							textarea(name='message' placeholder='Leave us a question to solve...' rows=4 required).form-control= formData.message
+							textarea(name='message' placeholder='feel free to ask anything...' rows=4 required).form-control= formData.message
 					.form-group
 						.col-sm-10.col-sm-offset-2
-							p.help-block Note: others can see your enquiry in the <a href='/keystone/enquiries'>Admin UI</a>
+							p.help-block Note: others can see your Enquiry in the <a href='/keystone/enquiries'>Database</a>
 							button(type='submit').btn.btn-primary Submit
 			//- .col-sm-4
 			//- 	.panel.panel-default
