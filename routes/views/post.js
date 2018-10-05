@@ -51,7 +51,7 @@ exports = module.exports = function (req, res) {
 			.sort('-publishedOn')
 			.exec(function (err, comments) {
 				if (err) return res.err(err);
-				if (!comments) return res.notfound('Post comments not found');
+				if (!comments) return res.notfound('Post Solution not found');
 				locals.comments = comments;
 				next();
 			});
@@ -76,7 +76,7 @@ exports = module.exports = function (req, res) {
 			if (err) {
 				validationErrors = err.errors;
 			} else {
-				req.flash('success', 'Your comment was added.');
+				req.flash('success', 'Your Solution was added.');
 				return res.redirect('/blog/post/' + locals.post.key + '#comment-id-' + newComment.id);
 			}
 			next();
@@ -88,7 +88,7 @@ exports = module.exports = function (req, res) {
 	view.on('get', { remove: 'comment' }, function (next) {
 
 		if (!req.user) {
-			req.flash('error', 'You must be signed in to delete a comment.');
+			req.flash('error', 'You must be signed in to delete a Solution.');
 			return next();
 		}
 
@@ -99,23 +99,23 @@ exports = module.exports = function (req, res) {
 			.exec(function (err, comment) {
 				if (err) {
 					if (err.name === 'CastError') {
-						req.flash('error', 'The comment ' + req.query.comment + ' could not be found.');
+						req.flash('error', 'The Solution ' + req.query.comment + ' could not be found.');
 						return next();
 					}
 					return res.err(err);
 				}
 				if (!comment) {
-					req.flash('error', 'The comment ' + req.query.comment + ' could not be found.');
+					req.flash('error', 'The Solution ' + req.query.comment + ' could not be found.');
 					return next();
 				}
 				if (comment.author != req.user.id) {
-					req.flash('error', 'Sorry, you must be the author of a comment to delete it.');
+					req.flash('error', 'Sorry, you must be the author of a Solution to delete it.');
 					return next();
 				}
 				comment.commentState = 'archived';
 				comment.save(function (err) {
 					if (err) return res.err(err);
-					req.flash('success', 'Your comment has been deleted.');
+					req.flash('success', 'Your Solution has been deleted.');
 					return res.redirect('/blog/post/' + locals.post.key);
 				});
 			});

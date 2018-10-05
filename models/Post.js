@@ -3,7 +3,7 @@ var Types = keystone.Field.Types;
 
 var Post = new keystone.List('Post', {
 	autokey: { from: 'name', path: 'key', unique: true },
-	label: 'Articles',        
+	label: 'Doubts',        
 });
 
 Post.add({

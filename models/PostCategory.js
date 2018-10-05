@@ -3,7 +3,7 @@ var Types = keystone.Field.Types;
 
 var PostCategory = new keystone.List('PostCategory', {
 	autokey: { from: 'name', path: 'key', unique: true },
-	label: 'Categories',
+	label: 'Topics',
 });
 
 PostCategory.add({

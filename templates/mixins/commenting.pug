@@ -8,9 +8,9 @@ mixin comment-form(action)
 				else
 					img(src='http://placehold.it/80x80', alt='Comment author placeholder', width=80, height=80).img-rounded
 			.media-body
-				textarea(name='content', placeholder=user ? 'Leave a comment...' : 'Please sign in to comment', disabled=!user, style="margin-bottom: 10px; min-height: 80px; resize: vertical;").form-control
+				textarea(name='content', placeholder=user ? 'Give a Solution...' : 'Please sign in to give solution', disabled=!user, style="margin-bottom: 10px; min-height: 80px; resize: vertical;").form-control
 				if user
-					button(type='submit').btn.btn-primary Post Comment
+					button(type='submit').btn.btn-primary Submit Solution 
 				else
 					ul.list-inline
 						li: a(href='/keystone/signin').btn.btn-sm.btn-primary Sign in to Comment
