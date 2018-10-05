@@ -3,7 +3,7 @@ var Types = keystone.Field.Types;
 
 var GalleryCategory = new keystone.List('GalleryCategory', {
 	autokey: { from: 'name', path: 'key', unique: true },
-	label: 'Categories',        
+	label: 'Topics',        
 });
 
 GalleryCategory.add({

@@ -38,12 +38,12 @@ Gallery.add({
 		{ value: 'MCA', label: "MCA" },
 		{ value: 'Mining', label: "Mining" },
 		{ value: 'Electrical', label: "Electrical" },	], required: false },
-		categories: { type: Types.Relationship, ref: 'GalleryCategory', many: true },
+		topics: { type: Types.Relationship, ref: 'GalleryCategory', many: true },
 
 
 });
 
 Gallery.track = true;
-Gallery.defaultSort = 'categories';
-Gallery.defaultColumns = 'name,categories, publishedDate, Sem, Branch';
+Gallery.defaultSort = 'topics';
+Gallery.defaultColumns = 'name,topics, publishedDate, Sem, Branch';
 Gallery.register();
