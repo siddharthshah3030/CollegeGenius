@@ -63,5 +63,5 @@ Previous.add({
 
 Previous.track = true;
 Previous.defaultSort = 'name';
-Previous.defaultColumns = 'name,topics, publishedDate, Sem, Branch';
+Previous.defaultColumns = 'name,Exam, Year, Sem, Branch';
 Previous.register();
