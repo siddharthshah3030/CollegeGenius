@@ -250,12 +250,12 @@ function branch(){
 }
 function marksToGrade(a){
     var b;
-    if(a>42)b=5;
-    if(a>54)b=6;
-    if(a>66)b=7;
-    if(a>78)b=8;
-    if(a>90)b=9;
-if(a>102)b=10;
+    if(a>41){b=5;}
+    if(a>53){b=6;}
+    if(a>65){b=7;}
+    if(a>77){b=8;}
+    if(a>89){b=9;}
+if(a>101){b=10;}
 if(a<42){
     b = 0
 }
@@ -263,12 +263,12 @@ return b;
 }
 function marksRange(a){
     var b;
-    if(a>42)b=48;
-    if(a>54)b=60;
-    if(a>66)b=72;
-    if(a>78)b=84;
-    if(a>90)b=96;
-if(a>102){b=103;}
+    if(a>41)b=48;
+    if(a>53)b=60;
+    if(a>65)b=72;
+    if(a>77)b=84;
+    if(a>89)b=96;
+if(a>101){b=103;}
 if(a<43){
     b = 10
 }
@@ -297,19 +297,20 @@ $('#gbtn').on('click',function(){
     for(var i = 1;i<7;i++){
         var stringnow = "#s"+i+"t";
         if($(stringnow).val()>0){
-            nume = $("#s"+i+"t").val()*eval("sub.g"+ i+".c" ) 
+            nume = $("#s"+i+"t").val()
             if(nume>0){
-                num += marksToGrade(nume)
+                num += marksToGrade(nume)*eval("sub.g"+ i+".c" ) 
+                console.log(num)
             cred += eval("sub.g"+ i+".c" )
             sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ marksToGrade(nume) +' <br>'
 
             }
         } else {
-            nume = ($("#s"+i+"c1").val()+$("#s"+i+"c2").val()+$("#s"+i+"e").val()+$("#s"+i+"a").val())*eval("sub.g"+ i+".c" ) 
+            nume = ($("#s"+i+"c1").val()+$("#s"+i+"c2").val()+$("#s"+i+"e").val()+$("#s"+i+"a").val())
             console.log(marksToGrade(nume))
             if(nume>0){
             num +=marksToGrade(nume)
-            cred += eval("sub.g"+ i+".c" )
+            cred += eval("sub.g"+ i+".c" )*eval("sub.g"+ i+".c" ) 
             sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ marksToGrade(nume) +' <br>'
 
             }
@@ -318,22 +319,22 @@ $('#gbtn').on('click',function(){
     }
     for(var i = 7;i<12;i++){
         if($("#s"+i+"t").val()>0){
-            console.log($("#s"+i+"t").val()*eval("sub.g"+ i+".c" ))
-            console.log(typeof($("#s"+i+"t").val()*eval("sub.g"+ i+".c" )))
-            nume = $("#s"+i+"t").val()*eval("sub.g"+ i+".c" ) 
+            // console.log($("#s"+i+"t").val()*eval("sub.g"+ i+".c" ))
+            // console.log(typeof($("#s"+i+"t").val()*eval("sub.g"+ i+".c" )))
+            nume = $("#s"+i+"t").val()
             if(nume>0){
-                num += pmarksToGrade(nume)
+                num += pmarksToGrade(nume)*eval("sub.g"+ i+".c" ) 
                 sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ pmarksToGrade(nume) +' <br>'
 
              cred += eval("sub.g"+ i+".c" )
             }
         } else {
-            console.log($("#s"+i+"t").val()*eval("sub.g"+ i+".c" ))
-            console.log(typeof($("#s"+i+"t").val()*eval("sub.g"+ i+".c" )))
-            nume = ($("#s"+i+"c1").val()+$("#s"+i+"c2").val())*eval("sub.g"+ i+".c" ) 
+            // console.log($("#s"+i+"t").val()*eval("sub.g"+ i+".c" ))
+            // console.log(typeof($("#s"+i+"t").val()*eval("sub.g"+ i+".c" )))
+            nume = ($("#s"+i+"c1").val()+$("#s"+i+"c2").val())
             if(nume>0){
                 
-                num += pmarksToGrade(nume)
+                num += pmarksToGrade(nume)*eval("sub.g"+ i+".c" ) 
                 sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ pmarksToGrade(nume) +' <br>'
 
             cred += eval("sub.g"+ i+".c" )
@@ -380,41 +381,41 @@ $('#gbtn').on('click',function(){
     document.getElementById('reset').classList.remove("hide");
 });
 
-function clearAll(){
-    $('#g1').val('0');$('#g2').val('0');$('#g3').val('0');$('#g4').val('0');$('#g5').val('0');$('#g6').val('0');$('#g7').val('0');$('#g8').val('0');$('#g9').val('0');$('#g10').val('0');
-    $('#c1').val('0');$('#c2').val('0');$('#c3').val('0');$('#c4').val('0');$('#c5').val('0');$('#c6').val('0');$('#c7').val('0');$('#c8').val('0');$('#c9').val('0');$('#c10').val('0');
-}
+// function clearAll(){
+//     $('#g1').val('0');$('#g2').val('0');$('#g3').val('0');$('#g4').val('0');$('#g5').val('0');$('#g6').val('0');$('#g7').val('0');$('#g8').val('0');$('#g9').val('0');$('#g10').val('0');
+//     $('#c1').val('0');$('#c2').val('0');$('#c3').val('0');$('#c4').val('0');$('#c5').val('0');$('#c6').val('0');$('#c7').val('0');$('#c8').val('0');$('#c9').val('0');$('#c10').val('0');
+// }
 
 /*
 * VALIDATION
 * */
 
-$('.cgpa-input').on('keyup',function(){
-    var input=document.getElementById(this.id).value;
-    if(!input==''){
-        var re=/^\d+\.?\d{0,2}$/;
-        if (!(re.test(input))){
-            alert("Please enter a valid data.");
-            $(this).val('');
-        }
-    }
-    if((input>10 || input<0) && this.id==='gpa'){
-        alert('Your GPA should be between 0 and 10 !');
-        $(this).val('');
-    }
-    else if((input>10 || input<0) && this.id==='cgpa'){
-        alert('Your CGPA should be between 0 and 10 !');
-        $(this).val('');
-    }
-    else if((input>32 || input<0) && this.id==='c'){
-        alert('Your Credits should be between 16 and 32 !'); //made it 32 for temporary users
-        $(this).val('');
-    }
-    else if((input>200 || input<0) && this.id==='tc'){
-        alert('Your Credits should be between 0 and 200 !');
-        $(this).val('');
-    }
-});
+// $('.cgpa-input').on('keyup',function(){
+//     var input=document.getElementById(this.id).value;
+//     if(!input==''){
+//         var re=/^\d+\.?\d{0,2}$/;
+//         if (!(re.test(input))){
+//             alert("Please enter a valid data.");
+//             $(this).val('');
+//         }
+//     }
+//     if((input>10 || input<0) && this.id==='gpa'){
+//         alert('Your GPA should be between 0 and 10 !');
+//         $(this).val('');
+//     }
+//     else if((input>10 || input<0) && this.id==='cgpa'){
+//         alert('Your CGPA should be between 0 and 10 !');
+//         $(this).val('');
+//     }
+//     else if((input>32 || input<0) && this.id==='c'){
+//         alert('Your Credits should be between 16 and 32 !'); //made it 32 for temporary users
+//         $(this).val('');
+//     }
+//     else if((input>200 || input<0) && this.id==='tc'){
+//         alert('Your Credits should be between 0 and 200 !');
+//         $(this).val('');
+//     }
+// });
 
 $('.form-control').on('keyup',function(){
     var input=document.getElementById(this.id).value;

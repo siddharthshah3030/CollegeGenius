@@ -47,11 +47,12 @@ keystone.set('routes', require('./routes'));
 
 keystone.set('nav', {
 	'Doubts': ['posts', 'post-comments', 'post-categories'],
+	'Quiz': ['quizzes', 'questions'],
 	'Notes': 'galleries',
 	'enquiries': 'enquiries',
+	'Previous Year Question Papers': 'Previous',
 	'users': 'users',
 	// 'field-tests': 'things',
-	'Quiz': ['quizzes', 'questions']
 
 });
 
