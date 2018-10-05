@@ -1,6 +1,6 @@
 var keystone = require('keystone');
-var Post = keystone.list('Doubts');
-var PostComment = keystone.list('DoubtsComment');
+var Doubts = keystone.list('Doubts');
+var DoubtsComment = keystone.list('DoubtsComment');
 
 exports = module.exports = function (req, res) {
 
@@ -8,7 +8,7 @@ exports = module.exports = function (req, res) {
 	var locals = res.locals;
 
 	// Init locals
-	locals.section = 'blog';
+	locals.section = 'doubts';
 	locals.filters = {
 		doubts: req.params.doubts,
 	};
@@ -18,11 +18,11 @@ exports = module.exports = function (req, res) {
 
 		var q = Doubts.model.findOne({
 			state: 'unsolved',
-			key: locals.filters.post,
+			key: locals.filters.doubts,
 		}).populate('author categories');
 
 		q.exec(function (err, result) {
-			locals.post = result;
+			locals.doubts = result;
 			next(err);
 		});
 
@@ -43,8 +43,8 @@ exports = module.exports = function (req, res) {
 
 	// Load comments on the Post
 	view.on('init', function (next) {
-		PostComment.model.find()
-			.where('post', locals.post)
+		DoubtsComment.model.find()
+			.where('doubts', locals.doubts)
 			.where('commentState', 'published')
 			.where('author').ne(null)
 			.populate('author', 'name photo')
@@ -77,7 +77,7 @@ exports = module.exports = function (req, res) {
 				validationErrors = err.errors;
 			} else {
 				req.flash('success', 'Your comment was added.');
-				return res.redirect('/blog/post/' + locals.doubts.key + '#comment-id-' + newComment.id);
+				return res.redirect('/doubts/doubt/' + locals.doubts.key + '#comment-id-' + newComment.id);
 			}
 			next();
 		});
@@ -94,7 +94,7 @@ exports = module.exports = function (req, res) {
 
 		DoubtsComment.model.findOne({
 				_id: req.query.comment,
-				doubts: locals.post.id,
+				doubts: locals.doubts.id,
 			})
 			.exec(function (err, comment) {
 				if (err) {
@@ -116,7 +116,7 @@ exports = module.exports = function (req, res) {
 				comment.save(function (err) {
 					if (err) return res.err(err);
 					req.flash('success', 'Your comment has been deleted.');
-					return res.redirect('/doubts/doubt/' + locals.post.key);
+					return res.redirect('/doubts/doubt/' + locals.doubts.key);
 				});
 			});
 	});
