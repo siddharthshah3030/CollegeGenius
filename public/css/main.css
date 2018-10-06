@@ -16,18 +16,7 @@ More Info: https://uideck.com/products/helium-ui-kit
   font-size: 20px;
 
 }
-#menutitle h5 {
-  /* display: none; */
 
-  /* width: 0px; */
-  /* opacity: 0; */
-  /* overflow-y: hidden;
-	max-height: 500px; /* approximate max height */
-
-	/* transition-property: all;
-	transition-duration: .5s;
-	transition-timing-function: cubic-bezier(0, 1, 0.5, 1); */ */
-}
 #menutitle h3 {
   display: inline-block;
   font-size: 60px;

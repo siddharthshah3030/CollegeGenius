@@ -64,6 +64,25 @@
     
         });
     });
+    $(document).ready(function() {
+      // var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+      $('.nichewaala').hover(
+        function() { // mouseenter
+
+          $(".nichekar").slideDown();
+
+
+    
+        },
+        function() { //mouseleave
+
+          $(".nichekar").slideUp();
+
+   
+    
+        });
+    });
     // one page navigation 
     $('.navbar-nav').onePageNav({
       currentClass: 'active'
