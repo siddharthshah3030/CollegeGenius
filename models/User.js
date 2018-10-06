@@ -90,5 +90,5 @@ User.schema.path('password').set(function (newValue) {
  */
 
 User.track = true;
-User.defaultColumns = 'name, email, phone, photo';
+User.defaultColumns = 'name, email, phone, photo,Sem, Branch';
 User.register();

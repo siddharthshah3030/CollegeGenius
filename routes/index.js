@@ -6,7 +6,7 @@ keystone.pre('routes', function (req, res, next) {
 	res.locals.navLinks = [
 		{ label: 'Home', key: 'home', href: '/' },
 		{ label: 'Doubts', key: 'doubts', href: '/blog' },
-		{ label: 'Notes', key: 'gallery', href: '/gallery' },
+		{ label: 'Notes', key: 'gallery', href: '/notes' },
 		{ label: 'Enquiry', key: 'contact', href: '/contact' },
 		{ label: 'Previous Years', key: 'previous', href: '/previous' },
 		{ label: 'CPI', key: 'cpi', href: '/cpi' },
@@ -37,11 +37,11 @@ exports = module.exports = function (app) {
 	app.get('/', routes.views.index);
 	app.get('/blog/:category?', routes.views.blog);
 	app.all('/blog/post/:post', routes.views.post);
-	app.get('/gallery', routes.views.gallery);
+	app.get('/notes', routes.views.gallery);
 	app.all('/contact', routes.views.contact);
 	app.all('/previous', routes.views.previous);
 	app.all('/cpi', routes.views.cpi);
-	app.all('/doubts', routes.views.doubts);
+	// app.all('/doubts', routes.views.doubts);
 	app.all('/quiz', routes.views.quiz)
 	app.all('/quiz/list', routes.views.question)
 	app.all('/quiz/:id', routes.views.quiz_detail)
