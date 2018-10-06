@@ -8,10 +8,23 @@ let result=``
 fetch('/quiz/list/').then(d => d.json()).then(d => {
     d = d.filter((item,i) => i==location.href.split('/').pop())[0]
     title.innerHTML = d.name
+    
     fill_questions(d)
     quiz=d
 })
+var myTimer;
+   function clock() {
+     myTimer = setInterval(myClock, 1000);
+     var c = 0;
 
+     function myClock() {
+       document.getElementById("demo").innerHTML = c++;
+       if (c == -1) {
+         clearInterval(myTimer);
+         alert("Reached zero");
+       }
+     }
+   }
 fill_questions= (d) => {
     console.log(JSON.stringify(d,null,2))
     d.questions.forEach((q,i)=> {

@@ -3,6 +3,12 @@ extends ../layouts/default
 block content
     #quiz
         h1.text-center#title
+        p#demo 0
+        button(onclick="clock(); document.getElementById('demo').innerHTML='0';") Start counter
+        button(onclick='clearInterval(myTimer);') Stop counter
+
+
+
         #questions
         .text-center
             button#submit.btn.btn-primary.mt-5 Submit
