@@ -27,7 +27,7 @@
         }
     });
     $(document).ready(function() {
-      var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+      // var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
       $('#menutitle').hover(
         function() { // mouseenter
@@ -38,26 +38,29 @@
           // }, $('#menutitle h3').hide);
 
           // show & decompress link options
-          $('#menutitle h5').stop().show().animate({
-            width: w,
-            opacity: 1
-          });
+          $("#menutitle h5").slideDown();
+
+          // $('#menutitle h5').stop().show().animate({
+          //   width: w,
+          //   opacity: 1
+          // });
     
         },
         function() { //mouseleave
           // hide & compress options
-          $('#menutitle h5').stop().animate({
-            width: '0px',
-            opacity: 0
-          }, $('#menutitle h5').hide);
-          var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+          // $('#menutitle h5').stop().animate({
+          //   width: '0px',
+          //   opacity: 0
+          // }, $('#menutitle h5').hide);
+          // var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+          $("#menutitle h5").slideUp();
 
           // show & decompress link options
-          $('#menutitle h3').stop().show().animate({
+          // $('#menutitle h3').stop().show().animate({
             
-            width: w,
-            opacity: 1
-          });
+          //   width: w,
+          //   opacity: 1
+          // });
     
         });
     });
