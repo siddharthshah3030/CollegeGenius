@@ -26,5 +26,5 @@ Post.schema.virtual('content.full').get(function () {
 Post.relationship({ path: 'comments', ref: 'PostComment', refPath: 'post' });
 
 Post.track = true;
-Post.defaultColumns = 'name, state|20%, author|20%, publishedDate|20%';
+Post.defaultColumns = 'name,categories, state|20%, author|20%, publishedDate|20%';
 Post.register();

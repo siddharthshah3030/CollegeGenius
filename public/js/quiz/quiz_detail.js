@@ -25,6 +25,10 @@ var myTimer;
        }
      }
    }
+   setTimeout( e=>{
+    clock()
+},500)
+  
 fill_questions= (d) => {
     console.log(JSON.stringify(d,null,2))
     d.questions.forEach((q,i)=> {

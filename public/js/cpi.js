@@ -330,7 +330,7 @@ $('#gbtn').on('click',function(){
                 console.log(num)
                 stat = comparegrade(marksToGrade(nume),i)
             cred += eval("sub.g"+ i+".c" )
-            sname = sname + ' pointergreater then '+stat.win +' of '+eval("sub.g"+i+".n")+ ' is '+ marksToGrade(nume) +' <br>'
+            sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ marksToGrade(nume) +' <br>'
 
             }
         } else {
