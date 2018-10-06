@@ -12,8 +12,9 @@ More Info: https://uideck.com/products/helium-ui-kit
 #menutitle * {
   overflow: hidden;
   white-space: nowrap;
-  font-size: 50px;
   text-align: center;
+  font-size: 20px;
+
 }
 #menutitle h5 {
   display: none;
@@ -29,6 +30,7 @@ More Info: https://uideck.com/products/helium-ui-kit
 }
 #menutitle h3 {
   display: inline-block;
+  font-size: 60px;
 
   width: 100vw;
 }
