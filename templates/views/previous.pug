@@ -12,7 +12,9 @@ block content
 	if previous.length
 		each gallery, i in previous
 			h3
-				| #{gallery.name} 
+				| #{gallery.name}  - #{gallery.Branch} #{gallery.Sem} #{gallery.Year} 
+			p   #{gallery.Exam} 
+
 				small.text-muted= gallery._.publishedDate.format('Do MMM YYYY')
 			
 			.row

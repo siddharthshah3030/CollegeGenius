@@ -12,9 +12,10 @@ block content
 	if galleries.length
 		each gallery, i in galleries
 			h3
-				| #{gallery.name}  - #{gallery.Branch} #{gallery.Sem} #{gallery.Topics} 
-			p   #{gallery.Topics} 
-
+				| #{gallery.name}  - #{gallery.Branch} #{gallery.Sem} 
+			//- h6  
+				//- | #{gallery.Topics} 
+			p #{gallery}
 				small.text-muted= gallery._.publishedDate.format('Do MMM YYYY')
 			
 			.row
