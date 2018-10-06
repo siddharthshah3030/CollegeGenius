@@ -32,10 +32,10 @@
       $('#menutitle').hover(
         function() { // mouseenter
           // hide & compress initial text
-          $('#menutitle h3').stop().animate({
-            width: '0px',
-            opacity: 0
-          }, $('#menutitle h3').hide);
+          // $('#menutitle h3').stop().animate({
+          //   width: '0px',
+          //   opacity: 0
+          // }, $('#menutitle h3').hide);
 
           // show & decompress link options
           $('#menutitle h5').stop().show().animate({
