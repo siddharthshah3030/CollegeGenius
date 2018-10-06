@@ -1,0 +1,46 @@
+extends ../layouts/default
+
+block css
+	link(rel="stylesheet", href="/js/lib/fancybox/jquery.fancybox.css")
+				
+block content
+	.page-header
+		h1 Event Notifications
+		a(href='/keystone/notifications?new').btn.btn-default.pull-right.btn-info= user ? 'Add Event' : 'Sign in to Add Event'
+		a(href='/keystone/notifications').btn.btn-primary.center-block.modal-sm.btn-group-sm Search all events
+
+	if Notification.length
+		each gallery, i in Notification
+			h3  #{gallery.name}
+			p publish date| #{gallery._.publishedDate.format('Do MMM YYYY')}  
+			p registratin date| #{gallery._.registration_date.format('Do MMM YYYY')}  
+			p event date| #{gallery._.event_date.format('Do MMM YYYY')}  
+
+			//- small.text-muted= gallery._.publishedDate.format('Do MMM YYYY')
+			
+			.row
+				each image, i in gallery.images
+					//- p: i
+					.col-xs-4.col-sm-3.col-md-2(style="margin-bottom: 30px;")
+						a(href=image.limit(900,600), title=gallery.name + ' image ' + (i+1), rel=gallery.key).gallery-image
+							img(src=image.fill(300,300), alt=gallery.name + ' image ' + (i+1)).img-thumbnail
+		
+	else
+		.jumbotron.text-center
+			h3(style="margin-bottom:0;margin-top:0;") There are no previous year question papers yet .
+
+
+block page-js
+	script(src="/js/lib/fancybox/jquery.fancybox.pack.js")
+	script.
+		jQuery(function($) {
+			$('.gallery-image').fancybox({
+				prevEffect: 'none',
+				nextEffect: 'none',
+				closeBtn: false,
+				helpers: {
+					titl: {},
+					buttons: {}
+				}
+			});
+		});

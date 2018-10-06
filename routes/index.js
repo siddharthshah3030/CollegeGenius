@@ -11,6 +11,7 @@ keystone.pre('routes', function (req, res, next) {
 		{ label: 'Previous Years', key: 'previous', href: '/previous' },
 		{ label: 'CPI', key: 'cpi', href: '/cpi' },
 		{ label: 'Quiz', key: 'quiz', href: '/quiz' },
+		{ label: 'Notification', key: 'notification', href: '/Notification' },
 
 	];
 	res.locals.user = req.user;
@@ -40,6 +41,7 @@ exports = module.exports = function (app) {
 	app.get('/notes', routes.views.gallery);
 	app.all('/contact', routes.views.contact);
 	app.all('/previous', routes.views.previous);
+	app.all('/notification', routes.views.notification);
 	app.all('/cpi', routes.views.cpi);
 	// app.all('/doubts', routes.views.doubts);
 	app.all('/quiz', routes.views.quiz)
