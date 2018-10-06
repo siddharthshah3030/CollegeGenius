@@ -134,15 +134,23 @@ header#header-wrap
             .carousel-inner(role='listbox')
               .carousel-item.active
                 img(src='img/slider/98.jpeg', alt='')
-                .carousel-caption
+                #menutitle.carousel-caption
                   h3.slide-title.animated.fadeInDown
-                    span Nitrr Genius
+                    span Nitrr Geniu
+                    br
                     |  - Education Vending Platform
                   h5.slide-text.animated.fadeIn
                     | One platform of all education of NITRR
                     br
                     |  notes, assignments, previous year&apos;s, doubts, CPI enhancement and much more
-                    //- | #{user}
+                  //- h3.slide-title.animated.fadeInDown
+                  //-   span Nitrr Genius
+                  //-   |  - Education Vending Platform
+                  //- h5.slide-text.animated.fadeIn
+                  //-   | One platform of all education of NITRR
+                  //-   br
+                  //-   |  notes, assignments, previous year&apos;s, doubts, CPI enhancement and much more
+                  //-   //- | #{user}
                   if user
                     a.btn.btn-lg.btn-common.animated.fadeInUp(href='/keystone/signout') Sign Out
                     a.btn.btn-lg.btn-common.animated.fadeInUp(href='/keystone/galleries?new') Upload Notes
@@ -150,10 +158,10 @@ header#header-wrap
                     a.btn.btn-lg.btn-common.animated.fadeInUp(href='/keystone/signin') Sign In
                     a.btn.btn-lg.btn-common.animated.fadeInUp(href='/keystone/galleries?new') Upload Notes
 
-            a.carousel-control-prev(href='#carousel-slider', role='button', data-slide='prev')
-              i.fa.fa-chevron-left
-            a.carousel-control-next(href='#carousel-slider', role='button', data-slide='next')
-              i.fa.fa-chevron-right
+            //- a.carousel-control-prev(href='#carousel-slider', role='button', data-slide='prev')
+            //-   i.fa.fa-chevron-left
+            //- a.carousel-control-next(href='#carousel-slider', role='button', data-slide='next')
+            //-   i.fa.fa-chevron-right
         .search
             <gcse:search></gcse:search>              
   // End sliders

@@ -26,7 +26,41 @@
             $('.scrolling-navbar').removeClass('top-nav-collapse');
         }
     });
+    $(document).ready(function() {
+      var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
+      $('#menutitle').hover(
+        function() { // mouseenter
+          // hide & compress initial text
+          $('#menutitle h3').stop().animate({
+            width: '0px',
+            opacity: 0
+          }, $('#menutitle h3').hide);
+
+          // show & decompress link options
+          $('#menutitle h5').stop().show().animate({
+            width: w,
+            opacity: 1
+          });
+    
+        },
+        function() { //mouseleave
+          // hide & compress options
+          $('#menutitle h5').stop().animate({
+            width: '0px',
+            opacity: 0
+          }, $('#menutitle h5').hide);
+          var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+          // show & decompress link options
+          $('#menutitle h3').stop().show().animate({
+            
+            width: w,
+            opacity: 1
+          });
+    
+        });
+    });
     // one page navigation 
     $('.navbar-nav').onePageNav({
       currentClass: 'active'

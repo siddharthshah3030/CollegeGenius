@@ -5,6 +5,25 @@ Website: https://uideck.com
 More Info: https://uideck.com/products/helium-ui-kit
 */
 
+
+#menutitle {
+  width: auto;
+}
+#menutitle * {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 30px;
+  text-align: center;
+}
+#menutitle h5 {
+  display: none;
+  width: 0px;
+  opacity: 0;
+}
+#menutitle h3 {
+  display: inline-block;
+  width: 100vw;
+}
 .slide-text{
 
   font-size: 16px;
