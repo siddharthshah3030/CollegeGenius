@@ -248,6 +248,30 @@ function branch(){
 
 }
 }
+function comparegrade(a,i){
+    var win =0;
+    console.log("begin compare "+ a)
+    var lose = 0;
+    for(var x = 1;x<41;x++){
+
+        if(a>eval("r.t"+ x+".n"+i)){
+            win++;
+
+            console.log(eval("r.t"+ x+".n"+i))
+        }else if(a<eval("r.t"+ x+".n"+i)){
+            lose++;
+            }
+        }
+        word = " ---   "
+        if(i<7){
+        html += '<tr><td>' + eval("sub.g"+ i+".n" ) + '</td><td>' + eval("sub.g"+ i+".c" ) + '</td><td>' + marksToGrade(nume) + '</td><td>'+ win + '</td><td>' + lose + '</td></tr>';
+        }
+        else if(i<13){
+            html += '<tr><td>' + eval("sub.g"+ i+".n" ) + '</td><td>' + eval("sub.g"+ i+".c" ) + '</td><td>' + pmarksToGrade(nume) + '</td><td>'+ win + '</td><td>' + lose + '</td></tr>';
+
+        }
+        return {win,lose}
+}
 function marksToGrade(a){
     var b;
     if(a>41){b=5;}
@@ -288,10 +312,13 @@ if(a<25) {
 return b;
 }
 $('#gbtn').on('click',function(){
+    $("#myTable > tr").remove();
+
+     html = '<table> <th>Subject </th><th>credits </th>     <th>Pointer</th><th>students better then you </th><th>students behind you </th>';
      num = 0;
      sname = " pointers are<br> "
      cred = 0;
-
+    stat = 0;
 
     //  sname = sname + ' the pointer of '+eval("sub.g"+i+".n")+ ' is '+ marksToGrade(nume) +' <br>'
     for(var i = 1;i<7;i++){
@@ -301,15 +328,18 @@ $('#gbtn').on('click',function(){
             if(nume>0){
                 num += marksToGrade(nume)*eval("sub.g"+ i+".c" ) 
                 console.log(num)
+                stat = comparegrade(marksToGrade(nume),i)
             cred += eval("sub.g"+ i+".c" )
-            sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ marksToGrade(nume) +' <br>'
+            sname = sname + ' pointergreater then '+stat.win +' of '+eval("sub.g"+i+".n")+ ' is '+ marksToGrade(nume) +' <br>'
 
             }
         } else {
             nume = ($("#s"+i+"c1").val()+$("#s"+i+"c2").val()+$("#s"+i+"e").val()+$("#s"+i+"a").val())
             console.log(marksToGrade(nume))
             if(nume>0){
-            num +=marksToGrade(nume)
+                
+                num +=marksToGrade(nume)
+                stat = comparegrade(marksToGrade(nume),i)
             cred += eval("sub.g"+ i+".c" )*eval("sub.g"+ i+".c" ) 
             sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ marksToGrade(nume) +' <br>'
 
@@ -323,7 +353,9 @@ $('#gbtn').on('click',function(){
             // console.log(typeof($("#s"+i+"t").val()*eval("sub.g"+ i+".c" )))
             nume = $("#s"+i+"t").val()
             if(nume>0){
+                
                 num += pmarksToGrade(nume)*eval("sub.g"+ i+".c" ) 
+                stat = comparegrade(pmarksToGrade(nume),i)
                 sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ pmarksToGrade(nume) +' <br>'
 
              cred += eval("sub.g"+ i+".c" )
@@ -335,6 +367,7 @@ $('#gbtn').on('click',function(){
             if(nume>0){
                 
                 num += pmarksToGrade(nume)*eval("sub.g"+ i+".c" ) 
+                stat = comparegrade(pmarksToGrade(nume),i)
                 sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ pmarksToGrade(nume) +' <br>'
 
             cred += eval("sub.g"+ i+".c" )
@@ -342,10 +375,13 @@ $('#gbtn').on('click',function(){
         }
     }
     for(var i = 12;i<14;i++){
-            console.log($("#s"+i+"t").val()*eval("sub.g"+ i+".c" ))
-            console.log(typeof($("#s"+i+"t").val()*eval("sub.g"+ i+".c" )))
+            // console.log($("#s"+i+"t").val()*eval("sub.g"+ i+".c" ))
+            // console.log(typeof($("#s"+i+"t").val()*eval("sub.g"+ i+".c" )))
+            nume = ($("#s"+i+"t").val())
+
             if(nume>0){
-                
+                stat = comparegrade(pmarksToGrade(nume),i)
+
                 num += $("#s"+i+"t").val()*eval("sub.g"+ i+".c" ) 
             cred += eval("sub.g"+ i+".c" )
             }
@@ -377,6 +413,7 @@ $('#gbtn').on('click',function(){
     $('.alert-grades').show();
     $('#grades').html("YOUR SPI IS "+spiform4.toFixed(2)+"<br>");
     $('#gradespointer').html(" Your individual subject  "+sname);
+    $("#myTable").append(html);
 
     document.getElementById('reset').classList.remove("hide");
 });
