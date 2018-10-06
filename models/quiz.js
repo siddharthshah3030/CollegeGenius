@@ -40,6 +40,7 @@ Quiz.add({
 		{ value: 'Electrical', label: "Electrical" },	], required: false },
 		// topics: { type: Types.Relationship, ref: 'GalleryCategory', many: true },
         questions: { type: Types.Relationship, ref: 'Question', many: true },
+		Topics: { type: String,initial: "topics of the test", required: false },
 
 
 });

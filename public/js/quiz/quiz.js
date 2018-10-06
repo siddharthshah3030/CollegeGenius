@@ -11,7 +11,9 @@ fill_questions = (d) => {
                 <h3><a href=/quiz/${i}>${item.name}</a></h3>
                 <p>
                 <span class='branch badge'>${item.Sem}</span>
+
                     <span class='semester badge'>${item.Branch}</span>
+                    <span class='semester badge'>${item.topics}</span>
                 </p>
                 <hr>
             </div>
