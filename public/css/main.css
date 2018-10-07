@@ -1256,12 +1256,12 @@ footer .menu li a:hover {
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  color: #EB586F;
+  color: #fff;
 }
 
 /* Default Navbar */
 .navbar-nav .nav-link {
-  color: #000;
+  color: #fff;
   font-size: 23px;
   margin-right: 5px;
   font-weight: 800;
@@ -1271,20 +1271,20 @@ footer .menu li a:hover {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #EB586F;
+  color: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link:hover:focus {
-  color: #EB586F;
+  color: #fff;
 }
 
 .navbar-light .navbar-nav > .active > a, .navbar-light .navbar-nav > .active > a:focus, .navbar-light .navbar-nav > .active > a:hover {
-  color: #EB586F;
+  color: #fff;
   background-color: transparent;
 }
 
 .navbar-light .navbar-nav > .open > a, .navbar-light .navbar-nav > .open > a:focus, .navbar-light .navbar-nav > .open > a:hover {
-  color: #EB586F;
+  color: #fff;
   background-color: transparent;
 }
 

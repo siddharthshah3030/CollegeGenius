@@ -12,6 +12,7 @@ keystone.pre('routes', function (req, res, next) {
 		{ label: 'CPI', key: 'cpi', href: '/cpi' },
 		{ label: 'Quiz', key: 'quiz', href: '/quiz' },
 		{ label: 'Notification', key: 'notification', href: '/Notification' },
+		{ label: 'Maps', key: 'map', href: '/map' },
 
 	];
 	res.locals.user = req.user;
