@@ -117,7 +117,6 @@ $('#submit').click(function(){
     // var f=(((cgpa*tc)+(gpa*c))/(tc+c));
         var f=(cgpa*tc + c)/(tc + 1);
 
-
         console.log(gpa)
         console.log(c)
   
@@ -206,7 +205,8 @@ $('#sem-cgpa-btn').on('click',function(){
 * GPA CALCULATOR
 * */
 
-
+g1lastmax = sub.g12.max;
+h2lastmax = sub.h13.max;
 var brach1 =  document.getElementById("br1").checked ;
 
 if(brach1){
@@ -226,7 +226,7 @@ if(brach1){
    }
 }
 function branch(){
-    console.log("branch function triggered")
+    // console.log("branch function triggered")
         var brach1  =  document.getElementById("br1").checked ;
         var brach2 =  document.getElementById("br2").checked ;
         console.log(brach1 +"  "+ brach2)
@@ -267,7 +267,7 @@ function branch(){
 }
 function comparegrade(a,i){
     var win =0;
-    console.log("begin compare "+ a)
+    // console.log("begin compare "+ a)
     var lose = 0;
     for(var x = 1;x<41;x++){
 
@@ -331,7 +331,7 @@ return b;
 $('#gbtn').on('click',function(){
     $("#myTable > tr").remove();
 
-     html = '<table> <th>Subject </th><th>credits </th>     <th>Pointer</th><th>better no.<br>of students</th><th>Below no.<br>of students</th>';
+     html = '<table> <th>Subject </th><th>credits </th>     <th>Pointer</th><th>Below no.<br>of students</th><th>Better no.<br>of students</th>';
      num = 0;
      sname = " pointers are<br> "
      cred = 0;
@@ -343,8 +343,10 @@ $('#gbtn').on('click',function(){
         if($(stringnow).val()>0){
             nume = $("#s"+i+"t").val()
             if(nume>0){
+                console.log(" subject runs "+ i+" "+marksToGrade(nume)*eval("sub.g"+ i+".c" ))
+
                 num += marksToGrade(nume)*eval("sub.g"+ i+".c" ) 
-                console.log(num)
+                // console.log(num)
                 stat = comparegrade(marksToGrade(nume),i)
             cred += eval("sub.g"+ i+".c" )
             sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ marksToGrade(nume) +' <br>'
@@ -352,9 +354,10 @@ $('#gbtn').on('click',function(){
             }
         } else {
             nume = ($("#s"+i+"c1").val()+$("#s"+i+"c2").val()+$("#s"+i+"e").val()+$("#s"+i+"a").val())
-            console.log(marksToGrade(nume))
+            // console.log(marksToGrade(nume))
             if(nume>0){
-                
+                console.log(" subject runs "+ i+" "+ marksToGrade(nume)*eval("sub.g"+ i+".c" ))
+
                 num +=marksToGrade(nume)
                 stat = comparegrade(marksToGrade(nume),i)
             cred += eval("sub.g"+ i+".c" )*eval("sub.g"+ i+".c" ) 
@@ -370,7 +373,8 @@ $('#gbtn').on('click',function(){
             // console.log(typeof($("#s"+i+"t").val()*eval("sub.g"+ i+".c" )))
             nume = $("#s"+i+"t").val()
             if(nume>0){
-                
+                console.log(" subject runs "+ i+ " "+ pmarksToGrade(nume)*eval("sub.g"+ i+".c" ))
+
                 num += pmarksToGrade(nume)*eval("sub.g"+ i+".c" ) 
                 stat = comparegrade(pmarksToGrade(nume),i)
                 sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ pmarksToGrade(nume) +' <br>'
@@ -382,7 +386,9 @@ $('#gbtn').on('click',function(){
             // console.log(typeof($("#s"+i+"t").val()*eval("sub.g"+ i+".c" )))
             nume = ($("#s"+i+"c1").val()+$("#s"+i+"c2").val())
             if(nume>0){
-                
+                console.log(" subject runs "+ i+ " "+pmarksToGrade(nume)*eval("sub.g"+ i+".c" ))
+
+
                 num += pmarksToGrade(nume)*eval("sub.g"+ i+".c" ) 
                 stat = comparegrade(pmarksToGrade(nume),i)
                 sname = sname + ' pointer of '+eval("sub.g"+i+".n")+ ' is '+ pmarksToGrade(nume) +' <br>'
@@ -398,7 +404,7 @@ $('#gbtn').on('click',function(){
 
             if(nume>0){
                 stat = comparegrade(pmarksToGrade(nume),i)
-
+                console.log(" subject runs "+ i+ " "+comparegrade(pmarksToGrade(nume),i))
                 num += $("#s"+i+"t").val()*eval("sub.g"+ i+".c" ) 
             cred += eval("sub.g"+ i+".c" )
             }
@@ -412,12 +418,12 @@ $('#gbtn').on('click',function(){
     }
   
     
-    console.log(num)
-    console.log(cred)
+    // console.log(num)
+    // console.log(cred)
      spiform4 = num/cred;
 
-    console.log(typeof(spiform4))
-    console.log(spiform4)
+    // console.log(typeof(spiform4))
+    // console.log(spiform4)
 
     // var g1=0,g2=0,g3=0,g4=0,g5=0,g6=0,g7=0,g8=0,g9=0,g10=0,c1=0,c2=0,c3=0,c4=0,c5=0,c6=0,c7=0,c8=0,c9=0,c10=0,sum=0,gpa=0;
     // g1=parseInt($('#g1').val()),g2=parseInt($('#g2').val()),g3=parseInt($('#g3').val()),g4=parseInt($('#g4').val()),g5=parseInt($('#g5').val()),g6=parseInt($('#g6').val()),g7=parseInt($('#g7').val()),g8=parseInt($('#g8').val()),g9=parseInt($('#g9').val()),g10=parseInt($('#g10').val()),c1=parseInt($('#c1').val()),c2=parseInt($('#c2').val()),c3=parseInt($('#c3').val()),c4=parseInt($('#c4').val()),c5=parseInt($('#c5').val()),c6=parseInt($('#c6').val()),c7=parseInt($('#c7').val()),c8=parseInt($('#c8').val()),c9=parseInt($('#c9').val()),c10=parseInt($('#c10').val());
