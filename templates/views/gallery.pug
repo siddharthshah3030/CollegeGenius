@@ -24,7 +24,8 @@ block content
 					.col-xs-4.col-sm-3.col-md-2(style="margin-bottom: 30px;")
 						a(href=image.limit(900,600), title=gallery.name + ' image ' + (i+1), rel=gallery.key).gallery-image
 							img(src=image.fill(300,300), alt=gallery.name + ' image ' + (i+1)).img-thumbnail
-		
+			p
+				| #{gallery.content}  		
 	else
 		.jumbotron.text-center
 			h3(style="margin-bottom:0;margin-top:0;") There are no Notes yet.

@@ -16,6 +16,7 @@ Notification.add({
 	event_date: { type: Types.Date,  },
 	images: { type: Types.CloudinaryImages },
 	notify: { type: Types.Boolean },
+	eventlink: { type: String },
 
 
 

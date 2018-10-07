@@ -13,6 +13,7 @@ Gallery.add({
 	name: { type: String, required: true },
 	publishedDate: { type: Types.Date, default: Date.now },
 	images: { type: Types.CloudinaryImages },
+	content: { type: String },
 	Sem: { type: Types.Select, options: [
 		{ value: '1st sem', label: "1st sem" },
 		{ value: '2nd sem', label: "2nd sem" },

@@ -12,6 +12,8 @@ block content
 	if Notification.length
 		each gallery, i in Notification
 			h3  #{gallery.name}
+			a(href='#{gallery.eventlink}' ) event link
+
 			p publish date| #{gallery._.publishedDate.format('Do MMM YYYY')}  
 			p registratin date| #{gallery._.registration_date.format('Do MMM YYYY')}  
 			p event date| #{gallery._.event_date.format('Do MMM YYYY')}  
