@@ -331,7 +331,7 @@ return b;
 $('#gbtn').on('click',function(){
     $("#myTable > tr").remove();
 
-     html = '<table> <th>Subject </th><th>credits </th>     <th>Pointer</th><th>students better then you </th><th>students behind you </th>';
+     html = '<table> <th>Subject </th><th>credits </th>     <th>Pointer</th><th>better no.<br>of students</th><th>Below no.<br>of students</th>';
      num = 0;
      sname = " pointers are<br> "
      cred = 0;

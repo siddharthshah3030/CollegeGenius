@@ -1,4 +1,19 @@
-select{
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 3px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  width: auto;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}select{
     background: white;
     border-color: #95a5a6;
     color:#000;
