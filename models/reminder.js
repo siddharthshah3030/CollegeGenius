@@ -15,6 +15,8 @@ Notification.add({
 	registration_date: { type: Types.Date,  },
 	event_date: { type: Types.Date,  },
 	images: { type: Types.CloudinaryImages },
+	notify: { type: Types.Boolean },
+
 
 
 });
