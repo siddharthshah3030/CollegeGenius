@@ -42,8 +42,12 @@ html
 									span.caret
 								ul.dropdown-menu
 									each theme in themes
-										li(class=currentTheme === theme ? 'active' : '')
-											a(href='?theme=' + theme)= theme
+										if(theme == 'Journal')
+											li(class=currentTheme === theme ? 'active' : '')
+												a(href='?theme=' + theme) Light
+										if(theme == 'Slate')
+											li(class=currentTheme === theme ? 'active' : '')
+												a(href='?theme=' + theme) Dark												
 						if user
 							li: a(href='/keystone') Database
 							li: a(href='/keystone/signout') Sign Out
