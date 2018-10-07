@@ -9,7 +9,24 @@ var getMarks = function(){
     var marksDa = parseFloat($('#da').val());
     var marksLab = parseFloat($('#lab').val());
     var marksProj = parseFloat($('#j-comp').val());
-    var marksFat = parseFloat($('#fat').val());
+    var ass =     document.getElementById("f1ass").checked ;
+
+    var f1a1  =  document.getElementById("f1abb1").checked ;
+    var f1a2  =  document.getElementById("f1abb2").checked ;
+    var f1a3  =  document.getElementById("f1abb3").checked ;
+    var f1a4  =  document.getElementById("f1abb4").checked ;
+    var f1a5  =  document.getElementById("f1abb5").checked ;
+    var mf 
+if(f1a1 && ass)mf = 20;
+if(f1a1 && !ass)mf = 19;
+if(f1a2 && ass)mf = 18;
+if(f1a2 && !ass)mf = 17;
+if(f1a3 && ass)mf = 16;
+if(f1a3 && !ass)mf = 15;
+if(f1a4 && ass)mf = 14;
+if(f1a4 && !ass)mf = 13;
+if(f1a5 )mf = 12;
+
     // console.log(marksCat1,marksCat2,marksDa,marksLab,marksProj,marksFat);
     // var choice,netMarks = 0.0;
     // if(marksLab && marksProj){
@@ -39,7 +56,7 @@ var getMarks = function(){
     var netMarks = 0;
     console.log(marksDa)
     
-    netMarks = marksCat1 + marksCat2 + marksDa + marksFat;
+    netMarks = marksCat1 + marksCat2 + marksDa + mf;
     console.log("net marks is here ")
     console.log(netMarks)
 
