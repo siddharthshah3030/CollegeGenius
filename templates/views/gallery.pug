@@ -7,7 +7,7 @@ block content
 	.page-header
 		h1 Notes
 		a(href='/keystone/galleries?new').btn.btn-default.pull-right.btn-info= user ? 'Add Notes' : 'Sign in to Add Notes'
-		a(href='/keystone/galleries').btn.btn-primary.center-block.modal-sm.btn-group-sm Search Database
+		a(href='/keystone/galleries').btn.btn-primary.center-block.modal-sm.btn-group-sm Search Notes
 
 	if galleries.length
 		each gallery, i in galleries
