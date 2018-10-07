@@ -8,7 +8,7 @@ More Info: https://uideck.com/products/helium-ui-kit
 #menutitle a {
 
 position: absolute;
-top: 80%;
+top: 75%;
 }
 #menutitle a .oneaa{
   left: 40%;
@@ -883,8 +883,9 @@ footer .menu li a:hover {
   border: 2px solid #EB586F;
   background: transparent;
   color: #fff;
-  background: #EB586F;
+  background: #173853;
   border: 2px solid #EB586F;
+  border-radius: 30px;
 
 }
 
