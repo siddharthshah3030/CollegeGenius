@@ -246,8 +246,8 @@ module.exports.create = function (configs) {
           };
         }, function (err) {
           if (args.debug) {
-            console.error("[le-store-certbot] certificates.check");
-            console.error(err.stack);
+            log("certificates.check");
+            log(err.stack);
           }
           return null;
         });
