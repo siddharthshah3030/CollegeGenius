@@ -59,7 +59,7 @@ Let's make a better learning platform
 
 
 
-
+  <img src="public/img/collegegenious.svg" width="100%" height="50%">
 ## Tech
 * [KeystoneJS CMS](https://keystonejs.com/) - framework for developing database-driven websites
 * [ReactJs](https://reactjs.org/) - building user interfaces in admin panel
@@ -111,6 +111,5 @@ or simply make a PR
 ### License
 
 MIT
-
 
 
