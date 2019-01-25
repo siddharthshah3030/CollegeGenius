@@ -4,7 +4,7 @@
 use used_ID : hello@gmail.com , password: siddharth
 #### All Education at One Place
   - All Doubts and solutions
-  - All notes, previous years, shedule, topics and events
+  - All notes, previous years, schedule, topics, and events
   - CPI enhancement tool and college map of NITRR
   - Quiz to test yourself
   - everything sorted by topics, users, date, sem, branch, keywords with google custom search
@@ -12,24 +12,24 @@ use used_ID : hello@gmail.com , password: siddharth
 ### New Features!
 
   - added college map of NITRR
-  - compare CPI with others in class
-  - Shedule updated 
-  - Search anything with the hep of Google Custom Search
+  - compare CPI with others in the class
+  - Schedule updated 
+  - Search anything with the help of Google Custom Search
 
 
 You can also:
-  - ask enqueries to heads
- - check whole database at database panel 
+  - ask inquiries to heads
+ - check the whole database at database panel 
  - add important academic events(notified via SMS)
 
 ### Problem: 
-In this era of digitalisation, our college is not utilising Technology to its fullest. we are not having a common education platform for all our educational resources
+In this era of digitalization, our college is not utilizing Technology to its fullest. we are not having a common education platform for all our educational resources
 
   > We faced this problem of arranging notes, 
   > asking others for previous year papers
   > wasted our’s and their’s time while 
   > still being confused.
-  > This will save time of both students and faculty
+  > This will save the time of both students and faculty
   > Doubts and CPI tools will prove useful, 
   > everything will be available to everyone
   > helping each and every student 
@@ -39,7 +39,7 @@ Let's make a better learning platform
 
   - **HomePage** - interactive UI to all all sections
   - **Doubts** - ask or answer to other's doubts 
-  - **NOtes** - Open collection of notes sorted by subjects and Topics
+  - **Notes** - Open collection of notes sorted by subjects and Topics
   - **Enquiry_Us** - have questions then ask here
   - **Maps** - Needy college campus maps with all floors and labelled classes
   - **CPI enhancement** - various CPI tools
@@ -47,19 +47,19 @@ Let's make a better learning platform
     - quick CPI calculator
     - calculate CPI from semesters
     - calculate SPI and compare with others 
-- **Previous_Year's** - all question papaers sorted for practice
-- **Quiz** - attempt designed quizes in time for practice
-- **Shedule** - Reminder for assignments,exams and submissions 
-- **Events** - Get notified and stay aware for all events and competions being organised
+- **Previous_Year's** - all question papers sorted for practice
+- **Quiz** - attempt designed quizzes in time for practice
+- **Schedule** - Reminder for assignments, exams, and submissions 
+- **Events** - Get notified and stay aware of all events and competitions being organized
 - **Topics** - see resources by topics
 - **Google_Custom_Search** - search everything by just a keyword
     - eg. all previous, notes, quiz, doubts of Lorentz equation
-- **Database** - large collection of all the resources in website
+- **Database** - a large collection of all the resources on the website
 
 
 
 
-  <img src="public/img/collegegenious.svg" width="100%" height="50%">
+  <img src="public/img/collegegenious.svg" title="Simple Workflow" width="100%" height="50%">
 ## Tech
 * [KeystoneJS CMS](https://keystonejs.com/) - framework for developing database-driven websites
 * [ReactJs](https://reactjs.org/) - building user interfaces in admin panel
@@ -97,16 +97,16 @@ Setup required for Cloudinary and Mlab Databases
 you will have to create an account there and add the link for connection to Database
  
 Want to contribute? Great!
-just make an issue for suggesstions and bugs
+just make an issue for suggestions and bugs
 or simply make a PR
 ### Contributors
 ##### [Siddharth Shah](https://github.com/siddharthshah3030) - Deadline_Driven_Development
 ### Todos
  - add even better CPI tools
  - make database access without authentication
- - better UI of Quiz section
+ - better UI of the Quiz section
  - support PDF
-> help us improve this project and make a better learning environement for eveyone 
+> help us improve this project and make a better learning environment for everyone 
 
 ### License
 
