@@ -93,8 +93,8 @@ $ npm start
 
 ## Development
 
-Setup required for Cloudinary and Mlab Databases
-you will have to create an account there and add the link for connection to Database
+Setup required for Cloudinary and Mlab Databases<br>
+you will have to create an account there and add the link for connection to Database<br>
 Some issues with GoogleCustomSearch 
 
 Want to contribute? Great!
