@@ -102,6 +102,8 @@ just make an issue for suggestions and bugs
 or simply make a PR
 ### Contributors
 ##### [Siddharth Shah](https://github.com/siddharthshah3030) - Deadline_Driven_Development
+##### [Prachi agrawal](https://github.com/Prachiagrawal1) - 
+
 ### Todos
  - add even better CPI tools
  - make database access without authentication
