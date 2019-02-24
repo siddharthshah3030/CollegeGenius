@@ -1,0 +1,55 @@
+extends ../layouts/default
+
+
+block content
+    #quiz
+        h1.text-center this is title
+        //- button(onclick="clock(); document.getElementById('demo').innerHTML='0';") Start Timer
+        //- button(onclick='clearInterval(myTimer);') Stop Timer
+    #videos
+        // Selector by Id
+        //- #unix(data-ycp_title='#Demo - Bachors.com', data-ycp_channel='UC4rasfm9J-X4jNl9SvXp8xA')
+        // By ChannelId
+        // Selector by ClassName
+        .demo(data-ycp_title='#Javascript - Sekolah Koding', data-ycp_channel='PLMC9KNkIncKvYin_USF1qoJQnIyMAfRxl')
+        // By PlayListId
+        //- .demo(data-ycp_title='#News - Vevo Uk', data-ycp_channel='Ct6BUPvE2sM')
+        // By UserName
+    .dropdown
+    button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+        | Tutorials
+        span.caret
+    ul.dropdown-menu
+        li
+        a(tabindex='-1', href='#') HTML
+        li
+        a(tabindex='-1', href='#') CSS
+        li.dropdown-submenu
+        a.test(tabindex='-1', href='#')
+            | New dropdown 
+            span.caret
+        ul.dropdown-menu
+            li
+            a(tabindex='-1', href='#') 2nd level dropdown
+            li
+            a(tabindex='-1', href='#') 2nd level dropdown
+            li.dropdown-submenu
+            a.test(href='#')
+                | Another dropdown 
+                span.caret
+            ul.dropdown-menu
+                li
+                a(href='#') 3rd level dropdown
+                li
+                a(href='#') 3rd level dropdown
+    #quiz
+        h1.text-center this is title        
+        h1.text-center this is title        
+        h1.text-center this is title        
+        //- #questions
+        //- .text-center
+        //- button#submit.btn.btn-primary.mt-5 Submit
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous')
+
+    script(src="/js/ycp.js")
+    script(src="/js/videoCourses.js")
