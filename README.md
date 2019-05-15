@@ -1,7 +1,7 @@
 # College Genius - Vigyaan18 Winner
 #### Education Vending System - lot's of educational resources organised via open database 
 ### [  website](https://collegegenius.herokuapp.com/) 
-use used_ID : hello@gmail.com , password: siddharth
+use user_ID : hello@gmail.com , password: siddharth
 #### All Education at One Place
   - All Doubts and solutions
   - All notes, previous years, schedule, topics, and events
