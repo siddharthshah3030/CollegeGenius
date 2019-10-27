@@ -42,7 +42,6 @@ exports = module.exports = function(app) {
   app.all("/previous", routes.views.previous);
   app.all("/notification", routes.views.notification);
   app.all("/cpi", routes.views.cpi);
-  // app.all('/doubts', routes.views.doubts);
   app.all("/quiz", routes.views.quiz);
   app.all("/map", routes.views.map);
   app.all("/videos", routes.views.videos);
