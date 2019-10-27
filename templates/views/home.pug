@@ -60,9 +60,6 @@ header#header-wrap
           li.nav-item
             a.nav-link(href='/previous')
               | Previous
-          //- li.nav-item
-          //-   a.nav-link(href='/doubts')
-          //-     | no work
           li.nav-item
             a.nav-link(href='/quiz')
               | Quiz              
@@ -120,7 +117,6 @@ header#header-wrap
     //-                     each link in navLinks
     //-                         li(class=(section === link.key ? 'active' : null)): a(href=link.href)= link.label
     //-                 ul.nav.navbar-nav.navbar-right
-
     //-                     if user
     //-                         li: a(href='/keystone') Database
     //-                         li: a(href='/keystone/signout') Sign Out
@@ -161,11 +157,6 @@ header#header-wrap
                   else
                     a#ava.oneaa.btn.btn-lg.btn-common.animated.fadeInUp(href='/keystone/signin') Sign In
                     a#bab.twoaa.btn.btn-lg.btn-common.animated.fadeInUp(href='/keystone/galleries?new') Upload Notes
-
-            //- a.carousel-control-prev(href='#carousel-slider', role='button', data-slide='prev')
-            //-   i.fa.fa-chevron-left
-            //- a.carousel-control-next(href='#carousel-slider', role='button', data-slide='next')
-            //-   i.fa.fa-chevron-right
         .search
             <gcse:search></gcse:search>              
   // End sliders
