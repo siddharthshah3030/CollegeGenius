@@ -47,6 +47,5 @@ exports = module.exports = function(app) {
   app.all("/videos", routes.views.videos);
   app.all("/quiz/list", routes.views.question);
   app.all("/quiz/:id", routes.views.quiz_detail);
-  // Downloads
   app.get("/download/users", routes.download.users);
 };

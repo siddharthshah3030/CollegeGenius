@@ -13,9 +13,9 @@ block content
 		each gallery, i in galleries
 			h3
 				| #{gallery.name}  - #{gallery.Branch} #{gallery.Sem} 
-			//- h6  
-				//- | #{gallery.Topics} 
-			//- p #{gallery}
+			h6  
+				| #{gallery.Topics} 
+			p #{gallery}
 				small.text-muted= gallery._.publishedDate.format('Do MMM YYYY')
 			
 			.row
