@@ -18,7 +18,7 @@ use user_ID : hello@gmail.com , password: siddharth
 
 
 You can also:
-  - ask inquiries to heads
+  - ask inquiries to admins
  - check the whole database at database panel 
  - add important academic events(notified via SMS)
 
@@ -105,10 +105,10 @@ or simply make a PR
 ##### [Prachi agrawal](https://github.com/Prachiagrawal1) - 
 
 ### Todos
- - add even better CPI tools
+ - add even better CPI analysis tools
  - make database access without authentication
  - better UI of the Quiz section
- - support PDF
+ - support PDF notes upload
 > help us improve this project and make a better learning environment for everyone 
 
 ### License
