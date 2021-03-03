@@ -14,7 +14,7 @@
     "lodash": "^4.17.10",
     "node-supervisor": "^1.0.2",
     "nodemon": "^1.18.4",
-    "pug": "^2.0.3"
+    "pug": "^3.0.1"
   },
   "scripts": {
     "start": " nodemon -e js,ejs,html -w . -w public -w views -w routes -w models keystone.js"
