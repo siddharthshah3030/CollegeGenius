@@ -37,6 +37,10 @@ block content
 								li: a(href='?page=' + doubts.next): span.glyphicon.glyphicon-chevron-right
 							else
 								li.disabled: a(href='?page=' + doubts.totalPages): span.glyphicon.glyphicon-chevron-right
+				
+							if doubts
+								li: span.glyphicon.glyphicon-chevron-learn
+						
 				else
 					if category
 						.jumbotron.text-center
